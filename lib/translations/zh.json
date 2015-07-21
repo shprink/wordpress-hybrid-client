@@ -23,9 +23,9 @@
     },
     "bookmark": {
         "title": "书签",
-        "emptyList" : "Nothing bookmarked yet!",
-        "bookmarked" : "Bookmarked!",
-        "removed" : "Bookmark removed!"
+        "emptyList" : "目前暂无书签！",
+        "bookmarked" : "已加入书签！",
+        "removed" : "书签已移除！"
     },
     "tags": {
         "title": "标签"
