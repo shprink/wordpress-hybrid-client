@@ -1,0 +1,84 @@
+{
+    "pullToRefresh": "Desliza para refrescar",
+    "retry": "Reintentar",
+    "error": "Ha ocurrido un error, inténtalo de nuevo.",
+    "attemptToConnect": "Attempt to connect {{attempt}} of {{attemptMax}}.",
+    "yes": "Sí",
+    "no" : "No",
+    "menu": {
+        "title": "Menu",
+        "home": "Inicio",
+        "tags": "Etiquetas",
+        "search": "Buscar",
+        "bookmarks": "Favoritos",
+        "socialNetworks": "Redes Sociales",
+        "categories": "Categorías",
+        "settings": "Configuración"
+    },
+    "pushNotifications": {
+        "newContent": {
+            "title": "Nueva publicación!",
+            "text": "Se ha publicado un nuevo artículo: '{{postTitle}}' en {{appTitle}}, ¿quieres leerlo?"
+        }
+    },
+    "bookmark": {
+        "title": "Favoritos",
+        "emptyList" : "No has guardado nada aún!",
+        "bookmarked" : "Añadido a favoritos!",
+        "removed" : "Eliminado de favoritos!"
+    },
+    "tags": {
+        "title": "Etiquetas"
+    },
+    "tag": {
+        "title": "Etiqueta: {{name}}"
+    },
+    "categories": {
+        "title": "Categorías"
+    },
+    "category": {
+        "title": "Categoría {{name}}"
+    },
+    "home": {
+        "title": "Inicio"
+    },
+    "search": {
+        "inputPlaceholder": "Buscar",
+        "title": "Search",
+        "titleQuery": "Buscar: {{query}}"
+    },
+    "sharing": {
+        "shared": "Compartido!"
+    },
+    "posts": {
+        "title": "Inicio",
+        "empty": "No se han encontrado publicaciones!",
+        "featured": "Destacado"
+    },
+    "post": {
+        "openInBrowser": "Abrir en el navegador"
+    },
+    "about": {
+        "title": "Acerca de",
+        "credit": "Powered by <a href='http://wphc.julienrenaux.fr' target='_blank'>WPHC</a> and WordPress"
+    },
+    "params": {
+        "title": "Parámetros",
+        "offlineMode": "Modo Offline (próximamente)",
+        "fontSize": "Tamaño de la fuente",
+        "language": "Idioma"
+    },
+    "languages": {
+        "en": "English",
+        "fr": "French",
+        "zh": "Chinese",
+		"es": "Spanish"
+    },
+    "fontSize": {
+        "small": "Pequeña",
+        "medium": "Mediana",
+        "large": "Grande",
+        "x-large": "Muy grande",
+        "xx-large": "Extra grande"
+    }
+}
