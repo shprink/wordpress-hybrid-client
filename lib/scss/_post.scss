@@ -5,12 +5,25 @@
 }
 .wp-caption.aligncenter {
     position: relative;
-    margin-bottom: 1.5em;
+    margin-bottom: 1.0em;
     max-width: 100%;
     overflow: hidden;
 }
-.wp-caption .wp-caption-text {
+.wp-caption-text {
     margin: 10px 0;
     text-align: center;
+    font-style: italic;
+}
+ol {
+    margin-left: 45px;
+    margin-bottom: 15px;
+    list-style: decimal;
+}
+ul {
+    margin-left: 45px;
+    margin-bottom: 15px;
+    list-style: disc;
+}
+em {
     font-style: italic;
 }
