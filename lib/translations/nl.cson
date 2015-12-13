@@ -1,0 +1,83 @@
+"pullToRefresh": "Trekken om te herladen!"
+"retry": "Opnieuw"
+"back": "Terug"
+"error": "Er ging iets mis, probeer het opnieuw."
+"attemptToConnect": "Poging {{attempt}} van {{attemptMax}} om te verbinden."
+"yes": "Ja"
+"no" : "Nee"
+"emptyList" : "Er is niks hier!"
+"menu":
+    "title": "Menu"
+    "home": "Home"
+    "tags": "Tags"
+    "pages": "Pagina's"
+    "posts": "Berichten"
+    "authors": "Auteurs"
+    "search": "Zoeken"
+    "bookmarks": "Bookmarks"
+    "socialNetworks": "Sociale Netwerken"
+    "categories": "Categorieën"
+    "settings": "Instellingen"
+    "customPosts": "Eigen post"
+    "customTaxonomy": "Eigen Taxanomie"
+"pushNotifications":
+    "newContent":
+        "title": "Nieuwe inhoud!"
+        "text": "Een nieuwe pagina/blog: '{{postTitle}}' is gepubliceerd op: {{appTitle}}, wil je het openen?"
+"bookmark":
+    "title": "Bookmarks"
+    "emptyList" : "Nog niks ge-bookmarkt!"
+    "bookmarked" : "ge-bookmarkt!"
+    "removed" : "Bookmark verwijderd!"
+"tags":
+    "title": "Tags"
+"tag":
+    "title": "Tag: {{name}}"
+"customTaxonomy":
+    "title": "{{term}}: {{name}}"
+"categories":
+    "title": "Categorieën"
+"category":
+    "title": "Categorie: {{name}}"
+"home":
+    "title": "Home"
+"search":
+    "inputPlaceholder": "Zoeken"
+    "title": "Zoeken"
+    "titleQuery": "Zoeken: {{query}}"
+"sharing":
+    "shared": "Gedeeld!"
+"authors":
+    "title": "Auteurs"
+"author":
+    "title": "Auteur: {{name}}"
+"pages":
+    "title": "Pagina's"
+"posts":
+    "title": "Berichten"
+    "featured": "Uitgelicht"
+"post":
+    "comments": "Reactie's"
+    "openInBrowser": "Open in browser"
+"about":
+    "title": "Over"
+"params":
+    "title": "Instellingen"
+    "offlineMode": "Offline mode (soon)"
+    "fontSize": "Bericht Lettertype grootte"
+    "language": "Taal"
+"languages":
+    "en": "Engels"
+    "fr": "Frans"
+    "zh": "Chinees"
+    "es": "Spaans"
+    "pl": "Pools"
+    "de": "Duits"
+    "pt": "Portugees"
+    "nl": "Nederlands"
+"fontSize":
+    "small": "Klein"
+    "medium": "Middel"
+    "large": "Groot"
+    "x-large": "XGroot"
+    "xx-large": "XXGroot"

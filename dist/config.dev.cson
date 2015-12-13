@@ -7,5 +7,5 @@
     "maxAttempt": 3
 
 "translation":
-    "displayed" : ["en", "fr", "zh", "es", "pl", "de", "pt"]
+    "displayed" : ["en", "fr", "zh", "es", "pl", "de", "pt", "nl"]
     "prefered": "en"
