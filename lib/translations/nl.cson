@@ -1,0 +1,82 @@
+"pullToRefresh": "Omlaag om te herladen!"
+"retry": "Opnieuw"
+"back": "Terug"
+"error": "Er ging iets mis, probeer het opnieuw."
+"attemptToConnect": "Poging {{attempt}} van {{attemptMax}}. Om te laden"
+"yes": "Ja"
+"no" : "Nee"
+"emptyList" : "There is nothing here!"
+"menu":
+    "title": "Menu"
+    "home": "Home"
+    "tags": "Tags"
+    "pages": "Pages"
+    "posts": "Posts"
+    "authors": "Authors"
+    "search": "Search"
+    "bookmarks": "Bookmarks"
+    "socialNetworks": "Social Networks"
+    "categories": "Categories"
+    "settings": "Settings"
+    "customPosts": "Custom posts"
+    "customTaxonomy": "Custom Taxonomy"
+"pushNotifications":
+    "newContent":
+        "title": "New content!"
+        "text": "A new Post/Page: '{{postTitle}}' has been released on {{appTitle}}, do you want to open it?"
+"bookmark":
+    "title": "Bookmarks"
+    "emptyList" : "Nothing bookmarked yet!"
+    "bookmarked" : "Bookmarked!"
+    "removed" : "Bookmark removed!"
+"tags":
+    "title": "Tags"
+"tag":
+    "title": "Tag: {{name}}"
+"customTaxonomy":
+    "title": "{{term}}: {{name}}"
+"categories":
+    "title": "Categories"
+"category":
+    "title": "Category: {{name}}"
+"home":
+    "title": "Home"
+"search":
+    "inputPlaceholder": "Search"
+    "title": "Search"
+    "titleQuery": "Search: {{query}}"
+"sharing":
+    "shared": "Shared!"
+"authors":
+    "title": "Authors"
+"author":
+    "title": "Author: {{name}}"
+"pages":
+    "title": "Pages"
+"posts":
+    "title": "Posts"
+    "featured": "Featured"
+"post":
+    "comments": "Comments"
+    "openInBrowser": "Open in browser"
+"about":
+    "title": "About"
+"params":
+    "title": "Parameters"
+    "offlineMode": "Offline mode (soon)"
+    "fontSize": "Posts font size"
+    "language": "Language"
+"languages":
+    "en": "English"
+    "fr": "French"
+    "zh": "Chinese"
+    "es": "Spanish"
+    "pl": "Polish"
+    "de": "German"
+    "pt": "Portuguese"
+"fontSize":
+    "small": "Small"
+    "medium": "Medium"
+    "large": "Large"
+    "x-large": "Xlarge"
+    "xx-large": "XXlarge"
