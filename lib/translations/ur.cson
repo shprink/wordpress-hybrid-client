@@ -1,0 +1,89 @@
+"pullToRefresh": "کھینچیں نئ چیزوں لوڈ کریں"
+"retry": "پھر کوشش کریں"
+"back": "واپس جائیں"
+"error": "کوی مسلا ھو گیا :) برائے مھربانی دوبارا کوشش کریں، شکریا!۔"
+"attemptToConnect": " رابتا کیا جا رھا ھے {{attemptMax}} کو {{attempt}}.پھر سے  "
+"yes": "جی ھاں"
+"no" : "جی نھیں"
+"emptyList" : "یھاں تو کچھ بھی نھیں"
+"enabled": "چالو"
+"menu":
+    "title": "مینیو"
+    "home": "گھر"
+    "tags": "ٹیگز"
+    "pages": "صفحات"
+    "posts": "پوسٹیں"
+    "authors": "مصنف"
+    "search": "تلاش کریں"
+    "bookmarks": "میری ڈائری"
+    "socialNetworks": "سماجی نظام"
+    "categories": "بکھرے"
+    "settings": "سیٹینگز"
+    "customPosts": "اپنی پوسٹیں"
+    "customTaxonomy": "اپنی تکسنومی"
+"pushNotifications":
+    "newContent":
+        "title": "تازا ترین"
+        "text": " , کیا آپ اُسے دیکھنا پسند کرینگے؟  {{appTitle}}   شایا ھو چکی ھے'{{postTitle}}'ایک نئی تازا ترین اشات   "
+"bookmark":
+    "title": "میری ڈائری"
+    "emptyList" : "ابھی تک کچھ بھی پسند نھی کیا گیا۔ پسند کی ڈائری کھالی ھے"
+    "bookmarked" : "اپنی پسند کی ڈائری میں شامِل کردیا گیا"
+    "removed" : "اپنی پسند کی ڈائری سے کھارِج کردیا گیا"
+"tags":
+    "title": "ٹیگز"
+"tag":
+    "title": "ٹیگ: {{name}}"
+"customTaxonomy":
+    "title": "{{term}}: {{name}}"
+"categories":
+    "title": "کیٹاگوریز"
+"category":
+    "title": "کیٹاگوری: {{name}}"
+"home":
+    "title": "گھر"
+"search":
+    "inputPlaceholder": "تلاش کریں"
+    "title": "تلاش کریں"
+    "titleQuery": "تلاش: {{query}}"
+"sharing":
+    "shared": "تکصیم کر دیا گیا"
+"authors":
+    "title": "مصنف"
+"author":
+    "title": "مصنف: {{name}}"
+"pages":
+    "title": "صفحات"
+"posts":
+    "title": "پوسٹیں"
+    "featured": "قابلِ تعریف"
+"post":
+    "comments": "تزکرے"
+    "openInBrowser": "برائوزر میں کھولیں"
+"about":
+    "title": "تحارف"
+"params":
+    "title": "سیٹینگز"
+    "offlineMode": "بغیر انٹرنٹ کے(جلدآرھاھے)۔"
+    "fontSize": "لِکھای کا سائز"
+    "language": "زبان"
+    "pushNotifications": "اطلاحی پیغام"
+"languages":
+    "en": "English"
+    "fr": "French"
+    "zh": "Chinese"
+    "es": "Spanish"
+    "pl": "Polish"
+    "de": "German"
+    "pt": "Portuguese"
+    "it": "Italian"
+    "nl": "Dutch"
+    "ru": "Russian"
+    "tr": "Turkish"
+    "ur": "اُردو"
+"fontSize":
+    "small": "چھوٹا"
+    "medium": "درمیانا"
+    "large": "بڑا"
+    "x-large": "بھت بڑا"
+    "xx-large": "بھت بھت بڑا"
