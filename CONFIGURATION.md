@@ -96,6 +96,7 @@ Add the following and change state and params to the page you want:
         "state": "public.posts"
         "params": {}
 ```
+#### Set the home page to the pages page:		
 ```
 # MENU
 "menu":
