@@ -30,6 +30,7 @@
 - [X] Syntax highlighter
 - [X] Offline (Bookmarks)
 - [X] Comments (Submitting is not supported yet)
+- [X] Push Notification
 
 ## Built with WPHC
 
@@ -129,6 +130,7 @@ npm run buildProdAndroid
 npm run buildIOS
 npm run buildProdIOS
 ```
+
 
 ## Contribute
 
