@@ -105,3 +105,8 @@ The register http request fails with this message: `{error: "401", reason: "Unau
 Why am I getting the errors `{Unable to connect to tls://gateway.sandbox.push.apple.com:2195}` or `{Unable to connect to tsl://gateway.push.apple.com:2195}`?
 
 [Solution](http://stackoverflow.com/questions/1444355/iphone-push-notification-unable-to-connect-to-the-ssl-server)
+
+ ## Or   
+ Use [OneSignal] (OneSignal.com)  
+
+ [Documentation] (https://documentation.onesignal.com/docs/phonegap-sdk-overview) 
