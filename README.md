@@ -30,6 +30,7 @@
 - [X] Syntax highlighter
 - [X] Offline (Bookmarks)
 - [X] Comments (Submitting is not supported yet)
+- [X] Custom post-order (depends on WordPress plugin, see bellow)
 
 ## Built with WPHC
 
@@ -119,6 +120,10 @@ Read the manual: [RELEASE.md](RELEASE.md)
 ### Splashscreens and Icons
 
 Read the manual: [SPLASHICONS.md](SPLASHICONS.md)
+
+### Custom post-order
+
+Read the manual: [CUSTOM_POST_ORDER.md](CUSTOM_POST_ORDER.md)
 
 ## Project public API
 

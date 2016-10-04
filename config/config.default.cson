@@ -104,6 +104,10 @@
         "order": "desc"
     "cache":
         "maxAge": 10800000
+    "posts":
+        "query":
+            "orderby" : "date"
+            "order": "desc"
 
 # AUTHOR
 "authors":
