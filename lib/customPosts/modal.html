@@ -1,0 +1,9 @@
+<ion-modal-view class="modal image-modal transparent">
+    <ion-header-bar ng-click="modal.hide()" class="bar bar-positive">
+      <h1 class="title">{{ item.imageTitle }}</h1>
+      <button class="button button-clear" ng-click="modal.hide()"><i class="icon ion-close-round"></i></button>
+    </ion-header-bar>
+    <ion-content class="transparent">
+      <img src="{{ item.imageUrl }}" class="fullscreen-image"/>
+    </ion-content>
+</ion-modal-view>
