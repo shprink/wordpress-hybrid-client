@@ -7,10 +7,20 @@
         <meta http-equiv="Content-Security-Policy" content="default-src * gap://ready file:; img-src * 'self' 'unsafe-inline' 'unsafe-eval' data: blob: filesystem:; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval'">
 
         <title>{%=o.htmlWebpackPlugin.options.pkg.title %}</title>
+        <link rel="manifest" href="/manifest.json">
         <script>
             var wordpressHybridClient = {};
             wordpressHybridClient.version = "{%= o.htmlWebpackPlugin.options.appVersion %}";
         </script>
+        {% if (o.htmlWebpackPlugin.options.serviceWorkerEnabled) { %}
+        <script>
+            if ('serviceWorker' in navigator) {
+                navigator.serviceWorker.register('service-worker.js')
+                    .then(() => console.log('service worker installed'))
+                    .catch(err => console.log('Error', err));
+            }
+        </script>
+        {% } %}
         <!-- cordova script (this will be a 404 during development) -->
         <script src="cordova.js"></script>
     </head>

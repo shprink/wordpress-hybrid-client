@@ -17,6 +17,7 @@ module.exports = extend(webpackConfig, {
         new HtmlWebpackPlugin({
             filename: 'index.html',
             pkg: pkg,
+            serviceWorkerEnabled: projectConfig.serviceWorker.enabled,
             appVersion: getAppVersion(),
             template: path.join(libPath, 'index.html')
         }),

@@ -42,11 +42,6 @@ During the installation you might have the following error on OSX:
 
 ## Config files
 
-```
-# Copy local config
-npm run installWPHC
-```
-
 Your personal config files live now in the `config` folder. You can modify all of them except `config.default.cson` which contains the default config that can be overwritten using `config/config.cson`
 
 ## Installing the Web service

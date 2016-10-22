@@ -81,6 +81,14 @@ For instance if you want to modify the way the menu is displayed, you will need 
 
 After that you will need to register your new template in `lib/templates/index.js` (read the comments for help)
 
+## Service Workers (Experiemental)
+
+WPHC supports progressive web apps. When [enabled](#serviceWorker) make sure you modify `config/manifest.json` with your own app informations (title, description etc.) and overwrite all the icons in `config/icons`.
+
+Chrome dev tools allow you to test the "add to homescreen" feature on the browser.
+
+![image](https://cloud.githubusercontent.com/assets/1388706/19619167/740031b0-9860-11e6-9ca0-ebb5bb9bb152.png)
+
 ## Frequently asked questions
 
 ### How to change the font
@@ -151,6 +159,7 @@ Here is a simple view of what you can configure:
 
 * title
 * ionicConfig
+* serviceWorker
 * api
     * baseUrl
     * timeout
@@ -158,7 +167,7 @@ Here is a simple view of what you can configure:
 * menu
     * exposeAsideWhen
     * list
-	* logo
+    * logo
 * settings
 * cache
     * views
@@ -205,16 +214,15 @@ allow overwriting ionic configuration <http://ionicframework.com/docs/api/provid
 
 Setting ```null``` will keep ionic default value.
 
+<a name="serviceWorker"></a>
+### serviceWorker [Object]
+
+* ***enabled***    ```Boolean```    Experiemental. default `false`
+
 ### menu [Object]
 
-The media query used to determine when to always display the left menu.
-
-```
-"exposeAsideWhen": "(min-width:900px)"
-```
-"logo": [String] (default: "/config/logo.png", null to disable, optimized 42 x 42px transparent)
-
-Your website logo. The logo will appear on the left of the title
+* ***exposeAsideWhen***     ```String```    The media query used to determine when to always display the left menu, default `(min-width:900px)`
+* ***displayIcon***         ```Boolean```   whether or not to display the icon on the menu header. default `true`, to modify the icon overwrite `config/icons/icon_48.png`
 
 ### Settings configuration.
 

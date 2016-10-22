@@ -10,6 +10,7 @@ require './font/font.coffee'
 require 'expose?_!lodash'
 require 'wp-api-angularjs'
 require './config.js'
+require '!file?name=[name].[ext]!./service-worker.js';
 overwriteModule = require '../config/index.js'
 customPostsModule = require './customPosts/index.js'
 pagesModule = require './pages/index.js'
@@ -126,7 +127,7 @@ app.controller 'WPHCMainController' , ($log, $WPHCConfig) ->
     vm.appVersion = wordpressHybridClient.version || null
     vm.appConfig = $WPHCConfig
     vm.appTitle = vm.appConfig.title || null
-    vm.appLogo = vm.appConfig.menu.logo || null
+    vm.displayIcon = vm.appConfig.menu.displayIcon
     vm
 
 ###

@@ -15,6 +15,9 @@
     "timeout": 30000
     "maxAttempt": 3
 
+"serviceWorker":
+    "enabled" : false
+
 # IONIC
 "ionicConfig":
     "views":
@@ -49,7 +52,7 @@
         "state": "public.posts"
         "params": {}
     "exposeAsideWhen": "(min-width:900px)"
-    "logo": "/config/logo.png" # null will disable
+    "displayIcon": true # uses config/icons/icon_48.png
 
 # SETTINGS PAGE
 "settings":

@@ -1,7 +1,7 @@
-<ion-header-bar class="bar-positive">
-	<div ng-if="::main.appLogo" class="bar-logo" wphc-img-background-cache="{{::main.appLogo}}"></div>	
-    <h1 class="title">{{main.appTitle}}</h1>
+<ion-header-bar class="bar-positive menu-bar" ng-class="::{'has-icon': main.displayIcon}">
+	<img ng-if="::main.displayIcon" class="icon" ng-src="img/icon_48.png" />
+	<h1 class="title">{{main.appTitle}}</h1>
 </ion-header-bar>
 <ion-content>
-    <wphc-menu list="menuCtrl.list"></wphc-menu>
+	<wphc-menu list="menuCtrl.list"></wphc-menu>
 </ion-content>
