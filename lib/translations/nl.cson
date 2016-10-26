@@ -12,15 +12,15 @@
     "home": "Home"
     "tags": "Tags"
     "pages": "Pagina's"
-    "posts": "Posts"
+    "posts": "Berichten"
     "authors": "Auteurs"
     "search": "Zoeken"
     "bookmarks": "bladwijzers"
     "socialNetworks": "Sociale netwerken"
     "categories": "Categorieën"
     "settings": "Instellingen"
-    "customPosts": "Eigen posts"
-    "customTaxonomy": "Eigen taxanomie"
+    "customPosts": "Aangepaste berichten"
+    "customTaxonomy": "Aangepaste taxanomie"
 "pushNotifications":
     "newContent":
         "title": "Nieuwe inhoud!"
@@ -55,7 +55,7 @@
 "pages":
     "title": "Pagina's"
 "posts":
-    "title": "Posts"
+    "title": "Berichten"
     "featured": "Uitgelicht"
 "post":
     "comments": "Reactie's"
@@ -65,9 +65,9 @@
 "params":
     "title": "Instellingen"
     "offlineMode": "Offline mode (binnenkort)"
-    "fontSize": "Post lettertype grootte"
+    "fontSize": "Lettertype grootte"
     "language": "Taal"
-    "pushNotifications": "Push meldingen"
+    "pushNotifications": "Push berichten"
 "languages":
     "en": "Engels"
     "fr": "Frans"
