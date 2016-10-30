@@ -16,10 +16,19 @@
 * [CONFIG] There is no more dev/prod distinction, WPHC turn debug OFF when building the prod app automatically.
 * [ABOUT] The About feature has been removed. You can use Pages to achieve the same purpose.
 
+<a name="2.0.0-beta14"></a>
+### 2.0.0-beta14 (2016-10-30)
+
+To upgrade checkout `git fetch --all && git checkout v2.0.0-beta14` and run `npm i`
+
+* [BUG] Fix Pagination on customPosts <https://github.com/shprink/wordpress-hybrid-client/issues/283>
+* [FEATURE] Custom posts and custom taxos queries are customizale through the conf <https://github.com/shprink/wordpress-hybrid-client/issues/288>
+* Add a new scss variable `$barHasIconTitleMarginLeft`
+
 <a name="2.0.0-beta13"></a>
 ### 2.0.0-beta13 (2016-10-22)
 
-To upgrade checkout `git checkout v2.0.0-beta13` and run `npm i`
+To upgrade checkout `git fetch --all && git checkout v2.0.0-beta13` and run `npm i`
 
 * [FEATURE] Display app icon in the menu header <https://github.com/shprink/wordpress-hybrid-client/issues/5>
 * [FEATURE] Progressive Web App support (Manifest & service workers)

@@ -151,6 +151,11 @@
         "capacity": 25
         "maxAge": 10800000
 
+# ANY CUSTOM POSTS (this is just an example with movie type)
+"movie":
+    "query":
+        "per_page": 2
+
 # TRANSLATIONS
 "translation":
     "displayed" : ["en", "fr", "zh", "es", "pl", "de", "pt", "it", "nl", "ru", "tr"]

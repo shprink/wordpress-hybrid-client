@@ -8,6 +8,6 @@ $logoSize : $bar-height - (2 * $bar-padding-portrait);
 		height:  $logoSize;
 	}
 	.title{
-		margin-left: $logoSize + 10;
+		margin-left: $logoSize + $barHasIconTitleMarginLeft;
 	}
 }

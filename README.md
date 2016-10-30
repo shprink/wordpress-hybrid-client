@@ -68,6 +68,7 @@
 - Git
 - NodeJS (>= 4)
 - NPM (>= 3)
+- [Yarn](https://yarnpkg.com/en/docs/install)
 
 This installation works on both OSX and Linux. Windows is not supported yet,
 
@@ -79,7 +80,7 @@ $ git tag
 $ git checkout <the-latest-version>
 
 # Install
-$ npm install
+$ yarn
 
 # Run on the browser
 $ npm start

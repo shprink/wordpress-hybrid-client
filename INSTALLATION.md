@@ -32,7 +32,7 @@ The installation will not install anything globally to avoid potential version c
 
 ```
 # install dependencies
-npm install
+yarn
 ```
 
 This could takes several minutes.
