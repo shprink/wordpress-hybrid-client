@@ -5,6 +5,6 @@
         <wphc-loader ng-if="!pagesCtrl.list" on-load="pagesCtrl.init()"></wphc-loader>
         <ion-refresher pulling-text="{{ 'pullToRefresh' | translate}}" on-refresh="pagesCtrl.refresh()"></ion-refresher>
         <wphc-pages pages="pagesCtrl.list"></wphc-pages>
-        <ion-infinite-scroll immediate-check="true" ng-if="pagesCtrl.list && !pagesCtrl.isPaginationOver" on-infinite="pagesCtrl.loadMore()" distance="1%">test</ion-infinite-scroll>
+        <ion-infinite-scroll immediate-check="true" ng-if="pagesCtrl.list && !pagesCtrl.isPaginationOver" on-infinite="pagesCtrl.loadMore()" distance="1%"></ion-infinite-scroll>
     </ion-content>
 </ion-view>

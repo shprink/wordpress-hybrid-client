@@ -81,9 +81,11 @@ For instance if you want to modify the way the menu is displayed, you will need 
 
 After that you will need to register your new template in `lib/templates/index.js` (read the comments for help)
 
-## Service Workers (Experiemental)
+## Service Workers (Experimental)
 
 WPHC supports progressive web apps. When [enabled](#serviceWorker) make sure you modify `config/manifest.json` with your own app informations (title, description etc.) and overwrite all the icons in `config/icons`.
+
+PWA requires a HTTPS connection, make sure to have an SSL certificate.
 
 Chrome dev tools allow you to test the "add to homescreen" feature on the browser.
 

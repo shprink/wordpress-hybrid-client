@@ -5,6 +5,6 @@
         <wphc-loader ng-if="!taxonomiesCtrl.list" on-load="taxonomiesCtrl.init()"></wphc-loader>
         <ion-refresher pulling-text="{{ 'pullToRefresh' | translate}}" on-refresh="taxonomiesCtrl.refresh()"></ion-refresher>
         <wphc-taxonomies taxonomies="taxonomiesCtrl.list" term="taxonomiesCtrl.term" post-type="taxonomiesCtrl.postType"></wphc-taxonomies>
-        <ion-infinite-scroll immediate-check="true" ng-if="taxonomiesCtrl.list && !taxonomiesCtrl.isPaginationOver" on-infinite="taxonomiesCtrl.loadMore()" distance="1%">test</ion-infinite-scroll>
+        <ion-infinite-scroll immediate-check="true" ng-if="taxonomiesCtrl.list && !taxonomiesCtrl.isPaginationOver" on-infinite="taxonomiesCtrl.loadMore()" distance="1%"></ion-infinite-scroll>
     </ion-content>
 </ion-view>

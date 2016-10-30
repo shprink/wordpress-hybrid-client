@@ -16,6 +16,16 @@
 * [CONFIG] There is no more dev/prod distinction, WPHC turn debug OFF when building the prod app automatically.
 * [ABOUT] The About feature has been removed. You can use Pages to achieve the same purpose.
 
+<a name="2.0.0-beta13"></a>
+### 2.0.0-beta13 (2016-10-22)
+
+To upgrade checkout `git checkout v2.0.0-beta13` and run `npm i`
+
+* [FEATURE] Display app icon in the menu header <https://github.com/shprink/wordpress-hybrid-client/issues/5>
+* [FEATURE] Progressive Web App support (Manifest & service workers)
+* Remove share button on browser
+
+
 <a name="2.0.0-beta12"></a>
 ### 2.0.0-beta12 (2016-09-18)
 

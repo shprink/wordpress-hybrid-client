@@ -19,7 +19,7 @@ All the necessary plugins will be installed as well:
 
 ## Android
 
-### Preriquisites
+### Prerequisites
 
 * Android SDK
 * Ant

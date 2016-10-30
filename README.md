@@ -161,4 +161,4 @@ It's always best to create two smaller PRs than one big one.
 
 ### Style
 
-Always use four spaces, no tabs. This goes for any HTML, CSS, or Javascript.
+Follow .editconfig 

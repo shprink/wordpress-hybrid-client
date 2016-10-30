@@ -14,6 +14,6 @@
         <wphc-loader ng-if="!searchCtrl.list" on-load="searchCtrl.init()"></wphc-loader>
         <ion-refresher pulling-text="{{ 'pullToRefresh' | translate}}" on-refresh="searchCtrl.refresh()"></ion-refresher>
         <wphc-posts show-toolbar="::searchCtrl.showToolbar" posts="searchCtrl.list"></wphc-posts>
-        <ion-infinite-scroll immediate-check="true" ng-if="searchCtrl.list && !searchCtrl.isPaginationOver" on-infinite="searchCtrl.loadMore()" distance="1%">test</ion-infinite-scroll>
+        <ion-infinite-scroll immediate-check="true" ng-if="searchCtrl.list && !searchCtrl.isPaginationOver" on-infinite="searchCtrl.loadMore()" distance="1%"></ion-infinite-scroll>
     </ion-content>
 </ion-view>

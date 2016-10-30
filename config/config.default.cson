@@ -11,7 +11,7 @@
 
 # API
 "api":
-    "baseUrl": "http://dev.julienrenaux.fr/wp-json"
+    "baseUrl": "https://dev.julienrenaux.fr/wp-json"
     "timeout": 30000
     "maxAttempt": 3
 
