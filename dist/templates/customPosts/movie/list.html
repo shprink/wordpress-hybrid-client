@@ -1,8 +1,14 @@
 <div list="posts">
     <div class="list card card-posts repeat-animation" ng-repeat="item in customPostsListCtrl.list">
         <div ui-sref="public.customPosts.id({ id: item.id, slug: customPostsListCtrl.type})">
-            <div class="item item-text-wrap">
+            <div class="item item-image" ng-if="::item.featured_media !== 0" wphc-img-background-cache="{{::item.featured_image}}"></div>    
+            <div class="item item-text-wrap" ng-if="::item.featured_media !== 0" style="overflow:hidden">
                 <h1 class="item-title" ng-bind-html="::item.title.rendered | truncate: 50: '...': true"></h1>
+                <h4 class="item-date" ng-bind-html="::item.date.rendered | truncate: 50: '...': true"></h4>
+            </div>
+            <div class="item item-text-wrap item-text-with-no-image" ng-if="::item.featured_media === 0">
+                <h1 class="item-title" ng-bind-html="::item.title.rendered | truncate: 50: '...': true"></h1>
+                <h4 class="item-date" ng-bind-html="::item.date.rendered | truncate: 50: '...': true"></h4>
             </div>
             <div class="item item-text-wrap" ng-if="::item.content.rendered" ng-bind-html="::item.content.rendered"></div>
         </div>

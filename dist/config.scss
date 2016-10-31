@@ -10,3 +10,78 @@ $palette-accent-color: #009688 !default;
 $palette-secondary-text: #727272 !default;
 $palette-divider-color: #EAEAEA !default;
 $bar-height: 64px !default;
+html.public-custom-posts{
+	.item-image{
+		height: 100px;
+    	width: 100px;
+    	background-size: contain;
+    	float: left;
+		margin: 1px 0 0 1px;
+	}
+}
+html.public-custom-posts-id{
+	.item-image{
+		height: 100px;
+    	width: 100px;
+    	background-size: contain;
+    	float: left;
+		margin: 1px 0 0 1px;
+	}
+
+}
+.bar .subtitle {
+    display: block;
+    position: absolute;
+    top: 22px;
+    right: 0;
+    left: 0;
+    z-index: 0;
+    overflow: hidden;
+    margin: 0 10px;
+    min-width: 30px;
+    height: 63px;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 64px;
+}
+.image-modal {
+  width: 100% !important;
+  height: 100%;
+  top: 0 !important;
+  left: 0 !important;
+}
+.transparent {
+  background: transparent !important;
+}
+.fullscreen-text,
+.fullscreen-image {
+  max-width: 100%;
+  max-height: 100%;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  overflow: auto;
+  position: fixed;
+  right: 0;
+  top: 0;
+}
+.fullscreen-text {
+  background-color: $palette-primary-background;
+  padding:15px;
+}
+
+/* Fix modal backdrop for smaller devices */
+@media (max-width: 679px) {
+  .active .modal-backdrop-bg {
+    opacity: .5;
+  }
+  .modal-backdrop-bg {
+    -webkit-transition: opacity 300ms ease-in-out;
+    transition: opacity 300ms ease-in-out;
+    background-color: #000;
+    opacity: 0;
+  }
+}

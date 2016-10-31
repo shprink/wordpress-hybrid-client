@@ -1,9 +1,24 @@
-<div class="post padding">
-    <h1 class="item-title item-title-without-image" ng-bind-html="::customPostsItemCtrl.item.title.rendered"></h1>
+<div class="post padding ">
+           <div class="item item-text-wrap item-with-no-image" ng-if="::customPostsItemCtrl.item.featured_media === 0">
+           		<h3 class="item-category-title" ng-bind-html="::customPostsItemCtrl.item.category_title_combined.rendered"></h3>
+                <h1 class="item-title" ng-bind-html="::customPostsItemCtrl.item.title.rendered"></h1>
+                <h4 class="item-date" ng-bind-html="::customPostsItemCtrl.item.date.rendered"></h4>
+            </div>
+			<div class="item" ng-if="::customPostsItemCtrl.item.featured_media !== false">
+            	<div class="item item-image" wphc-img-background-cache="{{::customPostsItemCtrl.item.featured_image}}" ng-click="::customPostsItemCtrl.showImageInModal('{{::customPostsItemCtrl.item.featured_fullsize_image}}','{{::customPostsItemCtrl.item.title.rendered}}','{{::customPostsItemCtrl.item.category_title_combined.rendered}}')"></div>
+    			
+                <h3 class="item-category-title" ng-bind-html="::customPostsItemCtrl.item.category_title_combined.rendered"></h3>
+           		<h1 class="item-title" ng-bind-html="::customPostsItemCtrl.item.title.rendered"></h1>
+                <h4 class="item-date" ng-bind-html="::customPostsItemCtrl.item.date.rendered"></h4>
+            </div>
+                    <div class="clearfix"></div>
+
     <div class="post-content" bind-and-compile-html="::(customPostsItemCtrl.item.content.rendered | prepLink | highlight)"></div>
+    
     <section class="footer">
         <a class="button button-positive button-open-browser" wphc-href href="{{::customPostsItemCtrl.item.link}}">
             {{'post.openInBrowser' | translate}}
         </a>
     </section>
+     
 </div>
