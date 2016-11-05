@@ -1,8 +1,18 @@
 <ion-view>
-    <ion-nav-title ng-bind-html="::pageCtrl.item.title.rendered"></ion-nav-title>
-    <ion-content>
+    <ion-nav-title ng-bind-html="::pageCtrl.item.pageTitle"></ion-nav-title>
+    <ion-content ng-class="(pageCtrl.item.footer.position == 1 && pageCtrl.item.link) ? 'has-footer' : ''" >
         <wphc-loader ng-if="!pageCtrl.item" on-load="pageCtrl.init()"></wphc-loader>
         <ion-refresher pulling-text="{{ 'pullToRefresh' | translate}}" on-refresh="pageCtrl.refresh()"></ion-refresher>
         <wphc-page page="pageCtrl.item" ng-if="pageCtrl.item"></wphc-page>
     </ion-content>
+     <ion-footer-bar ng-if="(pageCtrl.item.footer.position == 1 && pageCtrl.item.link)" class="no-padding">
+  			<div class="tabs-striped tabs-background-positive tabs-color-light">
+  				<div class="tabs tabs-icon-top">
+   					<a ng-if="::pageCtrl.item.link" class="tab-item" wphc-href href="{{::pageCtrl.item.link}}">
+      					<i class="icon ion-planet {{pageCtrl.item.footer.icon.openInBrowser}}"></i>
+      					{{'post.openInBrowser' | translate}}
+   					</a>
+  				</div>
+ 			</div>
+	</ion-footer-bar>
 </ion-view>

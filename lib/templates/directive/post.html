@@ -11,8 +11,9 @@
         <wphc-post-toolbar post="::postCtrl.post" show-share show-bookmark></wphc-post-toolbar>
     </div>
     <wphc-comments post-id="{{::postCtrl.post.id}}" ng-if="::postCtrl.enabled"></wphc-comments>
-    <section class="footer">
+    <section ng-if="((postCtrl.post.footer.position == 2 || postCtrl.post.footer.position == undefined) && postCtrl.post.link)" class="footer">
         <a class="button button-positive button-open-browser" wphc-href href="{{::postCtrl.post.link}}">
+            <i ng-if="postCtrl.post.footer.icon.openInBrowser != undefined" class="icon ion-planet {{postCtrl.post.footer.icon.openInBrowser}}"></i>
             {{'post.openInBrowser' | translate}}
         </a>
     </section>

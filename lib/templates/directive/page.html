@@ -10,9 +10,12 @@
     <!-- <div class="item item-divider item-toolbar">
         <wphc-post-toolbar post="::pageCtrl.page" show-share show-bookmark></wphc-post-toolbar>
     </div> -->
-    <section class="footer">
+   
+    <section ng-if="((pageCtrl.page.footer.position == 2 || pageCtrl.page.footer.position == undefined) && pageCtrl.page.link)" class="footer">
         <a class="button button-positive button-open-browser" wphc-href href="{{::pageCtrl.page.link}}">
+            <i ng-if="pageCtrl.item.footer.icon.openInBrowser != undefined" class="icon ion-planet {{pageCtrl.item.footer.icon.openInBrowser}}"></i>
             {{'post.openInBrowser' | translate}}
         </a>
     </section>
+   
 </div>
