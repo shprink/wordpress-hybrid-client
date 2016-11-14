@@ -1,7 +1,3 @@
-## BEWARE
-
-You CANNOT test push notification on emulators. Please use real devices.
-
 ## Install the WordPress plugin
 
 WPHC supports both free and pro version of Delite Studio's plugin for WP.
@@ -56,10 +52,8 @@ Change `baseUrl` in `config/config.cson`
 ```
 "cordova":
     "pushNotifications":
-        "enabled": true
+        "enabled": false
         "baseUrl": "http://yourDomain.com/pnfw"
-        "android":
-            "senderID": ""
 ```
 
 To make sure your web service works open `http://yourDomain.com/pnfw/register/` in your browser. You should see that:
@@ -99,15 +93,3 @@ If an error happened you will have the following log:
 The register http request fails with this message: `{error: "401", reason: "Unauthorized", detail: "Parameter oauth_consumer_key is missing"}`
 
 [Solution](https://wordpress.org/support/topic/not-connect-the-android-app-to-wordpress-site-using-register-api)
-
-### Push notifications not working on iOS
-
-Why am I getting the errors `{Unable to connect to tls://gateway.sandbox.push.apple.com:2195}` or `{Unable to connect to tsl://gateway.push.apple.com:2195}`?
-
-[Solution](http://stackoverflow.com/questions/1444355/iphone-push-notification-unable-to-connect-to-the-ssl-server)
-
-### Param tells me that I am not registered
-
-If the "enabled" checkbox on the push notif parameters (in app) is never on. It could mean that the following checkboxes are not checked. Please check at least `category` to resolve the problem.
-
-![image](https://cloud.githubusercontent.com/assets/1388706/19411490/f5f52170-9302-11e6-9f31-28f9a97da691.png)

@@ -1,0 +1,209 @@
+"title": "National Safety Stand-Down"
+
+# API
+"api":
+    "baseUrl": "http://nationalsafetystanddown.com/wp-json",
+    # "baseUrl": "http://nationalsafetystanddown.dev/wp-json",
+    "timeout": 30000
+    "maxAttempt": 3
+    
+# AUTH
+"auth":
+    "requireAuth": true
+    "user": "admin"
+    "password": "admin"
+    "defaultState":
+        "state": "auth.welcome"
+        "params": {}
+
+# IONIC
+"ionicConfig":
+    "views":
+        "transition": null
+        "maxCache": 10
+        "forwardCache": false
+    "scrolling":
+        "jsScrolling": false
+    "backButton":
+        "icon": null
+        "previousTitleText": null
+    "form":
+        "checkbox": null
+        "toggle": null
+    "spinner":
+        "icon": null
+    "tabs":
+        "style": null
+        "position": null
+    "templates":
+        "maxPrefetch": null
+    "navBar":
+        "alignTitle": 'center'
+        "positionPrimaryButtons": null
+        "positionSecondaryButtons": null
+
+# MENU
+"menu":
+    "defaultState":
+        "state": "public.taxonomies.slug"
+        "params": { term: 'category', slug: 'latest-news', postType: 'post' }
+    "exposeAsideWhen": "(min-width:900px)"
+
+# SETTINGS PAGE
+"settings":
+    "parameters":
+        "defaultFontSize": "medium"
+
+# CACHE
+"cache":
+    "img":
+        "localCacheFolder": "imgcache"
+        "useDataURI": false
+        "chromeQuota": 10485760
+        "usePersistentCache": true
+        "cacheClearSize": 0
+        "headers": {}
+        "skipURIencoding": false
+    "data":
+        "capacity": 100
+        "maxAge": 21600000
+        "deleteOnExpire": "aggressive"
+        "recycleFreq": 1000
+        "cacheFlushInterval": null
+        "storageMode": "localStorage"
+
+# BOOKMARK PAGE
+"bookmark":
+    "cache":
+        "capacity": 10
+
+# POST PAGES
+"post":
+    "comments":
+        "enabled": true
+        "depth": 2
+        "per_page": 50
+    "cache":
+        "capacity": 10
+
+# SYNTAX HIGHLIGHTER FOR TECH BLOG
+"syntaxHighlighter":
+    "enabled": false
+    "classPrefix": "hljs-"
+    "tabReplace": "    "
+    "useBR": false
+    "languages": ["javascript", "html", "coffeescript", "html", "css", "scss", "json", "apache", "bash", "markdown", "less", "php", "apache", "typescript"]
+
+# TAXONOMIES
+"taxonomies":
+    "query":
+        "per_page": 5
+        "orderby": "count"
+        "order": "desc"
+
+# AUTHOR
+"authors":
+    "query":
+        "per_page": 5
+    "cache":
+        "capacity": 10
+
+# PAGES PAGE
+"pages":
+    "query":
+        "per_page": 5
+        "filter[orderby]": "date"
+        "filter[order]": "desc"
+    "cache":
+        "capacity": 10
+
+# SEARCH PAGE
+"search":
+    "query":
+        "per_page": 5
+        "filter[orderby]": "date"
+        "filter[order]": "desc"
+        "filter[post_status]": "publish"
+
+    "cache":
+        "capacity": 25
+
+# POSTS PAGE
+"posts":
+    "query":
+        "per_page": 5
+        "filter[orderby]": "date"
+        "filter[order]": "desc"
+        "filter[post_status]": "publish"
+
+    "cache":
+        "capacity": 25
+
+# TRANSLATIONS
+"translation":
+    "displayed" : ["en", "fr", "zh", "es", "pl", "de", "pt", "it", "nl", "ru", "tr"]
+    "prefered": "en"
+    "available":
+        "en":
+            "en_*": "en"
+        "fr":
+            "fr_*": "fr"
+        "zh":
+            "zh_*": "zh"
+        "es":
+            "es_*": "es"
+        "pl":
+            "pl_*": "pl"
+        "de":
+            "de_*": "de"
+        "pt":
+            "pt_*": "pt"
+        "it":
+            "it_*": "it"
+        "nl":
+            "nl_*": "nl"
+        "ru":
+            "ru_*": "ru"
+        "tr":
+            "tr_*": "tr"
+
+# ANALYTICS (GOOGLE ANALYTICS)
+"analytics":
+    "enabled": false
+    "trackingId": ""
+    "userId": ""
+    "virtualPageTracking": true
+
+# CORDOVA
+"cordova":
+    "nativeTransitions":
+        "enabled": false
+        "defaultOptions": null
+        "defaultTransition" : null
+        "defaultBackTransition" : null
+    "statubar":
+        "show": true
+        "color": "#F57C00"
+    "appRate":
+        "enabled": false
+        "language": "en"
+        "appName": "National Safety Stand-Down"
+        "openStoreInApp": true
+        "usesUntilPrompt": 3
+        "promptForNewVersion": true
+        "useCustomRateDialog": ""
+        "iosURL": ""
+        "androidURL": ""
+        "windowsURL": ""
+    "pushNotifications":
+        "enabled": true
+        "baseUrl": "http://nationalsafetystanddown.com/pnfw"
+        "android":
+            "senderID": "1054295315467"
+            "icon": "notification_small_icon"
+            "iconColor": "#F57C00"
+            "vibrate": false
+        "ios":
+            "badge": true
+            "sound": true
+            "alert": true

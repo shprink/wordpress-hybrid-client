@@ -1,0 +1,11 @@
+<div class="post padding">
+    <div class="item item-image" ng-if="::postCtrl.post.featured_media != 0" wphc-img-background-cache="{{::postCtrl.featured_image}}"></div>
+    <h1 class="item-title item-title-without-image" ng-bind-html="::postCtrl.post.title.rendered"></h1>
+    <wphc-author date="::postCtrl.post.date"></wphc-author>
+    <div class="post-content" bind-and-compile-html="::(postCtrl.post.content.rendered | prepLink | highlight)" fit-vids></div>
+
+    <div class="item item-divider item-toolbar">
+        <wphc-post-toolbar post="::postCtrl.post" show-share show-bookmark></wphc-post-toolbar>
+    </div>
+    <wphc-comments post-id="{{::postCtrl.post.id}}" ng-if="::postCtrl.enabled"></wphc-comments>
+</div>

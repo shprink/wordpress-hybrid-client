@@ -11,12 +11,18 @@
 
 # API
 "api":
-    "baseUrl": "https://dev.julienrenaux.fr/wp-json"
+    "baseUrl": "http://dev.julienrenaux.fr/wp-json"
     "timeout": 30000
     "maxAttempt": 3
 
-"serviceWorker":
-    "enabled" : false
+# AUTH
+"auth":
+    "requireAuth": true
+    "user": "admin"
+    "password": "admin"
+    "defaultState":
+        "state": "auth.login"
+        "params": {}
 
 # IONIC
 "ionicConfig":
@@ -46,13 +52,10 @@
 
 # MENU
 "menu":
-    "externalLinkTarget" : null # _self|_blank|_system default: _system https://github.com/apache/cordova-plugin-inappbrowser#cordovainappbrowseropen
-    "externalLinkOptions": null # default: 'location=yes'
     "defaultState":
         "state": "public.posts"
         "params": {}
     "exposeAsideWhen": "(min-width:900px)"
-    "displayIcon": true # uses config/icons/icon_48.png
 
 # SETTINGS PAGE
 "settings":
@@ -71,7 +74,7 @@
         "skipURIencoding": false
     "data":
         "capacity": 100
-        "maxAge": 10800000
+        "maxAge": 21600000
         "deleteOnExpire": "aggressive"
         "recycleFreq": 1000
         "cacheFlushInterval": null
@@ -89,7 +92,7 @@
         "depth": 2
         "per_page": 50
     "cache":
-        "maxAge": 10800000
+        "maxAge": 172800000
         "capacity": 10
 
 # SYNTAX HIGHLIGHTER FOR TECH BLOG
@@ -107,7 +110,7 @@
         "orderby": "count"
         "order": "desc"
     "cache":
-        "maxAge": 10800000
+        "maxAge": 172800000
 
 # AUTHOR
 "authors":
@@ -115,7 +118,7 @@
         "per_page": 5
     "cache":
         "capacity": 10
-        "maxAge": 10800000
+        "maxAge": 86400000
 
 # PAGES PAGE
 "pages":
@@ -125,7 +128,7 @@
         "filter[order]": "desc"
     "cache":
         "capacity": 10
-        "maxAge": 10800000
+        "maxAge": 86400000
 
 # SEARCH PAGE
 "search":
@@ -137,7 +140,7 @@
 
     "cache":
         "capacity": 25
-        "maxAge": 10800000
+        "maxAge": 86400000
 
 # POSTS PAGE
 "posts":
@@ -149,12 +152,7 @@
 
     "cache":
         "capacity": 25
-        "maxAge": 10800000
-
-# ANY CUSTOM POSTS (this is just an example with movie type)
-"movie":
-    "query":
-        "per_page": 2
+        "maxAge": 86400000
 
 # TRANSLATIONS
 "translation":
@@ -183,8 +181,6 @@
             "ru_*": "ru"
         "tr":
             "tr_*": "tr"
-        "ur":
-            "ur_*": "ur"
 
 # ANALYTICS (GOOGLE ANALYTICS)
 "analytics":
@@ -203,20 +199,6 @@
     "statubar":
         "show": true
         "color": "#455a64"
-    "admob":
-        "enabled": false
-        "android":
-            "bannerID": null
-            "bannerPosition": "BOTTOM_CENTER"
-            "interstitialID": null
-        "ios":
-            "bannerID": null
-            "bannerPosition": "BOTTOM_CENTER"
-            "interstitialID": null
-        "windows":
-            "bannerID": null
-            "bannerPosition": "BOTTOM_CENTER"
-            "interstitialID": null
     "appRate":
         "enabled": false
         "language": "en"
@@ -237,4 +219,3 @@
             "badge": true
             "sound": true
             "alert": true
-            "clearBadge": true

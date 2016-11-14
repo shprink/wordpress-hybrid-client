@@ -1,0 +1,17 @@
+<ion-view>
+    <ion-nav-title>{{ postsCtrl.title | translate}}</ion-nav-title>
+    <ion-content class="padding bg-gray-lighter">
+        <wphc-empty-list list="postsCtrl.list"></wphc-empty-list>
+        <wphc-loader ng-if="!postsCtrl.list" on-load="postsCtrl.init()"></wphc-loader>
+        <ion-refresher pulling-text="{{ 'pullToRefresh' | translate}}" on-refresh="postsCtrl.refresh()"></ion-refresher>
+        <div class="card" ng-if="::postsCtrl.author">
+            <div class="item item-author item-avatar item-text-wrap repeat-animation">
+                <img wphc-img-cache ng-src="{{::postsCtrl.author.avatar_urls[96]}}" ng-if="::postsCtrl.author.avatar_urls[96]">
+                <h2 ng-bind-html="postsCtrl.author.name"></h2>
+                <small class="balanced" bind-and-compile-html="::postsCtrl.author.description"></small>
+            </div>
+        </div>
+        <wphc-posts posts="postsCtrl.list"></wphc-posts>
+        <ion-infinite-scroll immediate-check="true" ng-if="postsCtrl.list && !postsCtrl.isPaginationOver" on-infinite="postsCtrl.loadMore()" distance="1%">test</ion-infinite-scroll>
+    </ion-content>
+</ion-view>

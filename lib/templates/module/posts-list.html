@@ -1,10 +1,10 @@
 <ion-view>
-    <ion-nav-title ng-bind-html="postsCtrl.title | translate"></ion-nav-title>
+    <ion-nav-title>{{ postsCtrl.title | translate}}</ion-nav-title>
     <ion-content class="padding bg-gray-lighter">
         <wphc-empty-list list="postsCtrl.list"></wphc-empty-list>
         <wphc-loader ng-if="!postsCtrl.list" on-load="postsCtrl.init()"></wphc-loader>
         <ion-refresher pulling-text="{{ 'pullToRefresh' | translate}}" on-refresh="postsCtrl.refresh()"></ion-refresher>
         <wphc-posts show-author posts="postsCtrl.list"></wphc-posts>
-        <ion-infinite-scroll immediate-check="true" ng-if="postsCtrl.list && !postsCtrl.isPaginationOver" on-infinite="postsCtrl.loadMore()" distance="1%"></ion-infinite-scroll>
+        <ion-infinite-scroll immediate-check="true" ng-if="postsCtrl.list && !postsCtrl.isPaginationOver" on-infinite="postsCtrl.loadMore()" distance="1%">test</ion-infinite-scroll>
     </ion-content>
 </ion-view>

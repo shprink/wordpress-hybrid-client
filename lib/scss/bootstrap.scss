@@ -1,7 +1,7 @@
 @import "../../config/config.scss";
 @import "./variables";
 // Include all of Ionic
-@import "../../node_modules/ionic-angular/scss/ionic";
+@import "../../node_modules/ionic-sdk/scss/ionic";
 // local
 @import "./_layout";
 @import "./_mixins";
@@ -17,3 +17,5 @@
 @import '../bookmark/index.scss';
 @import '../search/index.scss';
 @import '../accessibility/index.scss';
+@import '../auth/index.scss';
+@import '../compose/index.scss';

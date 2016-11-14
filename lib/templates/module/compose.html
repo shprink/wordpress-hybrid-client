@@ -1,0 +1,5 @@
+<ion-view>
+    <ion-nav-title>{{ composeCtrl.title | translate}}</ion-nav-title>
+    <wphc-loader ng-if="!composeCtrl.item || composeCtrl.loading" on-load="composeCtrl.init()"></wphc-loader>
+    <div ng-include="composeCtrl.templateUrl" ng-if="composeCtrl.slug" ng-show="!composeCtrl.loading"></div>
+</ion-view>

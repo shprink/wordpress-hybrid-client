@@ -36,7 +36,7 @@ module.exports = {
             loader: "ng-annotate?add=true!babel"
         }, {
             test: /\.html$/,
-            loader: 'html'
+            loader: 'html?-removeRedundantAttributes'
         }, {
             test: /\.json$/,
             loader: "json"
@@ -79,7 +79,6 @@ module.exports = {
         new HtmlWebpackPlugin({
             filename: 'index.html',
             pkg: pkg,
-            serviceWorkerEnabled: projectConfig.serviceWorker.enabled,
             appVersion: getAppVersion(),
             template: path.join(libPath, 'index.html')
         }),

@@ -19,7 +19,7 @@ All the necessary plugins will be installed as well:
 
 ## Android
 
-### Prerequisites
+### Preriquisites
 
 * Android SDK
 * Ant
@@ -71,32 +71,16 @@ Open Chrome and dump this in the address bar: ```chrome://inspect/#devices```
 
 If your device is connected and in USB mode you will see your application that you can inspect using Chrome dev tools.
 
-### Crosswalk
-
-By default WPHC uses Crosswalk. It generates 2 apks that are around 28MB. If this is too big for your customers you can enable Crosswalk lite that way:
-
-In config.xmk change `<preference name="xwalkMode" value="embedded" />` to `<preference name="xwalkMode" value="lite" />`
-
-The size of the apks generated will be half the size as you can see below:
-
-![image](https://cloud.githubusercontent.com/assets/1388706/20239329/6075ae50-a8fe-11e6-93a6-c59a7fd5ed13.png)
-
 ---
 
 ## iOS
 
-### Prerequisites
+### Preriquisites
 
 * OSX
 * XCode
 * iOS Simulator
 * Provisioning profile
-
-### iOS10
-
-Also you will need to Assign Your App to a Team: `Project > General > Signing > Select your team ID in the dropdown`
-
-You will also need to disabled bitcode (see iOS9)
 
 ### iOS9
 

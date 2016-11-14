@@ -5,7 +5,7 @@
     <button class="button button-clear" ng-if="::postToolbarCtrl.terms[1].length" ng-click="postToolbarCtrl.showTaxonomies( 'tags.title', postToolbarCtrl.terms[1], 'post_tag') ">
         <i class="icon ion-pricetags"></i>
     </button>
-    <button ng-if="::postToolbarCtrl.hasShare" class="button button-clear pull-right" ng-click="postToolbarCtrl.share('native', postToolbarCtrl.post.title.rendered, postToolbarCtrl.post.link) ">
+    <button ng-if="::postToolbarCtrl.hasShare" class="button button-clear pull-right" ng-click="postToolbarCtrl.share('native', postToolbarCtrl.post.title, postToolbarCtrl.post.link) ">
         <i class="icon ion-android-share-alt"></i>
     </button>
     <button ng-if="::postToolbarCtrl.hasBookmark" class="button button-clear pull-right" ng-class="{active: postToolbarCtrl.isBookmarked}" ng-click="postToolbarCtrl.bookmark(postToolbarCtrl.post) ">

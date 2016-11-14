@@ -1,5 +1,5 @@
 <ion-view>
-    <ion-nav-title ng-bind-html="customPostCtrl.item.title.rendered | translate"></ion-nav-title>
+    <ion-nav-title>{{ customPostCtrl.item.title.rendered | translate}}</ion-nav-title>
     <ion-content>
         <wphc-loader ng-if="!customPostCtrl.item" on-load="customPostCtrl.init()"></wphc-loader>
         <ion-refresher pulling-text="{{ 'pullToRefresh' | translate}}" on-refresh="customPostCtrl.refresh()"></ion-refresher>

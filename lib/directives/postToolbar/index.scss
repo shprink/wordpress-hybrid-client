@@ -1,9 +1,6 @@
-.wphc-post-toolbar {
-    .button-clear {
-        color: #b2b2b2;
-        &.active {
-            color: $palette-accent-color;
-            opacity: 1;
-        }
+.wphc-post-toolbar{
+    .button-clear.active{
+        color: $palette-accent-color;
+        opacity: 1;
     }
 }

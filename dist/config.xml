@@ -22,11 +22,7 @@
     <!-- ANDROID -->
     <preference name="android-minSdkVersion" value="14"/>
     <preference name="android-targetSdkVersion" value="14"/>
-    <preference name="xwalkCommandLine" value="--disable-pull-to-refresh-effect"/>
-    <preference name="xwalkMode" value="embedded"/>
-    <preference name="xwalkMultipleApk" value="true"/>
-    <!-- Uncomment the following line to use Crosswalk lite => reduces apk size -->
-    <!--<preference name="xwalkMode" value="lite" />-->
+    <preference name="CROSSWALK_ANDROID_VERSION" value="14+" />
     <preference name="CrosswalkAnimatable" value="true" />
     <preference name="android-windowSoftInputMode" value="adjustNothing" />
     <feature name="StatusBar">

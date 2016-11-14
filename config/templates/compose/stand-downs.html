@@ -1,0 +1,69 @@
+<form name="composeCtrl.form" ng-submit="composeCtrl.submit()" novalidate>
+    <ion-content class="padding bg-gray-lighter">
+        <div class="card card-compose">
+            <ion-item class="item-text-wrap" ng-class="composeCtrl.message ? 'item-' + composeCtrl.message.type : ''" ng-if="composeCtrl.message" ng-bind-html="composeCtrl.message.content"></ion-item>
+            <ion-item class="item-text-wrap" translate="compose.stand-downs.intro" translate-compile="true"></ion-item>
+            <ion-item class="item-input item-stacked-label item-button-right item-icon-left" ng-class="{'has-error': (composeCtrl.form.$submitted || composeCtrl.form.date.$dirty) && composeCtrl.form.date.$invalid}">
+                <span class="input-label">{{'compose.labels.date' | translate}}</span>
+                <p>
+                    {{ composeCtrl.item.meta._date }}
+                </p>
+                <button type="button" class="button button-stable icon-left ion-calendar" ng-click="composeCtrl.pickDate()">
+                    {{'compose.labels.pick' | translate}}
+                </button>
+            </ion-item>
+            <ion-item class="form-errors" ng-if="(composeCtrl.form.$submitted || composeCtrl.form.date.$dirty) && composeCtrl.form.date.$invalid" ng-messages="composeCtrl.form.date.$error">
+                <div class="form-error" ng-message="required">{{'compose.form.required' | translate}}</div>
+                <div class="form-error" ng-message="mask">{{'compose.form.invalidDate' | translate}}</div>
+            </ion-item> 
+            <ion-item class="item-input item-stacked-label">
+                <span class="input-label">{{'compose.labels.attendees' | translate}}</span>
+                <input type="number" name="attendees" ng-model="composeCtrl.item.meta._attendees" placeholder="{{'compose.labels.attendeesPlaceholder' | translate}}" min="1" max="1000" required>
+            </ion-item>
+            <ion-item class="form-errors" ng-if="(composeCtrl.form.$submitted || composeCtrl.form.attendees.$dirty) && composeCtrl.form.attendees.$invalid" ng-messages="composeCtrl.form.attendees.$error">
+                <div class="form-error" ng-message="required">{{'compose.form.required' | translate}}</div>
+                <div class="form-error" ng-message="min">{{'compose.form.min' | translate}}</div>
+                <div class="form-error" ng-message="max">{{'compose.form.max' | translate}}</div>
+            </ion-item> 
+            <ion-item class="item-input item-stacked-label" ng-class="{'has-error': (composeCtrl.form.$submitted || composeCtrl.form.title.$dirty) && composeCtrl.form.title.$invalid}">
+                <span class="input-label">{{'compose.labels.title' | translate}}</span>
+                <input type="text" name="title" ng-model="composeCtrl.item.title" placeholder="{{'compose.labels.titlePlaceholder' | translate}}" required>
+            </ion-item>
+            <ion-item class="form-errors" ng-if="(composeCtrl.form.$submitted || composeCtrl.form.title.$dirty) && composeCtrl.form.title.$invalid" ng-messages="composeCtrl.form.title.$error">
+                <div class="form-error" ng-message="required">{{'compose.form.required' | translate}}</div>
+            </ion-item> 
+            <ion-item class="item-input item-stacked-label" ng-class="{'has-error': (composeCtrl.form.$submitted || composeCtrl.form.notes.$dirty) && composeCtrl.form.notes.$invalid}">
+                <span class="input-label">{{'compose.labels.notes' | translate}}</span>
+                <textarea name="notes" placeholder="{{'compose.labels.notesPlaceholder' | translate}}"  ng-model="composeCtrl.item.content" required></textarea>
+            </ion-item>
+            <ion-item class="form-errors" ng-if="(composeCtrl.form.$submitted || composeCtrl.form.notes.$dirty) && composeCtrl.form.notes.$invalid" ng-messages="composeCtrl.form.notes.$error">
+                <div class="form-error" ng-message="required">{{'compose.form.required' | translate}}</div>
+            </ion-item> 
+            <ion-item class="item-stacked-label">
+                <span class="input-label">{{'compose.labels.photo' | translate}}</span>
+                <div class="row responsive-sm">
+                    <div class="col">
+                        <button type="button" class="button button-block button-stable icon-left ion-images flush-top flush-bottom" ng-click="composeCtrl.getPicture('SAVEDPHOTOALBUM')">
+                            {{'compose.labels.photoGallery' | translate}}
+                        </button>
+                    </div>
+                    <div class="col">
+                        <button type="button" class="button button-block button-stable icon-left ion-camera flush-top flush-bottom" ng-click="composeCtrl.getPicture('CAMERA')">
+                            {{'compose.labels.photoCamera' | translate}}
+                        </button>
+                    </div>
+                </div>
+            </ion-item>
+            <ion-item class="item-image" ng-if="composeCtrl.item.featured_media">
+                <img ng-src="{{ composeCtrl.item.featured_media }}">
+            </ion-item>
+        </div>
+    </ion-content>
+    <ion-footer-bar align-title="center" class="bar-positive" keyboard-attach>
+        <div class="button-bar">
+            <button type="submit" class="button button-clear" ng-disabled="composeCtrl.processing">
+                {{'compose.stand-downs.submit' | translate}}
+            </button>
+        </div>
+    </ion-footer-bar>
+</form>

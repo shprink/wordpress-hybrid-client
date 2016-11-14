@@ -6,21 +6,20 @@
 "yes": "Ja"
 "no" : "Nee"
 "emptyList" : "Er is niks hier!"
-"enabled": "Ingeschakeld"
 "menu":
     "title": "Menu"
     "home": "Home"
     "tags": "Tags"
     "pages": "Pagina's"
-    "posts": "Berichten"
+    "posts": "Posts"
     "authors": "Auteurs"
     "search": "Zoeken"
     "bookmarks": "bladwijzers"
     "socialNetworks": "Sociale netwerken"
     "categories": "Categorieën"
     "settings": "Instellingen"
-    "customPosts": "Aangepaste berichten"
-    "customTaxonomy": "Aangepaste taxanomie"
+    "customPosts": "Eigen posts"
+    "customTaxonomy": "Eigen taxanomie"
 "pushNotifications":
     "newContent":
         "title": "Nieuwe inhoud!"
@@ -47,7 +46,7 @@
     "title": "Zoek"
     "titleQuery": "Resultaten voor: {{query}}"
 "sharing":
-    "shared": "Gedeeld!"
+    "shared": "Gedeelt!"
 "authors":
     "title": "Auteurs"
 "author":
@@ -55,7 +54,7 @@
 "pages":
     "title": "Pagina's"
 "posts":
-    "title": "Berichten"
+    "title": "Posts"
     "featured": "Uitgelicht"
 "post":
     "comments": "Reactie's"
@@ -65,9 +64,8 @@
 "params":
     "title": "Instellingen"
     "offlineMode": "Offline mode (binnenkort)"
-    "fontSize": "Lettertype grootte"
+    "fontSize": "Post lettertype grootte"
     "language": "Taal"
-    "pushNotifications": "Push berichten"
 "languages":
     "en": "Engels"
     "fr": "Frans"
@@ -76,13 +74,9 @@
     "pl": "Pools"
     "de": "Duits"
     "pt": "Portugees"
-    "it": "Italiaans"
-    "nl": "Nederlands"
-    "ru": "Russisch"
-    "tr": "Turks"
 "fontSize":
     "small": "Klein"
     "medium": "Normaal"
     "large": "Groot"
-    "x-large": "X-Groot"
-    "xx-large": "XX-Groot"
+    "x-large": "XGroot"
+    "xx-large": "XXGroot"

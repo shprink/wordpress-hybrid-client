@@ -1,2 +1,7 @@
-*
-!.gitignore
+ios/*
+android/*
+!ios/icon.png
+!ios/splash.png
+!android/icon.png
+!android/splash.png
+!android/icon-notification.png

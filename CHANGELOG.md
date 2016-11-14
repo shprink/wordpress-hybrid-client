@@ -4,7 +4,7 @@
 [milestone](https://github.com/shprink/wordpress-hybrid-client/milestones/2.0.0)
 
 * [FEATURE] WP-API v2 support <https://github.com/shprink/wordpress-hybrid-client/issues/76>
-* [FEATURE] Adding Many translations
+* [FEATURE] Adding German translation <https://github.com/shprink/wordpress-hybrid-client/pull/77>
 * [FEATURE] Authors list <https://github.com/shprink/wordpress-hybrid-client/issues/30>
 * [FEATURE] Pages list <https://github.com/shprink/wordpress-hybrid-client/issues/86>
 * [FEATURE] Custom posts and taxonomies <https://github.com/shprink/wordpress-hybrid-client/issues/80>
@@ -15,99 +15,6 @@
 * [CONFIG] `config.json` does not exist anymore. The installation (`npm run installWPHC`) creates several config files in the `config` folder. `config/config.cson` file overwrites `config/config.default.cson` (this on is read only, do not modify).
 * [CONFIG] There is no more dev/prod distinction, WPHC turn debug OFF when building the prod app automatically.
 * [ABOUT] The About feature has been removed. You can use Pages to achieve the same purpose.
-
-<a name="2.0.0-beta16"></a>
-### 2.0.0-beta16 (2016-11-12)
-
-To upgrade:
-
-```
-$ git fetch --all
-$ git checkout v2.0.0-beta16
-$ npm i
-$ npm run restore
-```
-
-* upgrade cordova-ios
-* upgrade cordova-android (API 25)
-* upgrade crosswalk
-* add more logs to admobs
-
-<a name="2.0.0-beta15"></a>
-### 2.0.0-beta15 (2016-11-01)
-
-To upgrade checkout `git fetch --all && git checkout v2.0.0-beta15` and run `npm i`
-
-* [BUG] Remove Object.assign ... <https://github.com/shprink/wordpress-hybrid-client/issues/294>
-
-<a name="2.0.0-beta14"></a>
-### 2.0.0-beta14 (2016-10-30)
-
-To upgrade checkout `git fetch --all && git checkout v2.0.0-beta14` and run `npm i`
-
-* [BUG] Fix Pagination on customPosts <https://github.com/shprink/wordpress-hybrid-client/issues/283>
-* [FEATURE] Custom posts and custom taxos queries are customizale through the conf <https://github.com/shprink/wordpress-hybrid-client/issues/288>
-* Add a new scss variable `$barHasIconTitleMarginLeft`
-
-<a name="2.0.0-beta13"></a>
-### 2.0.0-beta13 (2016-10-22)
-
-To upgrade checkout `git fetch --all && git checkout v2.0.0-beta13` and run `npm i`
-
-* [FEATURE] Display app icon in the menu header <https://github.com/shprink/wordpress-hybrid-client/issues/5>
-* [FEATURE] Progressive Web App support (Manifest & service workers)
-* Remove share button on browser
-
-
-<a name="2.0.0-beta12"></a>
-### 2.0.0-beta12 (2016-09-18)
-
-* [BUG] Display category/tag title instead of slug <https://github.com/shprink/wordpress-hybrid-client/issues/59>
-* [BUG] Fix Russian/Chinese author title encoding
-* [BUG] Removing Native transitions
-* iOS 10 ready. See notes on BUILD.md
-
-<a name="2.0.0-beta11"></a>
-### 2.0.0-beta11 (2016-09-04)
-
-* [UPGRADE] Ionic 1.3.1
-* [UPGRADE] ionic-plugin-keyboard 2.2.0
-* [COMMAND] Adds `npm start` to replace `npm run devserver` (kept for backward compat)
-
-<a name="2.0.0-beta10"></a>
-### 2.0.0-beta10 (2016-06-08)
-
-* [UPGRADE] Crosswalk 1.6
-* [UPGRADE] Cordova-android 5.x (API-23)
-
-#### Breaking changes:
-
-You now need to have API-23 installed on your Android SDK.
-
-<a name="2.0.0-beta09"></a>
-### 2.0.0-beta09 (2016-05-18)
-
-* [BUG] Fix Cordova dependency issue <https://github.com/shprink/wordpress-hybrid-client/issues/221>
-* [CONFIG] Change default cache from 24h to 3h <https://github.com/shprink/wordpress-hybrid-client/commit/5bacddaff8e0b2647c9e9a40ad6572e7da6ec697>
-* [LANGUAGE] Add Urdu language <https://github.com/shprink/wordpress-hybrid-client/pull/211>
-
-<a name="2.0.0-beta08"></a>
-### 2.0.0-beta08 (2016-03-31)
-
-* [FEATURE] Add Google Admob support! <https://github.com/shprink/wordpress-hybrid-client/issues/186>
-* [BUG] Fix iOS badge count <https://github.com/shprink/wordpress-hybrid-client/issues/192>
-* [BUG] Fix comment broken in WP-API beta12 <https://github.com/shprink/wordpress-hybrid-client/issues/201>
-* [FEATURE] Custom style per page <https://github.com/shprink/wordpress-hybrid-client/issues/136>
-* Upgrade PushNotif cordova plugin
-
-<a name="2.0.0-beta07"></a>
-### 2.0.0-beta07 (2016-03-18)
-
-* [BUG] Post title contains decimal <https://github.com/shprink/wordpress-hybrid-client/issues/74>
-* [BUG] how to display category/tag title instead of slug？ <https://github.com/shprink/wordpress-hybrid-client/issues/59>
-* [BUG] SHaring on whatsapp sends extra text as rendered <https://github.com/shprink/wordpress-hybrid-client/issues/181>
-* [FEATURE] External links open in app <https://github.com/shprink/wordpress-hybrid-client/issues/175>
-* Upgrade InAppBrowser cordova plugin
 
 <a name="2.0.0-beta06"></a>
 ### 2.0.0-beta06 (2016-02-20)

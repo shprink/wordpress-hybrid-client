@@ -6,7 +6,6 @@
 "yes": "Evet"
 "no" : "Hayır"
 "emptyList" : "Burada bir şey yok!"
-"enabled": "Aktif"
 "menu":
     "title": "Menü"
     "home": "Ana Sayfa"
@@ -67,7 +66,6 @@
     "offlineMode": "Çevrimdışı mod (yakında)"
     "fontSize": "Yazı Boyutu"
     "language": "Dil"
-    "pushNotifications": "Push Bildirimleri"
 "languages":
     "en": "İngilizce"
     "tr": "Türkçe"

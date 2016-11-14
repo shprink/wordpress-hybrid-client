@@ -1,0 +1,29 @@
+<ion-view>
+    <ion-nav-title>{{'auth.login.title' | translate}}</ion-nav-title>
+    <ion-content class="wphc-auth wphc-login bg-gray-lighter padding">
+        <form name="loginCtrl.form" class="card" novalidate>
+            <ion-item class="item-text-wrap item-assertive" ng-if="loginCtrl.error && loginCtrl.form.$submitted">
+                {{ loginCtrl.error }}
+            </ion-item>
+            <ion-item class="item-input item-stacked-label" ng-class="{'has-error': loginCtrl.form.username.$dirty && loginCtrl.form.username.$invalid}">
+                <span class="input-label">{{'auth.login.labels.email' | translate}}</span>
+                <input type="text" name="username" ng-model="loginCtrl.auth.username" required>
+            </ion-item>
+            <ion-item class="form-errors" ng-if="loginCtrl.form.username.$dirty && loginCtrl.form.username.$invalid" ng-messages="loginCtrl.form.username.$error">
+                <div class="form-error" ng-message="required">{{'auth.form.required' | translate}}</div>
+            </ion-item> 
+            <ion-item class="item-input item-stacked-label" ng-class="{'has-error': loginCtrl.form.password.$dirty && loginCtrl.form.password.$invalid}">
+                <span class="input-label">{{'auth.login.labels.password' | translate}}</span>
+                <input type="password" name="password" ng-model="loginCtrl.auth.password" required>
+            </ion-item>
+            <ion-item class="form-errors" ng-if="loginCtrl.form.password.$dirty && loginCtrl.form.password.$invalid" ng-messages="loginCtrl.form.password.$error">
+                <div class="form-error" ng-message="required">{{'auth.form.required' | translate}}</div>
+            </ion-item>
+        </form>
+    </ion-content>
+    <ion-footer-bar align-title="center" class="bar-positive" keyboard-attach>
+        <div class="button-bar">
+            <button type="button" class="button button-clear" ng-disabled="loginCtrl.processing" ng-click="loginCtrl.login()">{{'auth.login.submit' | translate}}</button>
+        </div>
+    </ion-footer-bar>
+</ion-view>
