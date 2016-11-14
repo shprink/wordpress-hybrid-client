@@ -1,0 +1,10 @@
+<ion-view>
+    <ion-nav-title>{{ authorsCtrl.title | translate}}</ion-nav-title>
+    <ion-content>
+        <wphc-empty-list list="authorsCtrl.list"></wphc-empty-list>
+        <wphc-loader ng-if="!authorsCtrl.list" on-load="authorsCtrl.init()"></wphc-loader>
+        <ion-refresher pulling-text="{{ 'pullToRefresh' | translate}}" on-refresh="authorsCtrl.refresh()"></ion-refresher>
+        <wphc-authors authors="authorsCtrl.list"></wphc-authors>
+        <ion-infinite-scroll immediate-check="true" ng-if="authorsCtrl.list && !authorsCtrl.isPaginationOver" on-infinite="authorsCtrl.loadMore()" distance="1%">test</ion-infinite-scroll>
+    </ion-content>
+</ion-view>

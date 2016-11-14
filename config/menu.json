@@ -1,0 +1,41 @@
+[{
+    "type": "internal",
+    "trans": "Latest News",
+    "route": "public.taxonomies.slug({ term: 'category', slug: 'latest-news', postType: 'post' })",
+    "icon": "icon ion-clock"
+}, {
+    "type": "internal",
+    "trans": "Toolbox Talks",
+    "route": "public.taxonomies.slug({ term: 'category', slug: 'toolbox-talks', postType: 'post' })",
+    "icon": "icon ion-settings"
+}, {
+    "type": "internal",
+    "trans": "Videos",
+    "route": "public.taxonomies.slug({ term: 'category', slug: 'videos', postType: 'post' })",
+    "icon": "icon ion-videocamera"
+}, {
+    "type": "internal",
+    "trans": "Documents & Downloads",
+    "route": "public.taxonomies.slug({ term: 'category', slug: 'documents', postType: 'post' })",
+    "icon": "icon ion-document-text"
+}, {
+    "type": "internal",
+    "trans": "menu.bookmarks",
+    "route": "public.bookmarks",
+    "icon": "icon ion-bookmark"
+}, {
+    "type": "internal",
+    "trans": "menu.postStandDown",
+    "route": "public.compose({ slug: 'stand-downs' })",
+    "icon": "icon ion-compose"
+}, {
+    "type": "internal",
+    "trans": "menu.settings",
+    "route": "public.params",
+    "icon": "icon ion-gear-b"
+}, {
+    "type": "internal",
+    "trans": "menu.logout",
+    "route": "auth.unauth",
+    "icon": "icon ion-log-out"
+}]

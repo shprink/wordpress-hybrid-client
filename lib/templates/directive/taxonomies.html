@@ -1,5 +1,5 @@
 <div class="list">
-    <a class="item repeat-animation item-text-wrap" ng-class="::{'active disabled': taxonomiesDirCtrl.isCurrentState(taxonomy.slug)}" ng-disabled="taxonomiesDirCtrl.isCurrentState(taxonomy.slug)" ui-sref="public.taxonomies.slug({ slug: taxonomy.slug, term: taxonomiesDirCtrl.term, postType: taxonomiesDirCtrl.postType, taxonomy: taxonomy })" ng-repeat="taxonomy in taxonomiesDirCtrl.taxonomies track by taxonomy.id"
+    <a class="item repeat-animation item-text-wrap" ng-class="::{'active disabled': taxonomiesDirCtrl.isCurrentState(taxonomy.slug)}" ng-disabled="taxonomiesDirCtrl.isCurrentState(taxonomy.slug)" ui-sref="public.taxonomies.slug({ slug: taxonomy.slug, term: taxonomiesDirCtrl.term, postType: taxonomiesDirCtrl.postType })" ng-repeat="taxonomy in taxonomiesDirCtrl.taxonomies track by taxonomy.id"
     ng-click="taxonomiesDirCtrl.triggerOnClick(taxonomy)">
         <h2 ng-bind-html="taxonomy.name"></h2>
         <small class="balanced" ng-bind-html="::taxonomy.description"></small>

@@ -1,16 +1,18 @@
 # Create namespace
 window.WPHC = window.WPHC || {}
 
-require 'ionic-angular/release/js/ionic.bundle.js'
+require 'ionic-sdk/release/js/ionic.bundle.js'
 require './angular-ios9-uiwebview.patch.js'
 require 'angular-cache'
 require 'angular-moment'
 require 'moment'
 require './font/font.coffee'
+require 'ionic-native-transitions'
 require 'expose?_!lodash'
 require 'wp-api-angularjs'
+require 'ng-mask/dist/ngMask.js'
+require 'angular-fitvids'
 require './config.js'
-require '!file?name=[name].[ext]!./service-worker.js';
 overwriteModule = require '../config/index.js'
 customPostsModule = require './customPosts/index.js'
 pagesModule = require './pages/index.js'
@@ -27,7 +29,8 @@ menuModule = require './menu/index.js'
 bookmarkModule = require './bookmark/index.js'
 accessibilityModule = require './accessibility/index.js'
 loadingModule = require './loading/index.js'
-pushNotificationsModule = require './pushNotifications/index.js';
+authModule = require './auth/index.js'
+composeModule = require './compose/index.js'
 
 # Style entry point
 require './scss/bootstrap'
@@ -36,10 +39,13 @@ module.exports = app = angular.module 'wordpress-hybrid-client', [
     'ionic'
     'ngIOS9UIWebViewPatch'
     'wordpress-hybrid-client.config'
+    'ionic-native-transitions'
     'ui.router'
     'wp-api-angularjs'
     'angular-cache'
     'angularMoment'
+    'ngMask'
+    'fitVids'
     customPostsModule
     filtersModule
     pagesModule
@@ -53,6 +59,8 @@ module.exports = app = angular.module 'wordpress-hybrid-client', [
     bookmarkModule
     accessibilityModule
     loadingModule
+    authModule
+    composeModule
     require('./cordova/cordova.module').name
     require('./cacheImg/cacheImg.module').name
     require('./syntaxHighlighter/syntaxHighlighter.module').name
@@ -60,7 +68,6 @@ module.exports = app = angular.module 'wordpress-hybrid-client', [
     directivesModule
     templatesModule
     overwriteModule
-    pushNotificationsModule
 ]
 
 app.config ($stateProvider, $urlRouterProvider) ->
@@ -84,6 +91,20 @@ ANGULAR CONF
 app.config ($logProvider, $compileProvider) ->
     $logProvider.debugEnabled if IS_PROD then false else true
     $compileProvider.debugInfoEnabled if IS_PROD then false else true
+
+###
+NATIVE TRANSITIONS CONF
+###
+app.config ($WPHCConfig, $ionicNativeTransitionsProvider) ->
+    defaultOptions = _.get $WPHCConfig, 'cordova.nativeTransitions.defaultOptions'
+    defaultTransition = _.get $WPHCConfig, 'cordova.nativeTransitions.defaultTransition'
+    defaultBackTransition = _.get $WPHCConfig, 'cordova.nativeTransitions.defaultBackTransition'
+    enabled = _.get $WPHCConfig, 'cordova.nativeTransitions.enabled'
+    enabled = if _.isBoolean enabled then enabled else true
+    $ionicNativeTransitionsProvider.setDefaultOptions defaultOptions if defaultOptions
+    $ionicNativeTransitionsProvider.setDefaultTransition defaultTransition if defaultTransition
+    $ionicNativeTransitionsProvider.setDefaultBackTransition defaultBackTransition if defaultBackTransition
+    $ionicNativeTransitionsProvider.enable enabled
 
 ###
 IONIC CONF
@@ -127,16 +148,14 @@ app.controller 'WPHCMainController' , ($log, $WPHCConfig) ->
     vm.appVersion = wordpressHybridClient.version || null
     vm.appConfig = $WPHCConfig
     vm.appTitle = vm.appConfig.title || null
-    vm.displayIcon = vm.appConfig.menu.displayIcon
     vm
 
 ###
 RUN
 ###
-app.run ($rootScope, $log, $WPHCConfig, $translate, $document, $WPHCLanguage, $ionicPlatform, $WPHCAccessibility, $cordovaSplashscreen, $WPHCInit) ->
+app.run ($rootScope, $log, $WPHCConfig, $translate, $WPHCLanguage, $ionicPlatform, $WPHCAccessibility, $cordovaSplashscreen, $WPHCInit) ->
     'ngInject';
     $rootScope.appLoaded = undefined
-    stateChangeTimeout = null
     # handling debug events
     if !IS_PROD
         $rootScope.$on '$stateNotFound', (event, unfoundState, fromState, fromParams) ->
@@ -145,16 +164,6 @@ app.run ($rootScope, $log, $WPHCConfig, $translate, $document, $WPHCLanguage, $i
             $log.info '$stateChangeError', error
 
     $WPHCAccessibility.updateBodyClass()
-    
-    $rootScope.$on '$stateChangeSuccess', (event, toState, toParams, fromState, fromParams) ->
-        $log.debug 'stateChangeSuccess', toState, toParams, fromState, fromParams
-        clearTimeout stateChangeTimeout
-        fromStateClass = if fromState.class then _.template(fromState.class)(fromParams) else fromState.name
-        toStateClass = if toState.class then _.template(toState.class)(toParams) else toState.name
-        stateChangeTimeout = setTimeout () ->
-            $document.find('html').removeClass _.kebabCase(fromStateClass)
-        , 500
-        $document.find('html').addClass _.kebabCase(toStateClass)
 
     $ionicPlatform.ready () ->
         $WPHCInit.init().finally ()->

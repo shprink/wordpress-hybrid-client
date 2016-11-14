@@ -25,8 +25,6 @@ mod.run(($templateCache) => {
     // $templateCache.put('module/menu.html', require('!html!./module/menu.html'));
     // $templateCache.put('module/bookmark.html', require('!html!./module/bookmark.html'));
     // $templateCache.put('module/about.html', require('!html!./module/about.html'));
-    // $templateCache.put('module/authors/author.html', require('!html!./module/author.html'));
-    // $templateCache.put('module/authors/authors.html', require('!html!./module/authors.html'));
 
     // Directives
     // $templateCache.put('directive/author.html', require('!html!./directive/author.html'));

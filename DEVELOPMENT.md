@@ -7,7 +7,7 @@ Now that the installation is done, make sure the project is running
 live reload in memory (no files are dumped in www folder)
 
 ```
-npm start
+npm run devserver
 ```
 
 Open http://localhost:8080/webpack-dev-server/ in Chrome (the only browser supported) and check if everything run as expected.

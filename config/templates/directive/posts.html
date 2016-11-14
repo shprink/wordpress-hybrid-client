@@ -1,0 +1,26 @@
+<div list="posts">
+    <div class="list card card-posts repeat-animation" ng-repeat="post in postsCtrl.posts">
+        <div ui-sref="public.posts.id(::{ id: post.id })">
+            <div class="item item-image" ng-if="::post.featured_media != 0" wphc-img-background-cache="{{::postsCtrl.featureImages[post.id]}}">
+                <div class="img-border"></div>
+                <h1 class="item-title" ng-bind-html="::post.title.rendered | truncate: 50: '...': true"></h1>
+                <div ng-if="::post.sticky" class="sticky-post badge badge-stable">
+                    <i class="icon ion-star"></i>
+                    <span>{{'posts.featured' | translate}}</span>
+                </div>
+            </div>
+            <div class="item item-text-wrap" ng-if="::post.featured_media == 0">
+                <h1 class="item-title" ng-bind-html="::post.title.rendered | truncate: 50: '...': true"></h1>
+                <div ng-if="::post.sticky" class="sticky-post badge badge-stable">
+                    <i class="icon ion-star"></i>
+                    <span>{{'posts.featured' | translate}}</span>
+                </div>
+            </div>
+            <wphc-author ng-if="postsCtrl.showAuthor" date="::post.date"></wphc-author>
+            <div class="item item-text-wrap" ng-if="::post.excerpt.rendered" ng-bind-html="::post.excerpt.rendered"></div>
+        </div>
+        <div class="item item-divider item-footer">
+            <wphc-post-toolbar post="::post" show-share show-bookmark></wphc-post-toolbar>
+        </div>
+    </div>
+</div>

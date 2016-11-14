@@ -1,0 +1,6 @@
+<div class="item item-author item-text-wrap" ng-class="::{'item-avatar' : authorCtrl.author.avatar_urls[96], 'item-icon-right' : authorCtrl.addLink}" ng-click="authorCtrl.onClick()">
+    <img wphc-img-cache ng-src="{{::authorCtrl.author.avatar_urls[96]}}" ng-if="::authorCtrl.author.avatar_urls[96]">
+    <h2>{{::authorCtrl.author.name}}</h2>
+    <span ng-if="::authorCtrl.date">{{authorCtrl.date | amDateFormat:'LL'}}</span>
+    <i class="icon ion-ios-arrow-right" ng-if="::authorCtrl.addLink"></i>
+</div>

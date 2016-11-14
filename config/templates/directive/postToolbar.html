@@ -1,0 +1,8 @@
+<div class="wphc-post-toolbar">
+    <button ng-if="::postToolbarCtrl.hasShare" class="button button-clear pull-right" ng-click="postToolbarCtrl.share('native', postToolbarCtrl.post.title, postToolbarCtrl.post.link) ">
+        <i class="icon ion-android-share-alt"></i>
+    </button>
+    <button ng-if="::postToolbarCtrl.hasBookmark" class="button button-clear pull-right" ng-class="{active: postToolbarCtrl.isBookmarked}" ng-click="postToolbarCtrl.bookmark(postToolbarCtrl.post) ">
+        <i class="icon ion-bookmark"></i>
+    </button>
+</div>

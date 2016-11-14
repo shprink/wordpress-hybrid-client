@@ -1,7 +1,7 @@
 <div>
     <ion-item class="item-avatar item-text-wrap comment">
         <img wphc-img-cache ng-src="{{::commentCtrl.comment.author_avatar_urls[96]}}" ng-if="::commentCtrl.comment.author_avatar_urls[96]">
-        <h2>{{::commentCtrl.comment.author_name}}</h2>
+        <h2>{{::commentCtrl.comment.author.name}}</h2>
         <div class="comment-content" bind-and-compile-html="::commentCtrl.comment.content.rendered"></div>
         <p class="text-muted" am-time-ago="::commentCtrl.comment.date"></p>
         <wphc-comment ng-if="commentCtrl.comment.children.length" ng-repeat="comment in commentCtrl.comment.children" comment="comment" class="level-{{::comment.level}}"></wphc-comment>

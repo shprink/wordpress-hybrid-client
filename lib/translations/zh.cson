@@ -6,7 +6,6 @@
 "yes": "是"
 "no" : "否"
 "emptyList" : "暂时没有文章！"
-"enabled": "启用"
 "menu":
     "title": "菜单"
     "home": "首页"
@@ -67,7 +66,6 @@
     "offlineMode": "离线模式（即将发布）"
     "fontSize": "文章字号"
     "language": "界面语言"
-    "pushNotifications": "推送通知"
 "languages":
     "en": "英语"
     "fr": "法语"
@@ -78,11 +76,9 @@
     "pt": "葡萄牙语"
     "it": "意大利语"
     "nl": "荷兰语"
-    "ru": "俄语"
-    "tr": "土耳其语"
 "fontSize":
-    "small": "小号"
-    "medium": "中号"
-    "large": "大号"
+    "small": "小"
+    "medium": "中"
+    "large": "大"
     "x-large": "稍大"
     "xx-large": "超大"

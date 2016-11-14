@@ -1,0 +1,37 @@
+<div>
+    <v-accordion>
+        <div ng-repeat="item in ::menuCtrl.list track by $index">
+            <v-pane ng-if="item.type == 'external'">
+                <v-pane-header wphc-href-in-app class="item" ng-class="::{'item-icon-left': item.icon}" menu-close target="_blank" ng-href="{{::item.href}}">
+                    <i class="{{::item.icon}}" ng-if="::item.icon"></i> {{item.trans | translate}}
+                </v-pane-header>
+                <v-pane-content></v-pane-content>
+            </v-pane>
+            <v-pane ng-if="item.type == 'internal'">
+                <v-pane-header class="item" ng-class="::{'item-icon-left': item.icon}" menu-close ui-sref="{{::item.route}}" ui-sref-active-eq="active">
+                    <i class="{{::item.icon}}" ng-if="::item.icon"></i> {{item.trans | translate}}
+                </v-pane-header>
+                <v-pane-content></v-pane-content>
+            </v-pane>
+            <v-pane ng-if="item.type == 'separator'">
+                <v-pane-header class="item item-divider">
+                    {{item.trans | translate}}
+                </v-pane-header>
+                <v-pane-content></v-pane-content>
+            </v-pane>
+            <v-pane ng-if="item.type == 'folder'" class="is-expandable">
+                <v-pane-header class="item" ng-class="::{'item-icon-left': item.icon}">
+                    <i class="{{::item.icon}}" ng-if="::item.icon"></i> {{item.trans | translate}}
+                </v-pane-header>
+                <v-pane-content>
+                    <wphc-menu ng-if="::item.list" list="item.list"></wphc-menu>
+                </v-pane-content>
+            </v-pane>
+        </div>
+        <a href="http://harnessup.com" target="_blank" class="item item-credits">
+            <p>
+                Powered by <span>Harness</span>
+            </p>
+        </a>
+    </v-accordion>
+</div>

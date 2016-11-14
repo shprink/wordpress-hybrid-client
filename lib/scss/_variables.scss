@@ -45,30 +45,30 @@ $bar-padding-portrait: 10px !default;
 $grid-responsive-xl-break: 1450px !default;
 
 // The path for our ionicons font files, relative to the built CSS in www/css
-$ionicons-font-path: "../../node_modules/ionic-angular/release/fonts" !default;
-$font-family-base: inherit !default;
+$ionicons-font-path: "../../node_modules/ionic-sdk/release/fonts" !default;
+$font-family-base: inherit;
 
 // Loader
 // ------------------------------
 $loader-width: 50px !default;
 $loader-height: 50px !default;
 $loader-zIndex: 1002 !default;
-$loader-bg: $gray-lighter !default;
-$loader-stroke: $positive !default;
-$loader-fill: $positive !default;
+$loader-bg: $gray-lighter;
+$loader-stroke: $positive;
+$loader-fill: $positive;
 
 // Empty list directive
 // ----------------------
-$emptyList-bg: $gray-lighter !default;
+$emptyList-bg: $gray-lighter;
 $emptyList-zIndex: 1001 !default;
 
 // Post
 // ------------------------------
 $post-title-size: 24px !default;
-$post-title-color: $base-color !default;
+$post-title-color: $base-color;
 $post-img-height: 200px !default;
 $post-img-bg: white !default;
-$post-img-title-size: $post-title-size !default;
+$post-img-title-size: $post-title-size;
 $post-img-title-padding: 20px !default;
 $post-img-title-color: white !default;
 $post-img-title-shadow: 0 0 5px rgba(0, 0, 0, 0.3) !default;
@@ -93,16 +93,10 @@ $pre-scrollable-max-height: 340px !default;
 
 // Menu
 // -------------------------------
-$menu-icon-color: $balanced !default;
+$menu-icon-color: $balanced;
 $menu-starting-bg-color: white !default;
 $menu-starting-darken-amount: 4% !default;
 $menu-icon-level-color: lighten($menu-icon-color, 10%) !default;
 $menu-max-depth: 6 !default;
 $menu-pane-expand-duration: 0.25s !default;
 $menu-pane-hover-duration: 0.25s !default;
-
-
-
-// Bar
-// -------------------------------
-$barHasIconTitleMarginLeft: 20 !default;

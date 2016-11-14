@@ -1,12 +1,14 @@
 <ion-view id="search-page">
-    <ion-nav-title ng-bind-html="searchCtrl.title | translate"></ion-nav-title>
+    <ion-nav-title>{{ searchCtrl.title | translate}}</ion-nav-title>
     <ion-header-bar class="bar bar-subheader">
-        <form ng-submit="searchCtrl.search()" class="row item-input-inset">
+        <form ng-submit="searchCtrl.search()" class="item-input-inset">
             <label class="item-input-wrapper">
                 <i class="icon ion-ios-search placeholder-icon"></i>
                 <input type="search" ng-model="searchCtrl.searchQuery" wphc-input-esc placeholder="{{'search.inputPlaceholder' | translate}}">
             </label>
-            <button type="button" class="button button-small icon ion-close" ng-click="searchCtrl.clearSearch()"></button>
+            <button type="button" class="button button-small button-clear" ng-click="searchCtrl.clearSearch()">
+                <i class="icon ion-close"></i>
+            </button>
         </form>
     </ion-header-bar>
     <ion-content class="padding bg-gray-lighter">
@@ -14,6 +16,6 @@
         <wphc-loader ng-if="!searchCtrl.list" on-load="searchCtrl.init()"></wphc-loader>
         <ion-refresher pulling-text="{{ 'pullToRefresh' | translate}}" on-refresh="searchCtrl.refresh()"></ion-refresher>
         <wphc-posts show-toolbar="::searchCtrl.showToolbar" posts="searchCtrl.list"></wphc-posts>
-        <ion-infinite-scroll immediate-check="true" ng-if="searchCtrl.list && !searchCtrl.isPaginationOver" on-infinite="searchCtrl.loadMore()" distance="1%"></ion-infinite-scroll>
+        <ion-infinite-scroll immediate-check="true" ng-if="searchCtrl.list && !searchCtrl.isPaginationOver" on-infinite="searchCtrl.loadMore()" distance="1%">test</ion-infinite-scroll>
     </ion-content>
 </ion-view>

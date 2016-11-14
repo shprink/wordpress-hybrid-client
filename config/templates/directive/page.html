@@ -1,0 +1,5 @@
+<div class="post padding">
+    <div class="item item-image" ng-if="::pageCtrl.page.featured_media != 0" wphc-img-background-cache="{{::pageCtrl.featured_image}}"></div>
+    <h1 class="item-title item-title-without-image" ng-bind-html="::pageCtrl.page.title.rendered"></h1>
+    <div class="post-content" ng-if="::pageCtrl.page.excerpt" bind-and-compile-html="::(pageCtrl.page.content.rendered | prepLink | highlight)" fit-vids></div>
+</div>

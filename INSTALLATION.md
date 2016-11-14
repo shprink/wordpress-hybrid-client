@@ -32,7 +32,7 @@ The installation will not install anything globally to avoid potential version c
 
 ```
 # install dependencies
-yarn
+npm install
 ```
 
 This could takes several minutes.
@@ -41,6 +41,11 @@ During the installation you might have the following error on OSX:
 - `ld: library not found for -lgcc_s.10.5`: Installing XCode 7 will solve the problem
 
 ## Config files
+
+```
+# Copy local config
+npm run installWPHC
+```
 
 Your personal config files live now in the `config` folder. You can modify all of them except `config.default.cson` which contains the default config that can be overwritten using `config/config.cson`
 

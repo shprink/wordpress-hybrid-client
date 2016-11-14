@@ -1,0 +1,50 @@
+// http://www.materialpalette.com/orange/blue-grey
+// Here you can also overwrite ionic's variables
+
+$palette-primary-dark:       #F57C00;
+$palette-primary-color:      #FF9800;
+$palette-primary-light:      #FFE0B2;
+$palette-primary-icon:       #FFFFFF;
+$palette-primary-text:       #212121;
+$palette-primary-background: #FFFFFF;
+$palette-accent-color:       #03A9F4;
+$palette-secondary-text:     #727272;
+$palette-divider-color:      #E4E4E4;
+
+$dark: $palette-secondary-text;
+
+$bar-height: 64px;
+
+.item-credits {
+    text-align: center;
+    p {
+        opacity: .5;
+        font-size: .7em;
+        span {
+            text-decoration: underline;
+        }
+    }
+}
+
+.list.card {
+    .item.item-author {
+        border-top: 1px solid $palette-divider-color;
+    }
+}
+
+.item-energized,
+.item-positive,
+.item-balanced,
+.item-assertive {
+    a {
+        color: $palette-primary-icon;
+    }
+}
+
+.flush-top {
+    margin-top: 0 !important;
+}
+
+.flush-bottom {
+    margin-bottom: 0 !important;
+}

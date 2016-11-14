@@ -33,7 +33,7 @@ $palette-divider-color: #eaeaea !default;
 
 You can also overwrite Ionic variables: <http://ionicframework.jp/tutorials/customizing-ionic-with-sass/>
 
-To know all WPHC internal variables checkout ```lib/scss/_variables.scss```
+To know all WPHC internal varaibles checkout ```lib/scss/_variables.scss```
 
 ## `config/templates`
 
@@ -81,41 +81,7 @@ For instance if you want to modify the way the menu is displayed, you will need 
 
 After that you will need to register your new template in `lib/templates/index.js` (read the comments for help)
 
-## Service Workers (Experimental)
-
-WPHC supports progressive web apps. When [enabled](#serviceWorker) make sure you modify `config/manifest.json` with your own app informations (title, description etc.) and overwrite all the icons in `config/icons`.
-
-PWA requires a HTTPS connection, make sure to have an SSL certificate.
-
-Chrome dev tools allow you to test the "add to homescreen" feature on the browser.
-
-![image](https://cloud.githubusercontent.com/assets/1388706/19619167/740031b0-9860-11e6-9ca0-ebb5bb9bb152.png)
-
 ## Frequently asked questions
-
-### How to change the font
-
-<https://github.com/shprink/wordpress-hybrid-client/issues/238>
-
-### How to have different style per page
-
-For instance you want a specific color on a category header. This is possible through `config/config.scss` file.
-
-Every page you visit has a unique class name injected in the `<html>` tag. Everything nested on `html.module-posts` rule is therefore applied only on this page:
-
-```scss
-html.module-posts{
-    ion-header-bar{
-        background-color: red !important;
-    }
-}
-
-html.module-pages{
-    ion-header-bar{
-        background-color: green !important;
-    }   
-}
-```
 
 ### How to change the home page
 
@@ -161,7 +127,6 @@ Here is a simple view of what you can configure:
 
 * title
 * ionicConfig
-* serviceWorker
 * api
     * baseUrl
     * timeout
@@ -169,7 +134,6 @@ Here is a simple view of what you can configure:
 * menu
     * exposeAsideWhen
     * list
-    * logo
 * settings
 * cache
     * views
@@ -192,7 +156,6 @@ Here is a simple view of what you can configure:
 * cordova
     * statubar
     * appRate
-    * admob
     * pushNotifications
 
 
@@ -216,15 +179,23 @@ allow overwriting ionic configuration <http://ionicframework.com/docs/api/provid
 
 Setting ```null``` will keep ionic default value.
 
-<a name="serviceWorker"></a>
-### serviceWorker [Object]
-
-* ***enabled***    ```Boolean```    Experiemental. default `false`
-
 ### menu [Object]
 
-* ***exposeAsideWhen***     ```String```    The media query used to determine when to always display the left menu, default `(min-width:900px)`
-* ***displayIcon***         ```Boolean```   whether or not to display the icon on the menu header. default `true`, to modify the icon overwrite `config/icons/icon_48.png`
+The media query used to determine when to always display the left menu.
+
+```
+"exposeAsideWhen": "(min-width:900px)"
+```
+
+They are four types of menu item (internal|external|folder|separator).
+
+* ***internal***    Can be any page of the application (home|category|tag|parameters)
+* ***external***    Any www website
+* ***folder***      Create a menu sublevel (you can add up to six levels)
+* ***separator***   Separate menu items
+
+NB: The icons must be from ionicons.com
+NB: For now the homepage is mandatory and cannot be a specific page.
 
 ### Settings configuration.
 
@@ -295,44 +266,6 @@ The languages you want to see in the parameters. So far we only support English 
 Enable Google Analytics
 
 ### cordova
-
-#### admob
-
-```
-"cordova":
-    "admob":
-        "enabled": false
-        "android":
-            "bannerID": null
-            "bannerPosition": "BOTTOM_CENTER"
-            "interstitialID": null
-        "ios":
-            "bannerID": null
-            "bannerPosition": "BOTTOM_CENTER"
-            "interstitialID": null
-        "windows":
-            "bannerID": null
-            "bannerPosition": "BOTTOM_CENTER"
-            "interstitialID": null
-```
-
-You can install a banner and/or a interstitial per device. To do that just add the bannerID and/or the interstitialID.
-
-You can also change the `bannerPosition` by selecting one of the following values:
-
-```
-NO_CHANGE
-TOP_LEFT
-TOP_CENTER
-TOP_RIGHT
-LEFT
-CENTER
-RIGHT
-BOTTOM_LEFT
-BOTTOM_CENTER
-BOTTOM_RIGHT
-POS_XY
-```
 
 #### StatuBar
 

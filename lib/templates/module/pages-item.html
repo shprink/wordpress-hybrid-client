@@ -1,5 +1,5 @@
 <ion-view>
-    <ion-nav-title ng-bind-html="::pageCtrl.item.title.rendered"></ion-nav-title>
+    <ion-nav-title>{{ ::pageCtrl.item.title.rendered }}</ion-nav-title>
     <ion-content>
         <wphc-loader ng-if="!pageCtrl.item" on-load="pageCtrl.init()"></wphc-loader>
         <ion-refresher pulling-text="{{ 'pullToRefresh' | translate}}" on-refresh="pageCtrl.refresh()"></ion-refresher>

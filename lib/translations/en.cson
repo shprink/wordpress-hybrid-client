@@ -21,6 +21,10 @@
     "settings": "Settings"
     "customPosts": "Custom posts"
     "customTaxonomy": "Custom Taxonomy"
+    "login": "Login"
+    "logout": "Logout"
+    "register": "Register"
+    "postStandDown": "Post a Stand-Down"
 "pushNotifications":
     "newContent":
         "title": "New content!"
@@ -33,13 +37,13 @@
 "tags":
     "title": "Tags"
 "tag":
-    "title": "Tag: {{name}}"
+    "title": "{{name}}"
 "customTaxonomy":
     "title": "{{term}}: {{name}}"
 "categories":
     "title": "Categories"
 "category":
-    "title": "Category: {{name}}"
+    "title": "{{name}}"
 "home":
     "title": "Home"
 "search":
@@ -51,7 +55,7 @@
 "authors":
     "title": "Authors"
 "author":
-    "title": "Author: {{name}}"
+    "title": "{{name}}"
 "pages":
     "title": "Pages"
 "posts":
@@ -86,3 +90,64 @@
     "large": "Large"
     "x-large": "Xlarge"
     "xx-large": "XXlarge"
+"auth":
+    "form":
+        "required": "This field is required."
+        "email": "Invalid email addresss."
+        "passwordMinlength": "Password must be at least 8 characters."
+        "error": "An unknown error occurred. Please try again."
+        "general": "Please correct all errors."
+    "login":
+        "title": "Login"
+        "submit": "Login"
+        "tokenMissing": "No token found."
+        "labels":
+            "username": "Username"
+            "email": "Email Address"
+            "password": "Password"
+    "register":
+        "title": "Get Started"
+        "next": "Continue"
+        "submit": "Complete Registration"
+        "formErrors": "Errors were found in your registration, please correct all fields marked."
+        "intro": "<p>We need to capture some basic info.  We’ll never release or share your info without your permission and we won’t send you unwanted communications.</p>"
+        "terms": "<p>By creating an account, you accept our <a ui-sref=\"auth.page({id: 3813})\">Terms of Service</a> and <a ui-sref=\"auth.page({id: 3816})\">Privacy Policy</a>.</p>"
+        "labels":
+            "email": "Email Address"
+            "firstName": "First Name"
+            "lastName": "Last Name"
+            "password": "Password"
+            "optIn": "I’d like to get updates on falls and other safety & health information from CPWR – The Center for Construction Research and Training."
+            "jobTitle": "What's your job title? Select the best match"
+            "trade": "Select your trade"
+            "companySize": "Company size"
+    "welcome":
+        "title": "National Safety Stand-Down"
+        "login": "Existing User? Login Here"
+        "register": "Get Started"
+        "intro": "<h2>Welcome to The National Safety Stand-Down App!</h2><p>Get The Latest Updates on The National Fall Prevention Campaign.</p><p>Access Free Stand-Down Meeting.</p><p>Guides & Other Helpful Resources.</p><p>Share Your Stand-Down Activities.</p>"
+"compose":
+    "form":
+        "required": "This field is required."
+        "invalidDate": "Invalid date."
+        "min": "Value is too low."
+        "max": "Value is too high."
+        "error": "An unknown error occurred. Please try again."
+        "submitted": "Thank you for your submission. To receive a Certificate of Participation visit <a href=\"https://www.osha.gov/StopFallsStandDown/\">this OSHA Website</a>."
+    "labels":
+        "date": "Date"
+        "pick": "Pick"
+        "attendees": "Number of Attendees"
+        "attendeesPlaceholder": "eg. 5"
+        "title": "Title"
+        "titlePlaceholder": "Title to summarize this activity"
+        "notes": "Notes"
+        "notesPlaceholder": "Enter a brief description of your activity"
+        "photo": "Choose photo to add..."
+        "photoGallery": "Gallery"
+        "photoCamera": "Take Picture"
+    "stand-downs":
+        "title": "Post a Stand-Down"
+        "intro": "<p>Let us know how you're raising awareness of fall prevention on your jobsites. Use this form to submit a Stand-Down activity and you could be featured on our official website <a href=\"http://stopconstructionfalls.com/\" target=\"_blank\">stopconstructionfalls.com</a>. <a ui-sref=\"public.pages.id({id: 3816})\">Learn more about how this information will be used</a>."
+        "submit": "Post Stand-Down"
+    

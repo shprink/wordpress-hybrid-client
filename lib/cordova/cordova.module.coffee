@@ -14,6 +14,5 @@ if ionic.Platform.isWebView()
     require './cordova.appRate'
     require './cordova.networkInformation'
     require './cordova.pushNotifications'
-    require './cordova.admob'
 
 require './cordova.socialsharing'
