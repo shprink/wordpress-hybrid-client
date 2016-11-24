@@ -130,6 +130,51 @@ Add the following and change state and params to the page you want:
         "state": "public.posts"
         "params": {}
 ```
+### How to integrate admobs
+step 1: Run this command in your project directory
+	```cordova plugin add cordova-plugin-admob```
+
+step 2: Open index.coffee
+	```gedit lib/index.coffee```
+
+step 3: copy this peice of code to the end, AND replace original one,
+```###RUN###
+
+app.run ($rootScope, $log, $WPHCConfig, $translate, $WPHCLanguage, $ionicPlatform, $WPHCAccessibility, $cordovaSplashscreen, $WPHCInit) ->
+'ngInject'
+$rootScope.appLoaded = undefined
+if !IS_PROD
+$rootScope.$on '$stateNotFound', (event, unfoundState, fromState, fromParams) ->
+$log.info '$stateNotFound', unfoundState
+$rootScope.$on '$stateChangeError', (event, toState, toParams, fromState, fromParams, error) ->
+$log.info '$stateChangeError', error
+$WPHCAccessibility.updateBodyClass()
+$ionicPlatform.ready ->
+admobid = {}
+    # select the right Ad Id according to platform
+    if /(android)/i.test(navigator.userAgent)
+        admobid = banner: 'ca-app-pub-1631481938954058/7613961721'
+    else if /(ipod|iphone|ipad)/i.test(navigator.userAgent)
+        admobid = banner: 'ca-app-pub-1631481938954058/7613961721'
+    else
+        admobid = banner: 'ca-app-pub-1631481938954058/7613961721'
+    if window.AdMob
+        AdMob.createBanner
+            adId: admobid.banner
+            position: AdMob.AD_POSITION.BOTTOM_CENTER
+            autoShow: true
+    $WPHCInit.init()['finally'] ->
+        $rootScope.appLoaded = true
+        if !ionic.Platform.isWebView()
+            $translate.use $WPHCLanguage.getLocale()
+        else
+            $cordovaSplashscreen.hide()
+ # Clean up appLoading
+    # angular.element(document.querySelector 'html').removeClass 'app-loading'
+    # angular.element(document.querySelector '#appLoaderWrapper').remove()```
+
+step 4: Don't forget to add your publisherId which you can get after signing up on admob.
+	#hint: PublisherId is like```'ca-app-pub-1631481938954058/7613961721'```
 
 #### Set the home page to the pages page:
 
