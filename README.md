@@ -50,6 +50,7 @@
   * https://play.google.com/store/apps/details?id=com.xvilo.regio25
   * https://play.google.com/store/apps/details?id=de.esv1927.app
   * http://play.google.com/store/apps/details?id=com.mirzapurnews
+  * https://play.google.com/store/apps/details?id=br.com.receitascompletas
 * IOS
   * https://itunes.apple.com/cn/app/id1030393337
   * https://itunes.apple.com/us/app/not-my-fault./id886617889
