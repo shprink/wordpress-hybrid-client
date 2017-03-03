@@ -3,8 +3,8 @@
 "back": "Voltar"
 "error": "Aconteceu algo errado, por favor tente novamnete mais tarde."
 "attemptToConnect": "Esperando conexão tentativa: {{attempt}} de {{attemptMax}}."
-"yes": "Yes"
-"no" : "No"
+"yes": "Sim"
+"no" : "Não"
 "emptyList" : "Não há nada aqui!"
 "enabled": "Habilitado"
 "menu":
