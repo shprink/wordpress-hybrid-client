@@ -1,0 +1,13 @@
+<!--
+  Generated template for the PagesList component.
+
+  See https://angular.io/docs/ts/latest/api/core/index/ComponentMetadata-class.html
+  for more info on Angular 2 Components.
+-->
+<post-card 
+  *ngFor="let item of list; trackBy: trackBy"
+  [type]="type"
+  [@appear]="'in'"
+  [post]="item"
+  [onClick]="openPage"
+></post-card>

@@ -1,0 +1,14 @@
+toolbar {
+    border-top: $toolbar-border-top;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: $toolbar-bg-color;
+    button {
+        color: $toolbar-button-color !important;
+        &.active{
+            color: $toolbar-button-active-color !important;
+            opacity: 1;
+        }
+    } 
+}

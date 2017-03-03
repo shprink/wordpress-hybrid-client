@@ -1,0 +1,19 @@
+<!--
+  Generated template for the Bookmarks component.
+
+  See https://angular.io/docs/ts/latest/api/core/index/ComponentMetadata-class.html
+  for more info on Angular 2 Components.
+-->
+<ion-list>
+  <ion-item-sliding *ngFor="let bookmark of list; trackBy:trackByUid">
+    <button ion-item (click)="onClick && onClick($event, bookmark)">
+    <h2 [innerHtml]="bookmark.item?.title.rendered"></h2>
+    <p>{{bookmark.timestamp | amTimeAgo}}</p>
+    </button>
+    <ion-item-options side="right">
+      <button ion-button icon-only color="danger" (click)="onRemove && onRemove($event, bookmark)">
+        <ion-icon name="trash"></ion-icon>
+      </button>
+    </ion-item-options>
+  </ion-item-sliding>
+</ion-list>

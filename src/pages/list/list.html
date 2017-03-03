@@ -1,0 +1,25 @@
+<!--
+  Generated template for the List page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <page-navbar [title]="'PAGES' | translate"></page-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-refresher (ionRefresh)="doRefresh($event)">
+    <ion-refresher-content [pullingText]="'PULL_TO_REFRESH' | translate">
+    </ion-refresher-content>
+  </ion-refresher>
+  <spinner [isVisible]="!init"></spinner>
+  <list [list]="stream$ | async" [type]="type" [options]="options"></list>
+  <button *ngIf="shouldRetry" ion-button color="light" full (click)="doLoad()">
+    {{ 'RETRY' | translate }}
+  </button>
+
+  <ion-infinite-scroll (ionInfinite)="doInfinite($event)" [enabled]="isPaginationEnabled">
+    <ion-infinite-scroll-content></ion-infinite-scroll-content>
+  </ion-infinite-scroll>
+</ion-content>

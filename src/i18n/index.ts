@@ -1,0 +1,12 @@
+import './de.cson';
+import './en.cson';
+import './es.cson';
+import './fr.cson';
+import './it.cson';
+import './nl.cson';
+import './pl.cson';
+import './pt.cson';
+import './ru.cson';
+import './tr.cson';
+import './ur.cson';
+import './zh.cson';

@@ -1,4 +1,6 @@
 {
   "name": "wordpress-hybrid-client",
-  "app_id": ""
+  "app_id": "f2dbe26f",
+  "typescript": true,
+  "v2": true
 }

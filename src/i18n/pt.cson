@@ -1,0 +1,74 @@
+PULL_TO_REFRESH: "Puxe para atualizar"
+RETRY: "Tentar novamente"
+CANCEL: "Cancel"
+SUBMIT: "Submit"
+BACK: "Voltar"
+ERROR: "Ocorreu um erro, tente novamente."
+ATTEMPT_TO_CONNECT: "Tentativa de conexão {{attempt}} de {{attemptMax}}."
+OK: "Ok"
+YES: "Sim"
+NO: "Não"
+MENU: "Menu"
+HOME: "Início"
+TAGS: "Etiquetas"
+PAGES: "Páginas"
+POSTS: "Posts"
+AUTHORS: "Autores"
+SEARCH: "Buscar"
+SOCIAL_NETWORKS: "Redes Sociais"
+CATEGORIES: "Categorias"
+SETTINGS: "Configurações"
+CUSTOM_POSTS: "Posts customizados"
+CUSTOM_TAXO: "Taxonomia customizada"
+CUSTOM_TAXO_TITLE: "{{term}}: {{name}}"
+PUSH_NOTIFS: "Push notifications"
+PUSH_NOTIF_TITLE: "Nova publicação!"
+PUSH_NOTIF_TEXT: "Novo artigo: '{{postTitle}}' em {{appTitle}}, quer visualizar?"
+BOOKMARKS: "Favoritos"
+BOOKMARKS_EMPTY: "Não há nada salvo!"
+BOOKMARK_ADDED: "Adicionado aos favoritos!"
+BOOKMARK_REMOVED: "Eliminado dos favoritos!"
+ZOOM: "Zoom"
+CACHE_CLEAR: "Clear cache"
+CACHE_CLEARED: "Cache cleared"
+"tags": 
+    "title": "Etiquetas"
+"tag":
+    "title": "Etiqueta: {{name}}"
+"categories": 
+    "title": "Categorias"
+"category":
+    "title": "Categoria {{name}}"
+"home": 
+    "title": "Início"
+"search":
+    "inputPlaceholder": "Buscar"
+    "title": "Buscar",
+    "titleQuery": "Buscar: {{query}}"
+"sharing": 
+    "shared": "Compartilhado!"
+AUTHORS: "Autores"
+AUTHOR: "Autor"
+AUTHOR_TITLE: "Autor: {{name}}"
+"pages":
+    "title": "Páginas"
+"posts": 
+    "title": "Início"
+    "empty": "Não encontrou novas publicações!"
+    "featured": "Em destaque"
+"post": 
+    "comments": "Comentários"
+    "openInBrowser": "Abrir no navegador"
+"about": 
+    "title": "Sobre"
+"languages":
+    "en": "Inglês"
+    "fr": "Francês"
+    "zh": "Chinês"
+    "es": "Espanhol"
+    "pl": "Polaco"
+    "de": "Alemão"
+    "pt": "Português"
+    "it": "Italiano"
+    "nl": "Holandês"
+

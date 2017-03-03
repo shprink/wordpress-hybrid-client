@@ -1,0 +1,143 @@
+// Ionic Variables and Theming. For more info, please see:
+// http://ionicframework.com/docs/v2/theming/
+$font-path: "../assets/fonts";
+
+@import "ionic.globals";
+
+
+// Shared Variables
+// --------------------------------------------------
+// To customize the look and feel of this app, you can override
+// the Sass variables found in Ionic's source scss files.
+// To view all the possible Ionic variables, see:
+// http://ionicframework.com/docs/v2/theming/overriding-ionic-variables/
+
+// http://www.materialpalette.com/blue-grey/teal
+$palette-primary-color: #607d8b !default;
+$palette-dark-color: #455a64 !default;
+$palette-light-color: #eaeaea !default;
+$palette-secondary-color: #009688 !default;
+$palette-danger-color: #bd1818 !default;
+
+// Named Color Variables
+// --------------------------------------------------
+// Named colors makes it easy to reuse colors on various components.
+// It's highly recommended to change the default colors
+// to match your app's branding. Ionic uses a Sass map of
+// colors so you can add, rename and remove colors as needed.
+// The "primary" color is the only required color in the map.
+
+$colors: (
+  primary:    $palette-primary-color,
+  secondary:  $palette-secondary-color,
+  danger:     $palette-danger-color,
+  light:      $palette-light-color,
+  dark:       $palette-dark-color
+);
+
+
+// App iOS Variables
+// --------------------------------------------------
+// iOS only Sass variables can go here
+
+
+
+
+// App Material Design Variables
+// --------------------------------------------------
+// Material Design only Sass variables can go here
+
+
+
+
+// App Windows Variables
+// --------------------------------------------------
+// Windows only Sass variables can go here
+
+
+
+
+// App Theme
+// --------------------------------------------------
+// Ionic apps can have different themes applied, which can
+// then be future customized. This import comes last
+// so that the above variables are used and Ionic's
+// default are overridden.
+
+@import "ionic.theme.default";
+
+
+// Ionicons
+// --------------------------------------------------
+// The premium icon font for Ionic. For more info, please see:
+// http://ionicframework.com/docs/v2/ionicons/
+
+@import "ionicons";
+
+
+// Fonts
+// --------------------------------------------------
+
+@import "roboto";
+@import "noto-sans";
+
+// Grays
+// ------------------------------
+$gray-base: #000 !default;
+$gray-darker: lighten($gray-base, 13.5%) !default;
+$gray-dark: lighten($gray-base, 20%) !default;
+$gray: lighten($gray-base, 33.5%) !default;
+$gray-light: lighten($gray-base, 46.7%) !default;
+$gray-light2: lighten($gray-base, 55%) !default;
+$gray-light3: lighten($gray-base, 65%) !default;
+$gray-light4: lighten($gray-base, 75%) !default;
+$gray-lighter: lighten($gray-base, 93.5%) !default;
+$gray-lighter2: lighten($gray-base, 95%) !default;
+$gray-lighter3: lighten($gray-base, 97%) !default;
+
+$list-bg-color: $gray-lighter !default;
+
+// Overwrite
+$background-color: $gray-lighter2 !default;
+
+// Post
+// ------------------------------
+$post-img-height: 200px !default;
+$post-img-bg: $gray-lighter !default;
+
+// Page Post
+// ------------------------------
+$page-post-bg-color: white !default; 
+$page-post-img-height: $post-img-height !default;
+$page-post-img-bg: $post-img-bg !default;
+
+// Page Page
+// ------------------------------
+$page-page-bg-color: white !default; 
+$page-page-img-height: $post-img-height !default;
+$page-page-img-bg: $post-img-bg !default;
+
+// Loader
+// ------------------------------
+$loader-width: 50px !default;
+$loader-height: 50px !default;
+$loader-zIndex: 1002 !default;
+$loader-bg-color: $gray-lighter !default;
+$loader-stroke: color($colors, primary) !default;
+$loader-fill: color($colors, primary) !default;
+
+// Empty list directive
+// ----------------------
+$emptyList-bg-color: $gray-lighter !default;
+$emptyList-zIndex: 1001 !default;
+
+// Toolbar
+$toolbar-border-top: 1px solid $gray-lighter !default;
+$toolbar-bg-color: $gray-lighter3 !default;
+$toolbar-button-color: $gray-light4 !default;
+$toolbar-button-active-color: color($colors, primary) !default;
+
+// Author
+$author-border-top: 1px solid $gray-lighter !default;
+$author-border-bottom: 1px solid $gray-lighter !default;
+$author-bg-color: white !default;

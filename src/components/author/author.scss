@@ -1,0 +1,10 @@
+author {
+    ion-list{
+        .item{
+            padding-left: 0px !important;
+            background-color: $author-bg-color !important;
+            border-top: $author-border-top !important;
+            border-bottom: $author-border-bottom !important;
+        }
+    }
+}

@@ -1,0 +1,14 @@
+<!--
+  Generated template for the Taxonomies component.
+
+  See https://angular.io/docs/ts/latest/api/core/index/ComponentMetadata-class.html
+  for more info on Angular 2 Components.
+-->
+
+<ion-list>
+  <button ion-item *ngFor="let item of list" (click)="onClick($event, item)">
+    <h2>{{ item.name }}</h2>
+    <p>{{item.description}}</p>
+    <ion-badge item-right>{{item.count}}</ion-badge>
+  </button>
+</ion-list>

@@ -1,0 +1,14 @@
+menu-items {
+    display: block;
+    menu-items{
+        ion-item{
+            background-color: $gray-lighter2 !important;
+        }
+    }
+    ion-list{
+        margin-bottom: 0px !important;
+        > div {
+            overflow: hidden; 
+        }
+    }
+}

@@ -1,0 +1,141 @@
+{
+  "name": "wordpress-hybrid-client",
+  "version": "2.0.0",
+  "title": "wordpress-hybrid-client",
+  "description": "Build amazing iOS and Android applications for your WordPress website for free!",
+  "main": "index.js",
+  "scripts": {
+    "build": "bash ./release.sh",
+    "restore": "rm -rf platforms/ plugins/ && ionic state restore",
+    "postinstall": "npm run installWPHC",
+    "installWPHC": "cd scripts && node ./install.js",
+    "increaseVersion": "cd scripts && node ./increaseVersion.js",
+    "start": "webpack-dev-server --port 8080 --json --progress",
+    "devserver": "npm start",
+    "dumpdev": "rm -rf www/* && webpack --progress --colors -d",
+    "dumpprod": "rm -rf www/* && webpack --progress --colors --config webpack.config.prod.js -p",
+    "android": "npm run dumpdev && cordova run android",
+    "iosEmulator": "npm run dumpdev && cordova run ios",
+    "ios": "npm run dumpdev && cordova run ios --device",
+    "cordova": "cordova",
+    "buildAndroid": "BUILD_MULTIPLE_APKS=true cordova build android --device",
+    "buildProdAndroid": "BUILD_MULTIPLE_APKS=true cordova build android --device --release",
+    "buildIOS": "cordova build ios --device",
+    "buildProdIOS": "cordova build ios --device --release"
+  },
+  "keywords": [
+    "wp-api",
+    "angular",
+    "angularjs",
+    "rest",
+    "restfull",
+    "hybrid",
+    "material design",
+    "client"
+  ],
+  "author": "Julien Renaux <contact@julienrenaux.fr>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shprink/wordpress-hybrid-client"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/shprink/wordpress-hybrid-client/issues"
+  },
+  "homepage": "http://wphc.julienrenaux.fr/",
+  "devDependencies": {
+    "autoprefixer-loader": "^3.1.0",
+    "babel": "^5.8.23",
+    "babel-core": "^5.0.0",
+    "babel-loader": "^5.3.2",
+    "coffee-loader": "^0.7.2",
+    "coffee-script": "^1.12.2",
+    "commander": "^2.9.0",
+    "cordova": "~6.4.0",
+    "cson": "^3.0.2",
+    "cson-loader": "^0.1.0",
+    "css-loader": "^0.18.0",
+    "deep-extend": "^0.4.0",
+    "exports-loader": "^0.6.2",
+    "expose-loader": "^0.7.0",
+    "file-loader": "^0.8.4",
+    "fs-extra": "^0.26.3",
+    "html-loader": "^0.3.0",
+    "html-webpack-plugin": "^1.6.1",
+    "imports-loader": "^0.6.4",
+    "ionic": "~2.1.17",
+    "json-loader": "^0.5.3",
+    "ng-annotate-loader": "~0.0.10",
+    "node-sass": "^3.3.3",
+    "path": "^0.12.7",
+    "sass-loader": "^2.0.1",
+    "semver": "^5.0.3",
+    "string-replace-loader": "^1.0.5",
+    "style-loader": "^0.12.4",
+    "util": "^0.10.3",
+    "webpack": "^1.12.0",
+    "webpack-dev-server": "^1.12.0"
+  },
+  "dependencies": {
+    "MD5": "^1.2.1",
+    "angular": "^1.4.7",
+    "angular-cache": "^4.0.0",
+    "angular-highlightjs": "^0.4.1",
+    "angular-moment": "^0.10.0",
+    "angular-recursion": "^1.0.5",
+    "angular-translate": "^2.5.2",
+    "highlight.js": "^8.9.0",
+    "imagesloaded": "^3.1.8",
+    "imgcache.js": "^1.0.0",
+    "ionic-angular": "~1.3.1",
+    "lodash": "^3.9.3",
+    "moment": "^2.9.0",
+    "ng-cordova": "^0.1.23-alpha",
+    "v-accordion": "~1.3.1",
+    "wp-api-angularjs": "^2.0.0-rc3"
+  },
+  "cordovaPlugins": [
+    "cordova-plugin-whitelist@1.3.0",
+    "cordova-plugin-inappbrowser@1.3.0",
+    "cordova-plugin-splashscreen@2.1.0",
+    "cordova-plugin-file@2.1.0",
+    "cordova-plugin-file-transfer@1.2.1",
+    "cordova-plugin-device@1.0.1",
+    "cordova-plugin-globalization@1.0.1",
+    "cordova-plugin-console@1.0.1",
+    "cordova-plugin-network-information@1.0.1",
+    "cordova-plugin-dialogs@1.1.1",
+    {
+      "locator": "https://github.com/pushandplay/cordova-plugin-apprate#v1.1.7",
+      "id": "org.pushandplay.cordova.apprate"
+    },
+    "cordova-plugin-x-toast@2.1.1",
+    "cordova-plugin-statusbar@1.0.1",
+    "cordova-plugin-google-analytics@0.8.1",
+    "phonegap-plugin-push@1.5.3",
+    "cordova-plugin-crosswalk-webview@2.2.0",
+    "cordova-plugin-spinner-dialog@1.3.1",
+    "cordova-plugin-admobpro@2.14.0",
+    "cordova-plugin-x-socialsharing@5.1.1",
+    "ionic-plugin-keyboard@2.2.0"
+  ],
+  "engines": {
+    "node": ">= 4",
+    "npm": ">= 3"
+  },
+  "os": [
+    "!win32"
+  ],
+  "cordovaPlatforms": [
+    {
+      "platform": "android",
+      "version": "6.x",
+      "locator": "android@6.x"
+    },
+    {
+      "platform": "ios",
+      "version": "4.x",
+      "locator": "ios@4.x"
+    }
+  ]
+}

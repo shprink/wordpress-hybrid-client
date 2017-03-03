@@ -1,0 +1,23 @@
+<!--
+  Generated template for the Author component.
+
+  See https://angular.io/docs/ts/latest/api/core/index/ComponentMetadata-class.html
+  for more info on Angular 2 Components.
+-->
+
+<ion-list *ngIf="author">
+  <ion-item *ngIf="!link">
+    <ion-avatar item-left *ngIf="author.avatar_urls[96]">
+      <img [src]="author.avatar_urls[96]">
+    </ion-avatar>
+    <h2>{{author.name}}</h2>
+    <p *ngIf="date">{{date | amDateFormat: 'LL'}}</p>
+  </ion-item>
+  <button ion-item *ngIf="link" (click)="goToAuthorPage($event)">
+    <ion-avatar item-left *ngIf="author.avatar_urls[96]">
+      <img [src]="author.avatar_urls[96]">
+    </ion-avatar>
+    <h2>{{author.name}}</h2>
+    <p *ngIf="date">{{date | amDateFormat: 'LL'}}</p>
+  </button>
+</ion-list>

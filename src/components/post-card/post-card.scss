@@ -1,0 +1,18 @@
+post-card {
+    display: block;
+    .thumbnail {
+        height: $post-img-height;
+        width: 100%;
+        background-color: $post-img-bg;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+    }
+    
+    author {
+        ion-list{
+            margin: -1px 0px 16px 0px !important;
+        }
+    }
+}

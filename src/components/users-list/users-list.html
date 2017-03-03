@@ -1,0 +1,14 @@
+<!--
+  Generated template for the UsersList component.
+
+  See https://angular.io/docs/ts/latest/api/core/index/ComponentMetadata-class.html
+  for more info on Angular 2 Components.
+-->
+<ion-list>
+  <button ion-item *ngFor="let item of list; trackBy: trackBy" (click)="openPage($event, item)">
+    <ion-avatar item-left *ngIf="item.avatar_urls[96]">
+      <img [src]="item.avatar_urls[96]">
+    </ion-avatar>
+    <h2>{{item.name}}</h2>
+  </button>
+</ion-list>

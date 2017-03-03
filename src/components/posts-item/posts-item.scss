@@ -1,0 +1,18 @@
+post {
+    .thumbnail {
+        height: $page-post-img-height;
+        width: 100%;
+        background-color: $page-post-img-bg;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        position: relative;
+    }
+    .main-content{
+        background-color: $page-post-bg-color;
+        max-width: 100%;
+        .post-content{
+            margin: 20px 0;
+        }
+    }
+}

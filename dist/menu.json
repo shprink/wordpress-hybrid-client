@@ -1,135 +1,303 @@
-[{
-    "type": "internal",
-    "trans": "menu.home",
-    "route": "public.posts",
-    "icon": "icon ion-home"
-}, {
-    "type": "separator",
-    "trans": "Posts type"
-}, {
-    "type": "folder",
-    "trans": "menu.posts",
-    "icon": "icon ion-ios-paper",
-    "list": [{
+[
+    {
         "type": "internal",
-        "trans": "Hello world",
-        "route": "public.posts.id({ id: 1 })",
-        "icon": "icon ion-android-document"
-    }, {
+        "trans": "HOME",
+        "page": "list",
+        "params": {
+            "type": "posts",
+            "options": {
+                "component": "posts-list"
+            }
+        },
+        "icon": "home",
+        "navRoot": true
+    },
+    {
         "type": "internal",
-        "trans": "All",
-        "route": "public.posts",
-        "icon": "icon ion-ios-paper"
-    }]
-}, {
-    "type": "folder",
-    "trans": "menu.pages",
-    "icon": "icon ion-android-document",
-    "list": [{
+        "trans": "TABS",
+        "page": "tabs",
+        "params": {
+            "options": {
+                "list": [
+                    {
+                        "type": "internal",
+                        "trans": "POSTS",
+                        "page": "list",
+                        "params": {
+                            "type": "posts"
+                        },
+                        "icon": "home",
+                        "navRoot": true
+                    },
+                    {
+                        "type": "internal",
+                        "trans": "PAGES",
+                        "page": "list",
+                        "params": {
+                            "type": "pages"
+                        },
+                        "icon": "copy",
+                        "navRoot": true
+                    },
+                    {
+                        "type": "internal",
+                        "trans": "MOVIES",
+                        "page": "list",
+                        "params": {
+                            "type": "movie"
+                        },
+                        "icon": "videocam",
+                        "navRoot": true
+                    }
+                ]
+            }
+        },
+        "icon": "home",
+        "navRoot": true
+    },
+    {
+        "type": "separator",
+        "trans": "Posts type"
+    },
+    {
+        "type": "folder",
+        "trans": "POSTS",
+        "icon": "paper",
+        "list": [
+            {
+                "type": "internal",
+                "trans": "Hello world",
+                "page": "item",
+                "params": {
+                    "type": "posts",
+                    "id": 1
+                },
+                "icon": "document"
+            },
+            {
+                "type": "internal",
+                "trans": "All",
+                "page": "list",
+                "params": {
+                    "type": "posts"
+                },
+                "icon": "paper",
+                "navRoot": true
+            }
+        ]
+    },
+    {
+        "type": "folder",
+        "trans": "PAGES",
+        "page": "pages",
+        "params": {},
+        "icon": "document",
+        "list": [
+            {
+                "type": "internal",
+                "trans": "Sample page",
+                "page": "item",
+                "params": {
+                    "type": "pages",
+                    "id": 2592
+                },
+                "icon": "document"
+            },
+            {
+                "type": "internal",
+                "trans": "All",
+                "page": "list",
+                "params": {
+                    "type": "pages"
+                },
+                "icon": "copy",
+                "navRoot": true
+            }
+        ]
+    },
+    {
+        "type": "folder",
+        "trans": "CUSTOM_POSTS",
+        "icon": "videocam",
+        "list": [
+            {
+                "type": "internal",
+                "trans": "La vie en rose",
+                "page": "item",
+                "params": {
+                    "type": "movie",
+                    "id": 2498
+                },
+                "icon": "videocam"
+            },
+            {
+                "type": "internal",
+                "trans": "All Movies",
+                "page": "list",
+                "params": {
+                    "type": "movie"
+                },
+                "icon": "videocam",
+                "navRoot": true
+            }
+        ]
+    },
+    {
+        "type": "separator",
+        "trans": "Taxonomies type"
+    },
+    {
+        "type": "folder",
+        "trans": "CATEGORIES",
+        "icon": "folder",
+        "list": [
+            {
+                "type": "internal",
+                "trans": "Uncategorized",
+                "page": "list",
+                "params": {
+                    "type": "posts",
+                    "options": {
+                        "query": {
+                            "categories": 1
+                        }
+                    }
+                },
+                "icon": "help"
+            },
+            {
+                "type": "internal",
+                "trans": "All",
+                "page": "list",
+                "params": {
+                    "type": "categories"
+                },
+                "icon": "folder",
+                "navRoot": true
+            }
+        ]
+    },
+    {
+        "type": "folder",
+        "trans": "TAGS",
+        "icon": "pricetags",
+        "list": [
+            {
+                "type": "internal",
+                "trans": "AngularJS",
+                "page": "list",
+                "params": {
+                    "type": "posts",
+                    "options": {
+                        "query": {
+                            "tags": 16
+                        }
+                    }
+                },
+                "icon": "logo-apple"
+            },
+            {
+                "type": "internal",
+                "trans": "All",
+                "page": "list",
+                "params": {
+                    "type": "tags"
+                },
+                "icon": "pricetags",
+                "navRoot": true
+            }
+        ]
+    },
+    {
+        "type": "folder",
+        "trans": "CUSTOM_TAXO",
+        "icon": "film",
+        "list": [
+            {
+                "type": "internal",
+                "trans": "Audrey Tautou",
+                "page": "list",
+                "params": {
+                    "type": "movie",
+                    "options": {
+                        "query": {
+                            "actor": 99
+                        }
+                    }
+                },
+                "icon": "film"
+            },
+            {
+                "type": "internal",
+                "trans": "Marion Cotillard",
+                "page": "list",
+                "params": {
+                    "type": "movie",
+                    "options": {
+                        "query": {
+                            "actor": 96
+                        }
+                    }
+                },
+                "icon": "film"
+            },
+            {
+                "type": "internal",
+                "trans": "All Actors",
+                "page": "list",
+                "params": {
+                    "type": "actor"
+                },
+                "icon": "film",
+                "navRoot": true
+            }
+        ]
+    },
+    {
+        "type": "separator",
+        "trans": "Others"
+    },
+    {
         "type": "internal",
-        "trans": "Sample page",
-        "route": "public.pages.id({ id: 2592 })",
-        "icon": "icon ion-android-document"
-    }, {
+        "trans": "AUTHORS",
+        "page": "list",
+        "params": {
+            "type": "users"
+        },
+        "icon": "people",
+        "navRoot": true
+    },
+    {
         "type": "internal",
-        "trans": "All",
-        "route": "public.pages",
-        "icon": "icon ion-android-document"
-    }]
-}, {
-    "type": "folder",
-    "trans": "menu.customPosts",
-    "icon": "icon ion-videocamera",
-    "list": [{
+        "trans": "BOOKMARKS",
+        "page": "bookmarks",
+        "params": {},
+        "icon": "bookmarks",
+        "navRoot": true
+    },
+    {
         "type": "internal",
-        "trans": "La vie en rose",
-        "route": "public.customPosts.id({ id: 2498, slug: 'movie'})",
-        "icon": "icon ion-videocamera"
-    }, {
+        "trans": "SETTINGS",
+        "page": "params",
+        "params": {},
+        "icon": "cog",
+        "navRoot": true
+    },
+    {
+        "type": "external",
+        "trans": "My blog (external link)",
+        "href": "http://julienrenaux.fr",
+        "icon": "link"
+    },
+    {
         "type": "internal",
-        "trans": "All Movies",
-        "route": "public.customPosts({slug: 'movie'})",
-        "icon": "icon ion-videocamera"
-    }]
-}, {
-    "type": "separator",
-    "trans": "Taxonomies type"
-}, {
-    "type": "folder",
-    "trans": "menu.categories",
-    "icon": "icon ion-folder",
-    "list": [{
-        "type": "internal",
-        "trans": "Uncategorized",
-        "route": "public.taxonomies.id({ term: 'categories', id: 1, postType: 'post' })",
-        "icon": "icon ion-iphone"
-    }, {
-        "type": "internal",
-        "trans": "All",
-        "route": "public.taxonomies({ term: 'categories', postType: 'post'})",
-        "icon": "icon ion-folder"
-    }]
-}, {
-    "type": "folder",
-    "trans": "menu.tags",
-    "icon": "icon ion-pricetags",
-    "list": [{
-        "type": "internal",
-        "trans": "AngularJS",
-        "route": "public.taxonomies.id({ term: 'tags', id: 16, postType: 'post' })",
-        "icon": "icon ion-iphone"
-    }, {
-        "type": "internal",
-        "trans": "All",
-        "route": "public.taxonomies({ term: 'tags', postType: 'post' })",
-        "icon": "icon ion-pricetags"
-    }]
-}, {
-    "type": "folder",
-    "trans": "menu.customTaxonomy",
-    "icon": "icon ion-ios-film",
-    "list": [{
-        "type": "internal",
-        "trans": "Audrey Tautou",
-        "route": "public.taxonomies.id({ term: 'actor', id: 99, postType: 'movie' })",
-        "icon": "icon ion-ios-film"
-    },{
-        "type": "internal",
-        "trans": "Marion Cotillard",
-        "route": "public.taxonomies.id({ term: 'actor', id: 96, postType: 'movie' })",
-        "icon": "icon ion-ios-film"
-    }, {
-        "type": "internal",
-        "trans": "All Actors",
-        "route": "public.taxonomies({ term: 'actor', postType: 'movie'})",
-        "icon": "icon ion-ios-film"
-    }]
-}, {
-    "type": "separator",
-    "trans": "Others"
-}, {
-    "type": "internal",
-    "trans": "menu.authors",
-    "route": "public.authors",
-    "icon": "icon ion-ios-people"
-}, {
-    "type": "internal",
-    "trans": "menu.bookmarks",
-    "route": "public.bookmarks",
-    "icon": "icon ion-bookmark"
-}, {
-    "type": "internal",
-    "trans": "params.title",
-    "route": "public.params",
-    "icon": "icon ion-gear-b"
-}, {
-    "type": "external",
-    "trans": "My blog (external link)",
-    "href": "http://julienrenaux.fr",
-    "icon": "icon ion-link"
-}, {
-    "type": "internal",
-    "trans": "About (page)",
-    "route": "public.pages.id({ id: 2596 })",
-    "icon": "icon ion-information"
-}]
+        "trans": "About (page)",
+        "page": "item",
+        "params": {
+            "type": "pages",
+            "id": 2596
+        },
+        "icon": "information-circle",
+        "navRoot": true
+    }
+]

@@ -1,0 +1,12 @@
+<!--
+  Generated template for the Spinner component.
+
+  See https://angular.io/docs/ts/latest/api/core/index/ComponentMetadata-class.html
+  for more info on Angular 2 Components.
+-->
+<div [@visibilityChanged]="isVisible">
+  <ion-spinner [hidden]="shouldRetry"></ion-spinner>
+  <button ion-button [hidden]="!shouldRetry" (click)="onRetry($event)">
+    {{'RETRY' | translate}}
+  </button>
+</div>

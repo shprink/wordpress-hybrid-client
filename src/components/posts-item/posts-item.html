@@ -1,0 +1,16 @@
+<!--
+  Generated template for the Post component.
+
+  See https://angular.io/docs/ts/latest/api/core/index/ComponentMetadata-class.html
+  for more info on Angular 2 Components.
+-->
+<div *ngIf="item">
+  <div *ngIf="item.featured_media !== 0" class="thumbnail" [style.background-image]="'url(' + item.better_featured_image.media_details.sizes.medium.source_url + ')'"></div>
+  <div class="main-content" padding>
+    <h1 [innerHtml]="item.title.rendered"></h1>
+    <!--<author [link]="true" [authorId]="item.author" [date]="item.date"></author>-->
+    <toolbar [bookmarkId]="type + ':' + item.id" [tags]="item._embedded['wp:term'][1]" [categories]="item._embedded['wp:term'][0]"></toolbar>
+    <div [innerHtml]="item.content.rendered" class="post-content"></div>
+    <toolbar [bookmarkId]="type + ':' + item.id" [tags]="item._embedded['wp:term'][1]" [categories]="item._embedded['wp:term'][0]"></toolbar>
+  </div>
+</div>

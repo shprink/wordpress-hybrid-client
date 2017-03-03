@@ -1,0 +1,13 @@
+<!--
+  Generated template for the TagsList component.
+
+  See https://angular.io/docs/ts/latest/api/core/index/ComponentMetadata-class.html
+  for more info on Angular 2 Components.
+-->
+<ion-list>
+  <taxonomy 
+    *ngFor="let item of list; trackBy: trackBy"
+    [item]="item"
+    (click)="openPage($event, item)"
+  ></taxonomy>
+</ion-list>

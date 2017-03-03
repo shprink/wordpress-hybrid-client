@@ -1,0 +1,18 @@
+page {
+    .thumbnail {
+        height: $page-page-img-height;
+        width: 100%;
+        background-color: $page-page-img-bg;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        position: relative;
+    }
+    .main-content{
+        background-color: $page-page-bg-color;
+        max-width: 100%;
+        .page-content{
+            margin: 20px 0;
+        }
+    }
+}

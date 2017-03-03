@@ -1,0 +1,28 @@
+<!--
+  Generated template for the PostCard component.
+
+  See https://angular.io/docs/ts/latest/api/core/index/ComponentMetadata-class.html
+  for more info on Angular 2 Components.
+-->
+
+
+<ion-card>
+  <!--<ion-img
+    *ngIf="post.featured_media !== 0"
+    (click)="doOpen($event)"
+    class="thumbnail"
+    cache="true"
+    [src]="post.better_featured_image.media_details.sizes.medium.source_url"></ion-img>-->
+  <div
+    *ngIf="post.featured_media !== 0"
+    (click)="onClick && onClick($event, post)"
+    class="thumbnail"
+    [style.background-image]="'url(' + post.better_featured_image.media_details.sizes.medium.source_url + ')'"></div>
+  
+  <ion-card-content (click)="onClick && onClick($event, post)">
+    <ion-card-title [innerHtml]="post.title.rendered"></ion-card-title>
+    <author [author]="author$ | async" [date]="post.date"></author>
+    <p [innerHtml]="post.excerpt.rendered"></p>
+  </ion-card-content>
+  <toolbar [bookmarkId]="type + ':' + post.id" [tags]="tags" [categories]="categories"></toolbar>
+</ion-card>

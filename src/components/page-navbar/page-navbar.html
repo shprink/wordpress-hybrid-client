@@ -1,0 +1,16 @@
+<!--
+  Generated template for the PageNavbar component.
+
+  See https://angular.io/docs/ts/latest/api/core/index/ComponentMetadata-class.html
+  for more info on Angular 2 Components.
+-->
+
+<ion-navbar color="primary">
+  <button ion-button menuToggle icon-only>
+    <ion-icon name='menu'></ion-icon>
+  </button>
+  <ion-title><span [innerHtml]="title"></span></ion-title>
+  <ion-buttons end>
+    <ng-content></ng-content>
+  </ion-buttons>
+</ion-navbar>

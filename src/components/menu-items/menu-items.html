@@ -1,0 +1,30 @@
+<!--
+  Generated template for the MenuItems component.
+
+  See https://angular.io/docs/ts/latest/api/core/index/ComponentMetadata-class.html
+  for more info on Angular 2 Components.
+-->
+<ion-list>
+  <div *ngFor="let item of list; trackBy: trackByIndex">
+    <div [ngSwitch]="item.type">
+      <ion-item-divider *ngSwitchCase="'separator'" color="light">
+        {{ item.trans | translate }}
+      </ion-item-divider>
+      <ion-item *ngSwitchCase="'internal'" menuClose (click)="doInternalClick($event, item)">
+        <ion-icon [name]="item.icon" item-left></ion-icon>
+        {{ item.trans | translate }}
+      </ion-item>
+      <ion-item *ngSwitchCase="'external'" menuClose>
+        <ion-icon [name]="item.icon" item-left></ion-icon>
+        {{ item.trans | translate }}
+      </ion-item>
+      <ion-item *ngSwitchCase="'folder'" (click)="toggleFolder(item)">
+        <ion-icon name="folder" item-left></ion-icon>
+        {{ item.trans | translate }}
+        <ion-icon name="ios-arrow-forward" item-right [@rotateIcon]="item.isOpen ? 'opened' : 'closed'"></ion-icon>
+      </ion-item>
+      <menu-items *ngIf="item.type === 'folder'" [@toggleMenu]="item.isOpen ? 'opened' : 'closed'" [content]="content" [list]="item.list"></menu-items>
+    </div>
+    
+  </div>
+</ion-list>

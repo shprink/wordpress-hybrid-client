@@ -1,9 +1,0 @@
-<div class="post padding">
-    <h1 class="item-title item-title-without-image" ng-bind-html="::customPostsItemCtrl.item.title.rendered"></h1>
-    <div class="post-content" bind-and-compile-html="::(customPostsItemCtrl.item.content.rendered | prepLink | highlight)"></div>
-    <section class="footer">
-        <a class="button button-positive button-open-browser" wphc-href href="{{::customPostsItemCtrl.item.link}}">
-            {{'post.openInBrowser' | translate}}
-        </a>
-    </section>
-</div>
