@@ -1,0 +1,89 @@
+"pullToRefresh": "اسحب للتحديث!"
+"retry": "إعادة المحاولة"
+"back": "العودة"
+"error": "حدثت مشكلة, الرجاء المحاولة لاحقاً."
+"attemptToConnect": "المحاولة {{attempt}} من {{attemptMax}}."
+"yes": "نعم"
+"no" : "لا"
+"emptyList" : "لايوجد محتوى هنا!"
+"enabled": "تفعيل"
+"menu":
+    "title": "القائمة"
+    "home": "الرئيسية"
+    "tags": "التصنيفات"
+    "pages": "الصفحات"
+    "posts": "المشاركات"
+    "authors": "الكُتاب"
+    "search": "البحث"
+    "bookmarks": "الإشارات المرجعية"
+    "socialNetworks": "وسائل التواصل"
+    "categories": "الاقسام"
+    "settings": "الإعدادات"
+    "customPosts": "مشاركة مخصصة"
+    "customTaxonomy": "تصنيف مخصص"
+"pushNotifications":
+    "newContent":
+        "title": "محتوى جديد!"
+        "text": "مشاركة/صفحة تم نشرها: '{{postTitle}}' تم نشرها {{appTitle}}, هل تريد فتحها?"
+"bookmark":
+    "title": "الإشارات المرجعية"
+    "emptyList" : "لايوجد إشارات مرجعية حتى الان!"
+    "bookmarked" : "تمت الاضافة"
+    "removed" : "تم حذف الإشارة المرجعية"
+"tags":
+    "title": "الكلمات الدلالية"
+"tag":
+    "title": "الكلمة الدلالية: {{name}}"
+"customTaxonomy":
+    "title": "{{term}}: {{name}}"
+"categories":
+    "title": "الاقسام"
+"category":
+    "title": "القسم: {{name}}"
+"home":
+    "title": "الرئيسية"
+"search":
+    "inputPlaceholder": "البحث"
+    "title": "البحث"
+    "titleQuery": "البحث عن: {{query}}"
+"sharing":
+    "shared": "تمت المشاركة"
+"authors":
+    "title": "الكُتاب"
+"author":
+    "title": "الكاتب: {{name}}"
+"pages":
+    "title": "الصفحات"
+"posts":
+    "title": "المشاركات"
+    "featured": "مميز"
+"post":
+    "comments": "التعليقات"
+    "openInBrowser": "فتح في المتصفح"
+"about":
+    "title": "حول"
+"params":
+    "title": "الإعدادات"
+    "offlineMode": "وضع الطيران (قريباً)"
+    "fontSize": "حجم الخط"
+    "language": "اللغات"
+    "pushNotifications": "التنبيهات"
+"languages":
+    "en": "English"
+    "fr": "French"
+    "zh": "Chinese"
+    "es": "Spanish"
+    "pl": "Polish"
+    "de": "German"
+    "pt": "Portuguese"
+    "it": "Italian"
+    "nl": "Dutch"
+    "ru": "Russian"
+    "tr": "Turkish"
+    "ar": "العربية"
+"fontSize":
+    "small": "صغير"
+    "medium": "متوسط"
+    "large": "كبير"
+    "x-large": "كبير جدا"
+    "xx-large": "كبير جدا جدا"

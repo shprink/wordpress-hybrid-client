@@ -158,7 +158,7 @@
 
 # TRANSLATIONS
 "translation":
-    "displayed" : ["en", "fr", "zh", "es", "pl", "de", "pt", "it", "nl", "ru", "tr"]
+    "displayed" : ["en", "fr", "zh", "es", "pl", "de", "pt", "it", "nl", "ru", "tr","ar"]
     "prefered": "en"
     "available":
         "en":
@@ -185,6 +185,8 @@
             "tr_*": "tr"
         "ur":
             "ur_*": "ur"
+        "ar":
+            "ar_*": "ar"
 
 # ANALYTICS (GOOGLE ANALYTICS)
 "analytics":
