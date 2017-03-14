@@ -75,7 +75,8 @@
     "cordova-plugin-splashscreen",
     "ionic-plugin-keyboard",
     "cordova-plugin-crosswalk-webview",
-    "cordova-plugin-x-toast"
+    "cordova-plugin-x-toast",
+    "onesignal-cordova-plugin"
   ],
   "cordovaPlatforms": [
     {
