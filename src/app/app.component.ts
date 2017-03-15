@@ -36,29 +36,35 @@ export class WPHC {
 
     platform.ready().then(() => {
     
-      const { oneSignal_enable, oneSignal_debug, oneSignal_appid } = this.config.get('cordova.oneSignal', {});
-      if (oneSignal_enable){
-        // Enable to debug issues.
-        if (oneSignal_debug{
-            window.plugins.OneSignal.setLogLevel({logLevel: 4, visualLevel: 4});
-        }
-        
-        var notificationOpenedCallback = function(jsonData) {
-            console.log('notificationOpenedCallback: ' + JSON.stringify(jsonData));
-        };
-
-        window.plugins.OneSignal
-            .startInit(oneSignal_appid)
-            .handleNotificationOpened(notificationOpenedCallback)
-            .endInit();
+      const { enabled, debug, appId } = this.config.get(`cordova.oneSignal`, {});
+      //console.log('OneSignal init. '+ JSON.stringify(enabled));
+      if (enabled){
+        try{
+            // Enable to debug issues.
+            if (debug){
+                console.log('OneSignal set log. '+ JSON.stringify(debug));
+                window["plugins"].OneSignal.setLogLevel({logLevel: 4, visualLevel: 4});
+            }
             
-        // Call syncHashedEmail anywhere in your app if you have the user's email.
-        // This improves the effectiveness of OneSignal's "best-time" notification scheduling feature.
-        // window.plugins.OneSignal.syncHashedEmail(oneSignal_userEmail);    
+            var notificationOpenedCallback = function(jsonData) {
+                console.log('notificationOpenedCallback: ' + JSON.stringify(jsonData));
+            };
+
+            window["plugins"].OneSignal
+                .startInit(appId)
+                .handleNotificationOpened(notificationOpenedCallback)
+                .endInit();
+                
+            // Call syncHashedEmail anywhere in your app if you have the user's email.
+            // This improves the effectiveness of OneSignal's "best-time" notification scheduling feature.
+            // window["plugins"].OneSignal.syncHashedEmail(oneSignal_userEmail);  
+        }catch(e){
+            console.log("Error init OneSignal");
+        }
         
       }
       const { page, params } = this.config.get('defaultPage', {});
-      
+      console.log('OneSignal init. '+ JSON.stringify(page));
 
       if (page && MenuMapping[page]) { // redirect to default page
         this.nav.setRoot(MenuMapping[page], params);
