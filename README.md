@@ -97,35 +97,35 @@ To go further please read the documentations.
 
 ## Documentation
 
-If you have just cloned the repository,  [INSTALLATION](INSTALLATION.md) is the recommended starting point. Here is the documentation index:
+If you have just cloned the repository,  [INSTALLATION](docs/INSTALLATION.md) is the recommended starting point. Here is the documentation index:
 
 ### Installation
 
-Read the manual: [INSTALLATION.md](INSTALLATION.md)
+Read the manual: [INSTALLATION](docs/INSTALLATION.md)
 
 ### Configuration
 
-Read the manual: [CONFIGURATION.md](CONFIGURATION.md)
+Read the manual: [CONFIGURATION](docs/CONFIGURATION.md)
 
 ### Development
 
-Read the manual: [DEVELOPMENT.md](DEVELOPMENT.md)
+Read the manual: [DEVELOPMENT](docs/DEVELOPMENT.md)
 
 ### Push Notifications
 
-Read the manual: [PUSHNOTIFICATIONS.md](PUSHNOTIFICATIONS.md)
+Read the manual: [PUSHNOTIFICATIONS](docs/PUSHNOTIFICATIONS.md)
 
 ### Build Android & iOS
 
-Read the manual: [BUILD.md](BUILD.md)
+Read the manual: [BUILD](docs/BUILD.md)
 
 ### Release Android & iOS
 
-Read the manual: [RELEASE.md](RELEASE.md)
+Read the manual: [RELEASE.md](docs/RELEASE.md)
 
 ### Splashscreens and Icons
 
-Read the manual: [SPLASHICONS.md](SPLASHICONS.md)
+Read the manual: [SPLASHICONS](docs/SPLASHICONS.md)
 
 ## Project public API
 

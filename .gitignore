@@ -43,5 +43,7 @@ before_build.md
 /config.xml
 www/
 myapp/
+resources/
+res/
 
 .io-config.json
