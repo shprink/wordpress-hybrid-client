@@ -1,5 +1,6 @@
 // Ionic Variables and Theming. For more info, please see:
 // http://ionicframework.com/docs/v2/theming/
+@import "../../config/config.scss";
 $font-path: "../assets/fonts";
 
 @import "ionic.globals";
@@ -107,13 +108,13 @@ $post-img-bg: $gray-lighter !default;
 
 // Page Post
 // ------------------------------
-$page-post-bg-color: white !default; 
+$page-post-bg-color: white !default;
 $page-post-img-height: $post-img-height !default;
 $page-post-img-bg: $post-img-bg !default;
 
 // Page Page
 // ------------------------------
-$page-page-bg-color: white !default; 
+$page-page-bg-color: white !default;
 $page-page-img-height: $post-img-height !default;
 $page-page-img-bg: $post-img-bg !default;
 
