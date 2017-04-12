@@ -1,0 +1,89 @@
+"pullToRefresh": "Empurre para atualizar!"
+"retry": "Reconectar"
+"back": "Voltar"
+"error": "Aconteceu algo errado, por favor tente novamnete mais tarde."
+"attemptToConnect": "Esperando conexão tentativa: {{attempt}} de {{attemptMax}}."
+"yes": "Sim"
+"no" : "Não"
+"emptyList" : "Não há nada aqui!"
+"enabled": "Habilitado"
+"menu":
+    "title": "Menu"
+    "home": "Início"
+    "tags": "Tags"
+    "pages": "Pages"
+    "posts": "Publicações"
+    "authors": "Autores"
+    "search": "Pesquisa"
+    "bookmarks": "Favoritos"
+    "socialNetworks": "Redes Sociais"
+    "categories": "Categorias"
+    "settings": "Configurações"
+    "customPosts": "Publicações customizadas"
+    "customTaxonomy": "Taxonomia Customizada"
+"pushNotifications":
+    "newContent":
+        "title": "Novo conteúdo!"
+        "text": "Uma nova publicação/página: '{{postTitle}}' foi lançado no {{appTitle}}, você quer abrir isso?"
+"bookmark":
+    "title": "Favoritos"
+    "emptyList" : "Nada favoritado ainda!"
+    "bookmarked" : "Favoritado!"
+    "removed" : "Favorito removido!"
+"tags":
+    "title": "Tags"
+"tag":
+    "title": "Tag: {{name}}"
+"customTaxonomy":
+    "title": "{{term}}: {{name}}"
+"categories":
+    "title": "Categorioas"
+"category":
+    "title": "Categoria: {{name}}"
+"home":
+    "title": "Início"
+"search":
+    "inputPlaceholder": "Pesquisar"
+    "title": "`Pesquisar"
+    "titleQuery": "Pesquisa: {{query}}"
+"sharing":
+    "shared": "Compartilhado!"
+"authors":
+    "title": "Autores"
+"author":
+    "title": "Autor: {{name}}"
+"pages":
+    "title": "Páginas"
+"posts":
+    "title": "Publicações"
+    "featured": "Destacado"
+"post":
+    "comments": "Comentários"
+    "openInBrowser": "Abrir no navegador"
+"about":
+    "title": "Sobre"
+"params":
+    "title": "Parameters"
+    "offlineMode": "Modo offline (em breve)"
+    "fontSize": "Tamanho da fonte das publicações"
+    "language": "Idioma"
+    "pushNotifications": "Push notificações"
+"languages":
+    "br": "Português do Brasil"
+    "en": "English"
+    "fr": "French"
+    "zh": "Chinese"
+    "es": "Spanish"
+    "pl": "Polish"
+    "de": "German"
+    "pt": "Portuguese"
+    "it": "Italian"
+    "nl": "Dutch"
+    "ru": "Russian"
+    "tr": "Turkish"
+"fontSize":
+    "small": "Small"
+    "medium": "Medium"
+    "large": "Large"
+    "x-large": "Xlarge"
+    "xx-large": "XXlarge"

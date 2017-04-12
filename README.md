@@ -36,8 +36,10 @@
 
 * Android
   * https://play.google.com/store/apps/details?id=com.shprinkinc.wordpresshybridclient
+  * https://play.google.com/store/apps/details?id=com.anotherplanet.korkubilimi
+  * https://play.google.com/store/apps/details?id=com.anotherplanet.metallicaonline
+  * https://play.google.com/store/apps/details?id=com.anotherplanet.pinkfloyd
   * http://hiwaldorf.com/app/
-  * https://play.google.com/store/apps/details?id=fr.silentkernel.app
   * https://play.google.com/store/apps/details?id=com.notmyfault
   * https://play.google.com/store/apps/details?id=com.ek.klootschieten
   * https://play.google.com/store/apps/details?id=ca.siksik.SikSikYFB
@@ -48,6 +50,8 @@
   * https://play.google.com/store/apps/details?id=com.xvilo.regio25
   * https://play.google.com/store/apps/details?id=de.esv1927.app
   * http://play.google.com/store/apps/details?id=com.mirzapurnews
+  * https://play.google.com/store/apps/details?id=br.com.receitascompletas
+  * https://play.google.com/store/apps/details?id=cd.primature.apps
 * IOS
   * https://itunes.apple.com/cn/app/id1030393337
   * https://itunes.apple.com/us/app/not-my-fault./id886617889
@@ -76,7 +80,7 @@ This installation works on both OSX and Linux. Windows is not supported yet,
 
 ```
 # Clone and use the latest version
-$ git clone https://github.com/shprink/wordpress-hybrid-client.git && cd wordpress-hybrid-client
+$ git clone --depth 1 https://github.com/shprink/wordpress-hybrid-client.git && cd wordpress-hybrid-client
 # List all versions
 $ git tag
 $ git checkout <the-latest-version>

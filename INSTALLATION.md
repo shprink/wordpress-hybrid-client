@@ -48,7 +48,7 @@ Your personal config files live now in the `config` folder. You can modify all o
 
 ## Installing the Web service
 
-Since WordPress 4.7, there is no need to install anything. The WP-API is not part of the WP core!
+Since WordPress 4.7, there is no need to install anything. The WP-API is now part of the WP core!
 
 > If you do not have your WP setup yet, no problem `http://dev.julienrenaux.fr/wp-json` is set by default for you to try features. Change it when you are ready.
 
