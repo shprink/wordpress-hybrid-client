@@ -1,8 +1,8 @@
-"pullToRefresh": "Tirer pour rafraîchir!"
+"pullToRefresh": "Tirer pour actualiser!"
 "retry": "Réessayez"
 "back": "Retour"
 "error": "Quelque chose d'inattendu est survenu, veuillez réessayer."
-"attemptToConnect": "Tentative de connection {{attempt}} sur {{attemptMax}}."
+"attemptToConnect": "Tentative de connexion {{attempt}} sur {{attemptMax}}."
 "yes": "Oui"
 "no" : "Non"
 "emptyList" : "La liste est vide!"
@@ -36,9 +36,9 @@
 "customTaxonomy":
     "title": "{{term}}: {{name}}"
 "categories":
-    "title": "Categories"
+    "title": "Catégories"
 "category":
-    "title": "Categorie: {{name}}"
+    "title": "Catégorie: {{name}}"
 "home":
     "title": "Accueil"
 "search":
@@ -63,7 +63,7 @@
     "title": "A propos"
 "params":
     "title": "Paramètres"
-    "offlineMode": "Mode offline (bientot)"
+    "offlineMode": "Mode offline (bientôt)"
     "fontSize": "Taille du texte des articles"
     "language": "Langue"
 "languages":
