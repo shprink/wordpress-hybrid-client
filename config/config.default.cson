@@ -221,15 +221,22 @@
             "interstitialID": null
     "appRate":
         "enabled": false
-        "language": "en"
-        "appName": "Your Blog title"
-        "openStoreInApp": true
-        "usesUntilPrompt": 3
-        "promptForNewVersion": true
-        "useCustomRateDialog": ""
-        "iosURL": ""
-        "androidURL": ""
-        "windowsURL": ""
+        "useCustomRateDialog": false
+        "preferences":
+            "language": "en"
+            "appName": "Your Blog title"
+            "openStoreInApp": true
+            "usesUntilPrompt": 3
+            "promptForNewVersion": true
+            "iosURL": ""
+            "androidURL": ""
+            "windowsURL": ""
+        "customLocale":
+            "title": 'Rate %@'
+            "message": 'If you enjoy using %@, would you mind taking a moment to rate it? It won’t take more than a minute. Thanks for your support!'
+            "cancelButtonLabel": 'No, Thanks'
+            "laterButtonLabel": 'Remind Me Later'
+            "rateButtonLabel": 'Rate It Now'
     "pushNotifications":
         "enabled": false
         "baseUrl": "http://yourDomain.com/pnfw"
