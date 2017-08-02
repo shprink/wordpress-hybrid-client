@@ -27,13 +27,13 @@ Create two files (either .psd, .ai or .png) within the ```resources``` directory
 
 ```
 # generate both icons and splashscreens
-ionic resources
+$ node_modules/.bin/ionic resources
 
 # generate only icons
-ionic resources --icon
+$ node_modules/.bin/ionic resources --icon
 
 # generate only splashscreens
-ionic resources --splash
+$ node_modules/.bin/ionic resources --splash
 ```
 
 It will upload your files to Ionic’s servers and create everything for you (create the correct platforms folders and even edit the ```config.xml``` file).
