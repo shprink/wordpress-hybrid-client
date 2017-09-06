@@ -46,3 +46,5 @@ before_build.md
 # v1 compatibility
 /config.scss
 /config.json
+
+.DS_Store
