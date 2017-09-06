@@ -1,0 +1,89 @@
+"pullToRefresh": "Povučite dole da osvežite!"
+"retry": "Osveži"
+"back": "Nazad"
+"error": "Nešto se dogodilo što nije trebalo! Greška."
+"attemptToConnect": "Povezujemo se {{attempt}} od {{attemptMax}}."
+"yes": "Da"
+"no" : "Ne"
+"emptyList" : "Ovde nema ničega!"
+"enabled": "Dozvoljeno"
+"menu":
+    "title": "Menu"
+    "home": "Naslovna"
+    "tags": "Tagovi"
+    "pages": "Stranice"
+    "posts": "Objave"
+    "authors": "Autor"
+    "search": "Pretraga"
+    "bookmarks": "Bookmark"
+    "socialNetworks": "Društvene mreže"
+    "categories": "Kategorije"
+    "settings": "Podešavanja"
+    "customPosts": "Određeni postovi"
+    "customTaxonomy": "Prilagodjena teksonomija"
+"pushNotifications":
+    "newContent":
+        "title": "Novi sadržaj!"
+        "text": "Najnovija vest: '{{postTitle}}' je objavljena na  {{appTitle}}, Pročitajte!"
+"bookmark":
+    "title": "Zabeleške"
+    "emptyList" : "Još uvek nemate zabeleške!"
+    "bookmarked" : "Zabeleženo!"
+    "removed" : "Zabeleška uklonjena!"
+"tags":
+    "title": "Tagovi"
+"tag":
+    "title": "Tag: {{name}}"
+"customTaxonomy":
+    "title": "{{term}}: {{name}}"
+"categories":
+    "title": "Kategorije"
+"category":
+    "title": "Kategorija: {{name}}"
+"home":
+    "title": "Naslovna"
+"search":
+    "inputPlaceholder": "Pretraga"
+    "title": "Pretraga"
+    "titleQuery": "Pretraga: {{query}}"
+"sharing":
+    "shared": "Podeljeno!"
+"authors":
+    "title": "Autori"
+"author":
+    "title": "Autor: {{name}}"
+"pages":
+    "title": "Stranice"
+"posts":
+    "title": "Vesti"
+    "featured": "Predstavljamo"
+"post":
+    "comments": "Komentari"
+    "openInBrowser": "Otvori"
+"about":
+    "title": "O"
+"params":
+    "title": "Parametri"
+    "offlineMode": "Mod bez interneta (uskoro)"
+    "fontSize": "Veličina fonta"
+    "language": "Jezik"
+    "pushNotifications": "Trenutna obaveštenja"
+"languages":
+    "en": "Engleski"
+    "fr": "Francuski"
+    "zh": "Kineski"
+    "es": "Španski"
+    "pl": "Poljski"
+    "de": "Nemački"
+    "pt": "Portugalski"
+    "it": "Italijanski"
+    "nl": "Dojč"
+    "ru": "Ruski"
+    "tr": "Turski"
+    "sr": "Srpski"
+"fontSize":
+    "small": "Mali"
+    "medium": "Srednji"
+    "large": "veliki"
+    "x-large": "X veliki"
+    "xx-large": "XX veliki"
