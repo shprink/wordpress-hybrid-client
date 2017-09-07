@@ -14,7 +14,7 @@ If you are running linux you might need to install all of the following dependen
 ## Clone repository
 
 ```
-$ git clone https://github.com/shprink/wordpress-hybrid-client.git
+$ git clone https://github.com/wordpress-clients/hybrid.git
 
 # Open the project folder
 $ cd wordpress-hybrid-client
