@@ -80,7 +80,7 @@ This installation works on both OSX and Linux. Windows is not supported yet,
 
 ```
 # Clone and use the latest version
-git clone https://github.com/shprink/wordpress-hybrid-client.git && cd wordpress-hybrid-client
+git clone https://github.com/wordpress-clients/hybrid.git && cd wordpress-hybrid-client
 
 # List all versions
 git tag
