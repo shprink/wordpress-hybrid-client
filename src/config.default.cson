@@ -37,6 +37,12 @@ components:
         categories: 'categories-list'
         tags: 'tags-list'
 
+permalinks:
+    post: ':year/:month/:day/:slug' # ':year/:month/:slug', ':archives/:id', ':slug'
+    tag: 'tag/:slug'
+    category: 'category/:slug'
+    author: 'author/:username'
+
 toast:
     duration: 3000
     position: 'bottom' # Accepted values: "top", "middle", "bottom".
