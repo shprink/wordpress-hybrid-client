@@ -6,7 +6,7 @@
 -->
 <div *ngIf="item">
   <div *ngIf="item.featured_media !== 0" class="thumbnail" 
-    [style.background-image]="'url(' + item.better_featured_image.media_details.sizes.medium.source_url + ')'">
+    [style.background-image]="'url(' + (item._embedded['wp:featuredmedia'][0].media_details.sizes?.medium?.source_url || item._embedded['wp:featuredmedia'][0].source_url) + ')'">
   </div>
   <div class="main-content" padding>
     <h1 [innerHtml]="item.title.rendered"></h1>

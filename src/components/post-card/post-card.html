@@ -7,17 +7,11 @@
 
 
 <ion-card>
-  <!--<ion-img
-    *ngIf="post.featured_media !== 0"
-    (click)="doOpen($event)"
-    class="thumbnail"
-    cache="true"
-    [src]="post.better_featured_image.media_details.sizes.medium.source_url"></ion-img>-->
   <div
     *ngIf="post.featured_media !== 0"
     (click)="onClick && onClick($event, post)"
     class="thumbnail"
-    [style.background-image]="'url(' + post.better_featured_image.media_details.sizes.medium.source_url + ')'"></div>
+    [style.background-image]="'url(' + (post._embedded['wp:featuredmedia'][0].media_details.sizes?.medium?.source_url || post._embedded['wp:featuredmedia'][0].source_url) + ')'"></div>
   
   <ion-card-content (click)="onClick && onClick($event, post)">
     <ion-card-title [innerHtml]="post.title.rendered"></ion-card-title>
