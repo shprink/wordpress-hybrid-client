@@ -114,6 +114,7 @@
   },
   "config": {
     "ionic_webpack": "./build/config.js",
-    "ionic_copy": "./build/copy.js"
+    "ionic_copy": "./build/copy.js",
+    "ionic_watch": "./config/watch.config.js"
   }
 }
