@@ -84,9 +84,9 @@ export class AbstractItemPage {
             });
     }
 
-    doLoad = (): void => {
+    doLoad = (): Observable<any> => {
         console.log('[ItemPage] doLoad');
-        this.fetch().take(1).subscribe(() => { }, () => { });
+        return this.fetch().take(1).subscribe(() => { }, () => { });
     }
 
     doRefresh(refresher: Refresher): void {

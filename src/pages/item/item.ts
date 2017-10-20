@@ -29,14 +29,22 @@ export class ItemPage extends AbstractItemPage {
   ) {
     super(injector);
     this.setType(this.navParams.get('type'));
-    this.setStream(this.store.select(state => _get(state, `items[${this.type}][${this.navParams.get('id')}]`)));
+    this.setStream(this.store.select(state => {
+      let item = _get(state, `items[${this.type}][${this.navParams.get('id')}]`);
+      if (item && item._full) return item;
+      this.init = true
+      return this.doLoad();
+    }));
 
     if (this.type === 'pages') this.setService(wpApiPages)
     else if (this.type === 'posts') this.setService(wpApiPosts)
     else this.setService(wpApiCustom.getInstance(this.type))
+
   }
 
   onLoad(item) {
+    item._full = true;
     this.store.dispatch(addItem(this.type, item));
+    this.setStream(item);
   }
 }

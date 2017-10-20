@@ -81,6 +81,9 @@
     "@types/prismjs": "^1.6.2",
     "@types/webpack-env": "^1.13.0",
     "angular2-template-loader": "^0.6.2",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.0",
     "cordova": "^6.5.0",
     "cson": "^4.1.0",
     "cson-loader": "^0.1.0",
@@ -107,7 +110,8 @@
     "style-loader": "^0.18.1",
     "ts-loader": "^2.1.0",
     "ts-node": "^3.0.6",
-    "typescript": "^2.3.4"
+    "typescript": "^2.3.4",
+    "webpack": "^3.7.1"
   },
   "engines": {
     "node": ">= 6",
