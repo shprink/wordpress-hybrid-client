@@ -31,10 +31,12 @@ export class ItemPage extends AbstractItemPage {
     this.setType(this.navParams.get('type'));
     this.setStream(this.store.select(state => {
       let item = _get(state, `items[${this.type}][${this.navParams.get('id')}]`);
+      console.log(item);
       if (item && item._full) return item;
-      this.init = true;
-      this.doLoad();
-      return item;
+      return undefined;
+      // this.init = true;
+      // this.doLoad();
+      // return item;
     }));
 
     if (this.type === 'pages') this.setService(wpApiPages)
