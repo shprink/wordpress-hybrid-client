@@ -38,7 +38,7 @@ export class AbstractItemPage {
     ionViewDidLoad() {
         console.log('[ItemPage] init');
         let isItemLoaded;
-        this.stream$.take(1).subscribe(item => isItemLoaded = item !== undefined);
+        this.stream$.take(1).subscribe(item => isItemLoaded = item !== undefined && item._needsRefresh !== true);
         if (!isItemLoaded) {
             this.doLoad();
         } else {
