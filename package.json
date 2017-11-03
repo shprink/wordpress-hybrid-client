@@ -31,7 +31,7 @@
     "build:pwa": "./scripts/buildPWA.sh",
     "buildAndRun:pwa": "./scripts/buildPWAAndRun.sh",
     "ionic:serve": "ionic-app-scripts serve",
-    "ionic:build": "ionic-app-scripts build",
+    "ionic:build": "ionic-app-scripts build --tsconfig tsconfig.production.json",
     "postinstall": "npm run installWPHC",
     "installWPHC": "cd scripts && node ./install.js",
     "report:dependencies": "./scripts/dependencyReport.sh"
@@ -120,7 +120,6 @@
   "config": {
     "ionic_webpack": "./build/config.js",
     "ionic_copy": "./build/copy.js",
-    "ionic_watch": "./config/watch.config.js",
-    "ionic_ts_config": "./config/tsconfig.json"
+    "ionic_watch": "./config/watch.config.js"
   }
 }
