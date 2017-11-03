@@ -59,30 +59,7 @@ module.exports = {
         test: /\.js$/,
         loader: process.env.IONIC_WEBPACK_TRANSPILE_LOADER
       }
-    ],
-    /*
-    rules: [
-      {
-        test: /\.js$/,
-        exclude: /(node_modules|bower_components)/,
-        use: {
-          loader: 'babel-loader',
-          options: {
-            presets: ["env", {
-              "targets": {
-                "browsers": [
-                  "last 2 versions",
-                  "last 5 Android versions",
-                  "last 5 ChromeAndroid versions",
-                  "last 4 iOS versions"
-                ]
-              }
-            }]
-          }
-        }
-      }
     ]
-    */
   },
 
   plugins: [

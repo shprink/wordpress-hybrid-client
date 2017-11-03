@@ -31,7 +31,7 @@
     "build:pwa": "./scripts/buildPWA.sh",
     "buildAndRun:pwa": "./scripts/buildPWAAndRun.sh",
     "ionic:serve": "ionic-app-scripts serve",
-    "ionic:build": "ionic-app-scripts build --tsconfig tsconfig.production.json",
+    "ionic:build": "ionic-app-scripts build",
     "postinstall": "npm run installWPHC",
     "installWPHC": "cd scripts && node ./install.js",
     "report:dependencies": "./scripts/dependencyReport.sh"
@@ -81,9 +81,6 @@
     "@types/prismjs": "^1.6.2",
     "@types/webpack-env": "^1.13.0",
     "angular2-template-loader": "^0.6.2",
-    "babel-core": "^6.26.0",
-    "babel-loader": "^7.1.2",
-    "babel-preset-env": "^1.6.0",
     "cordova": "^6.5.0",
     "cson": "^4.1.0",
     "cson-loader": "^0.1.0",
@@ -92,7 +89,7 @@
     "file-loader": "^0.11.1",
     "html-loader": "^0.4.5",
     "http-server": "^0.10.0",
-    "ionic": "^3.12.0",
+    "ionic": "^3.7.0",
     "jasmine": "^2.6.0",
     "karma": "^1.7.0",
     "karma-chrome-launcher": "^2.1.1",
@@ -110,8 +107,7 @@
     "style-loader": "^0.18.1",
     "ts-loader": "^2.1.0",
     "ts-node": "^3.0.6",
-    "typescript": "^2.3.4",
-    "webpack": "^3.7.1"
+    "typescript": "^2.3.4"
   },
   "engines": {
     "node": ">= 6",
