@@ -120,6 +120,7 @@
   "config": {
     "ionic_webpack": "./build/config.js",
     "ionic_copy": "./build/copy.js",
-    "ionic_watch": "./config/watch.config.js"
+    "ionic_watch": "./config/watch.config.js",
+    "ionic_ts_config": "./config/tsconfig.json"
   }
 }
