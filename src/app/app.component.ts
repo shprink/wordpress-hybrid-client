@@ -18,22 +18,7 @@ if (__DEV__) {
 }
 
 @Component({
-  template: `
-     <ion-split-pane>
-      <ion-menu [content]="content" persistent="true">
-        <ion-header>
-          <ion-toolbar color="primary">
-            <ion-title>{{title}}</ion-title>
-          </ion-toolbar>
-        </ion-header>
-        <ion-content>
-          <menu [content]="content"></menu>
-        </ion-content>
-      </ion-menu>
-    <ion-nav #content main [root]="rootPage"></ion-nav>
-
-    </ion-split-pane>
-  `
+  templateUrl: 'app.html'
 })
 export class WPHC {
   @ViewChild(Nav) nav: Nav;
