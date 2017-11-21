@@ -31,9 +31,11 @@ import '../i18n';
 import { WPHC } from './app.component';
 import { STORE } from '../store';
 import { COMPONENTS } from '../components';
-import { PAGES, DeepLinkerLnks } from '../pages';
+import { PAGES } from '../pages';
 import { PROVIDERS, Config, Storage as OwnStorage, } from '../providers';
 import { PIPES } from '../pipes';
+
+import * as ionicConfig from './config/app.config.ionic';
 
 // AoT requires an exported function for factories
 export function createTranslateLoader(http: Http) {
@@ -78,9 +80,7 @@ export function appInitializerTranslateFactory(translate: TranslateService, inje
     BrowserModule,
     HttpModule,
     BrowserAnimationsModule,
-    IonicModule.forRoot(WPHC, {}, {
-      links: DeepLinkerLnks
-    }),
+    IonicModule.forRoot(WPHC, ionicConfig.config, ionicConfig.deepLinkConfig),
     ...STORE,
     WpApiModule.forRoot({
       provide: WpApiLoader,
