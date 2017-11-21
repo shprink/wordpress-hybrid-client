@@ -6,14 +6,20 @@ import { ParamsPage } from './params/params';
 import { BookmarksPage } from './bookmarks/bookmarks';
 import { TaxonomiesModal } from './taxonomies-modal/taxonomies-modal';
 
-export const MenuMapping = {
+import {
+    MenuMapping as CustomMenuMapping,
+    DeepLinkerLnks as CustomDeepLinkerLnks,
+    PAGES as CustomPAGES
+} from '../../config/pages';
+
+export const MenuMapping = Object.assign({
     item: ItemPage,
     list: ListPage,
     tabs: TabsPage,
     search: SearchPage,
     params: ParamsPage,
     bookmarks: BookmarksPage,
-}
+}, CustomMenuMapping);
 
 export const DeepLinkerLnks = [
     { component: ItemPage, name: 'Item', segment: 'item/:type/:id' },
@@ -23,7 +29,8 @@ export const DeepLinkerLnks = [
     { component: TabsPage, name: 'Tabs', segment: 'tabs/:options' },
     { component: SearchPage, name: 'Search', segment: 'search' },
     { component: ParamsPage, name: 'Settings', segment: 'settings' },
-    { component: BookmarksPage, name: 'Bookmarks', segment: 'bookmarks' }
+    { component: BookmarksPage, name: 'Bookmarks', segment: 'bookmarks' },
+    ...CustomDeepLinkerLnks
 ]
 
 export const PAGES = [
@@ -34,4 +41,5 @@ export const PAGES = [
     SearchPage,
     BookmarksPage,
     TaxonomiesModal,
+    ...CustomPAGES
 ];
