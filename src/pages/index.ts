@@ -23,9 +23,7 @@ export const MenuMapping = Object.assign({
 
 export const DeepLinkerLnks = [
     { component: ItemPage, name: 'Item', segment: 'item/:type/:id' },
-    { component: ItemPage, name: 'Item', segment: 'item/:type/:id/:options' },
     { component: ListPage, name: 'List', segment: 'list/:type' },
-    { component: ListPage, name: 'List', segment: 'list/:type/:options' },
     { component: TabsPage, name: 'Tabs', segment: 'tabs/:options' },
     { component: SearchPage, name: 'Search', segment: 'search' },
     { component: ParamsPage, name: 'Settings', segment: 'settings' },
