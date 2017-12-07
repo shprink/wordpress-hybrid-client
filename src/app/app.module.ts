@@ -30,7 +30,7 @@ import 'rxjs/add/operator/catch';
 import '../i18n';
 import { WPHC } from './app.component';
 import { STORE } from '../store';
-import { COMPONENTS } from '../components';
+import { COMPONENTS, DIRECTIVES } from '../components';
 import { PAGES } from '../pages';
 import { PROVIDERS, Config, Storage as OwnStorage, } from '../providers';
 import { PIPES } from '../pipes';
@@ -75,7 +75,7 @@ export function appInitializerTranslateFactory(translate: TranslateService, inje
 };
 
 @NgModule({
-  declarations: [...COMPONENTS, ...PAGES, WPHC, ...PIPES],
+  declarations: [...COMPONENTS, ...PAGES, WPHC, ...PIPES, ...DIRECTIVES],
   imports: [
     BrowserModule,
     HttpModule,
