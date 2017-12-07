@@ -31,6 +31,9 @@ export class ItemPage extends AbstractItemPage {
     this.setType(this.navParams.get('type'));
     this.setStream(this.store.select(state => {
       let item = _get(state, `items[${this.type}][${this.navParams.get('id')}]`);
+      if (!item) {
+        return item;
+      }
       if (!item._full) {
         item._needsRefresh = true;
       }
