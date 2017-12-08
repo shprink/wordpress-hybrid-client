@@ -25,7 +25,8 @@ import { PageNavbarComponent } from './page-navbar/page-navbar';
 
 import {
     ComponentsMapping as CustomComponentsMapping,
-    COMPONENTS as CustomCOMPONENTS
+    COMPONENTS as CustomCOMPONENTS,
+    DIRECTIVES as CustomDIRECTIVES
 } from '../../config/components';
 
 export const ComponentsMapping = Object.assign({
@@ -64,4 +65,8 @@ export const COMPONENTS = [
     BookmarksComponent,
     PageNavbarComponent,
     ...CustomCOMPONENTS
+];
+
+export const DIRECTIVES = [
+    ...CustomDIRECTIVES
 ];
