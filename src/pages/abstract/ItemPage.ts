@@ -1,5 +1,6 @@
 import { TranslateService } from '@ngx-translate/core';
 import { Observable } from 'rxjs';
+import { isNumeric } from "rxjs/util/isNumeric";
 import { Refresher, NavParams } from 'ionic-angular';
 import { URLSearchParams } from '@angular/http';
 import { Injector } from '@angular/core';
@@ -67,14 +68,27 @@ export class AbstractItemPage {
         });
 
         console.log(`[ItemPage] fetch ${this.type}`, searchParams);
-        return this.service.get(this.navParams.get('id'), { search: uRLSearchParams })
+        return (() => {
+            if (isNumeric(this.navParams.get('id'))) {
+                return this.service.get(this.navParams.get('id'), { search: uRLSearchParams })
+            }
+            else {
+                uRLSearchParams.set('slug', this.navParams.get('id'));
+                uRLSearchParams.set('per_page', '1');
+                return this.service.getList({ search: uRLSearchParams })
+            }
+        })()
             .debounceTime(this.config.getApi('debounceTime', 400))
             .timeout(this.config.getApi('timeout', 10000))
             .retry(this.config.getApi('maxAttempt', 3) - 1)
             .map((r) => {
                 this.init = true;
                 this.shouldRetry = false;
-                this.onLoad(r.json())
+                let json = r.json();
+                if (json instanceof Array) {
+                    json = json[0];
+                }
+                this.onLoad(json)
             })
             .catch(res => {
                 this.init = true;

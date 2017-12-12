@@ -25,10 +25,19 @@ export const itemsReducer: ActionReducer<Object> = (state: Object = defaultState
     switch (action.type) {
         case ADD_ITEM: {
             const { item, itemType } = payload;
+            const indexes = {
+                [item.id]: item
+            };
+            if (item._indexes) {
+                if (item._indexes instanceof Array === false) {
+                    console.warn('item._indexes should be instance of Array');
+                }
+                item._indexes.forEach((key) => {
+                    indexes[item[key]] = item;
+                });
+            }
             return Object.assign({}, state, {
-                [itemType]: Object.assign({}, state[itemType], {
-                    [item.id]: item
-                })
+                [itemType]: Object.assign({}, state[itemType], indexes)
             });
         }
 
