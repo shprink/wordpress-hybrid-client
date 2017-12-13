@@ -70,6 +70,10 @@
   version "3.10.3"
   resolved "https://registry.yarnpkg.com/@ionic-native/core/-/core-3.10.3.tgz#c9be0a6b731e2ff6b4a60789f46c7386790bab9f"
 
+"@ionic-native/in-app-browser@^4.5.2":
+  version "4.5.2"
+  resolved "https://registry.yarnpkg.com/@ionic-native/in-app-browser/-/in-app-browser-4.5.2.tgz#3eebc77cb579292357ef9860fca254dea59ecce8"
+
 "@ionic-native/push@^3.4.2":
   version "3.10.3"
   resolved "https://registry.yarnpkg.com/@ionic-native/push/-/push-3.10.3.tgz#1fd1bc52486cc0fb8a326461506f89723f09c033"

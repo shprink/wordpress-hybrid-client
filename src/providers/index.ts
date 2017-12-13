@@ -5,6 +5,8 @@ import { Storage } from './storage';
 import { ServiceWorkerProvider } from './service-worker/service-worker';
 import { PushNotifications, PushNotificationsForWordPress } from './pushNotifications';
 
+import { InAppBrowser } from '@ionic-native/in-app-browser';
+
 export * from './config';
 export * from './toast';
 export * from './menu';
@@ -20,4 +22,6 @@ export const PROVIDERS = [
   PushNotifications,
   PushNotificationsForWordPress,
   ServiceWorkerProvider,
+  // TODO: InAppBrowser in seperated provider class / wrapper
+  InAppBrowser,
 ];
