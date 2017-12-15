@@ -1,4 +1,134 @@
-title: "My Blog title"
+###
+# BEWARE!!!
+# THIS FILE CANNOT BE MODIFIED
+# YOU CAN OVERWRITE ANY OF THE FOLLOWING IN config/config.cson
+# JUST COPY AND PAST WHAT YOU NEED TO CHANGE
+###
+
+title: 'Your Blog title'
+defaultZoom: 2 # Available: 0 to 8
+
+# The user language is determined during runtime and if exists automatically used.
+language:
+    default: 'en'
+    imported: ['ar', 'br', 'de', 'en',  'es', 'fr', 'it', 'nl', 'pl', 'pt', 'ru', 'tr', 'ur', 'zh']
+
+defaultPage:
+    page: 'postsItem'
+    params:
+        year: 2015,
+        month: 11,
+        day: 20,
+        slug: 'hello-world'
+
+tabs:
+    highlight: true
+    color: 'primary' # "primary", "secondary", "danger", "light", and "dark"
+    mode: null # "ios", "md", or "wp"
+    placement: null # top, bottom or null (will apply the device preference)
+    layout: 'icon-top' # icon-top, icon-left, icon-right, icon-bottom, icon-hide, title-hide
+
+search:
+    types: ['posts', 'pages']
+
+toast:
+    duration: 3000
+    position: 'bottom' # Accepted values: "top", "middle", "bottom".
 
 api:
-    baseUrl: "https://dev.julienrenaux.fr/wp-json"
+    baseUrl: 'https://dev.julienrenaux.fr/wp-json'
+    namespace: '/wp/v2'
+    timeout: 30000
+    debounceTime: 400
+    maxAttempt: 3
+    per_page: 10
+
+serviceWorker:
+    enabled : true
+
+menu:
+    externalLinkTarget : null # _self|_blank|_system default: _system https://github.com/apache/cordova-plugin-inappbrowser#cordovainappbrowseropen
+    externalLinkOptions: null # default: 'location=yes'
+    exposeAsideWhen: '(min-width:900px)'
+    displayIcon: true # uses config/icons/icon_48.png
+
+dev:
+    log: '*' # https://github.com/visionmedia/debug
+
+tags:
+    query:
+        orderby: 'count'
+        order: 'desc'
+        per_page: 10
+
+categories:
+    query:
+        orderby: 'count'
+        order: 'desc'
+        per_page: 10
+
+
+# the example of a custom taxonomies
+actor:
+    query:
+        orderby: 'count'
+        order: 'desc'
+        per_page: 10
+
+metas:
+    title: 'You app title'
+    description: 'Your app description'
+    viewport: 'width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover'
+    formatDetection: 'telephone=no'
+    tapHighlight: 'no'
+    themeColor: '#4e8ef7'
+    contentSecurityPolicy: "default-src *; img-src *;style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval'"
+    # Open graph
+    ogTitle: 'You app title'
+    ogType: 'website'
+    ogUrl: 'https://yourDomain.com'
+    ogImage: 'https://yourDomain.com/thumbnail.jpg'
+    ogImageWidth: 400
+    ogImageHeight: 400
+    # Twitter card
+    twitterSite: ''
+    twitterCreator: '' # e.g @julienrenaux
+
+storage:
+    enabled: true
+    pagesToStore: 1
+
+###
+ NATIVE SECTION
+###
+pushNotifications:
+    enabled: false
+    plugin: 'push-notifications-for-wordpress'
+    baseUrl: 'http://yourDomain.com/pnfw'
+    android:
+        senderID: null
+    ios:
+        badge: true
+        sound: true
+        alert: true
+
+statusBar:
+    show: true
+    color: '#607d8b'
+    overlaysWebView: true
+    style: 'default' # 'default' | 'light' | 'blackTranslucent' | 'blackOpaque' # http://ionicframework.com/docs/native/status-bar/
+
+admob:
+    enabled: false
+    android:
+        bannerID: null
+        bannerPosition: 'BOTTOM_CENTER'
+        interstitialID: null
+    ios:
+        bannerID: null
+        bannerPosition: 'BOTTOM_CENTER'
+        interstitialID: null
+    windows:
+        bannerID: null
+        bannerPosition: 'BOTTOM_CENTER'
+        interstitialID: null

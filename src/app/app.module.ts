@@ -61,12 +61,14 @@ export function appInitializerTranslateFactory(translate: TranslateService, inje
     const locationInitialized = injector.get(LOCATION_INITIALIZED, Promise.resolve(null));
     locationInitialized.then(() => {
       const defaultLanguage = config.get('defaultLanguage');
+      const language = config.get('language');
       const browserLanguage = translate.getBrowserLang()
       translate.setDefaultLang(defaultLanguage);
-      translate.use(browserLanguage || defaultLanguage).subscribe(() => {
-        console.info(`Successfully initialized '${browserLanguage || defaultLanguage}' language.'`);
+      const userLanguage = language || browserLanguage || defaultLanguage;
+      translate.use(userLanguage).subscribe(() => {
+        console.info(`Successfully initialized '${userLanguage}' language.'`);
       }, err => {
-        console.error(`Problem with '${browserLanguage || defaultLanguage}' language initialization.'`);
+        console.error(`Problem with '${userLanguage}' language initialization.'`);
       }, () => {
         resolve(null);
       });
