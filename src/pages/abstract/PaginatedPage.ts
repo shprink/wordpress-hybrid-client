@@ -164,6 +164,10 @@ export class AbstractListPage {
                 return response;
             })
             .catch(res => {
+                const json = res.json();
+                if (json.code === 'rest_post_invalid_page_number') {
+                    return res;
+                }
                 this.init = true;
                 this.shouldRetry = true;
                 this.isPaginationEnabled = false;
@@ -182,6 +186,7 @@ export class AbstractListPage {
     doInfinite(infiniteScroll: InfiniteScroll): void {
         log('[ListPage] doInfinite');
         const currentPage = this.getCurrentPage();
+        console.log(this.page, currentPage);
 
         if (this.page < currentPage) {
             this.page += 1;
