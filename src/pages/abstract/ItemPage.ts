@@ -75,6 +75,7 @@ export class AbstractItemPage {
             else {
                 uRLSearchParams.set('slug', this.navParams.get('id'));
                 uRLSearchParams.set('per_page', '1');
+                uRLSearchParams.set('full', '1');
                 return this.service.getList({ search: uRLSearchParams })
             }
         })()
