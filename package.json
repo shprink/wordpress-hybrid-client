@@ -66,10 +66,11 @@
     "ionic-angular": "^3.6.0",
     "ionicons": "3.0.0",
     "lodash": "^4.17.3",
+    "package": "^1.0.1",
     "prismjs": "^1.6.0",
     "rxjs": "^5.2.0",
     "sw-toolbox": "^3.4.0",
-    "wp-api-angular": "^3.0.0-beta8",
+    "wp-api-angular": "Intraktio/wp-api-angular.git#dist",
     "zone.js": "^0.8.4"
   },
   "devDependencies": {
