@@ -25,6 +25,7 @@
   "scripts": {
     "test": "karma start ./test-config/karma.conf.js",
     "test-ci": "karma start ./test-config/karma-ci.conf.js --single-run",
+    "ionic": "ionic",
     "start": "ionic serve",
     "restore": "cordova prepare",
     "clean": "ionic-app-scripts clean",
