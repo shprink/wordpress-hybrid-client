@@ -2,90 +2,71 @@
 # yarn lockfile v1
 
 
-"@angular/animations@4.1.2":
-  version "4.1.2"
-  resolved "https://registry.yarnpkg.com/@angular/animations/-/animations-4.1.2.tgz#3371596e736b7d240e200477d0dd8c5929352124"
+"@angular/animations@4.4.6":
+  version "4.4.6"
+  resolved "https://registry.yarnpkg.com/@angular/animations/-/animations-4.4.6.tgz#fa661899a8a4e38cb7c583c7a5c97ce65d592a35"
+  dependencies:
+    tslib "^1.7.1"
 
-"@angular/common@4.1.2":
-  version "4.1.2"
-  resolved "https://registry.yarnpkg.com/@angular/common/-/common-4.1.2.tgz#8f6d0496c204210bfe255feb437a72253f06984d"
-
-"@angular/common@^4.4.6":
+"@angular/common@4.4.6", "@angular/common@^4.4.6":
   version "4.4.6"
   resolved "https://registry.yarnpkg.com/@angular/common/-/common-4.4.6.tgz#4b81420724e0828a0e839b95a55eb1a7e83918f2"
   dependencies:
     tslib "^1.7.1"
 
-"@angular/compiler-cli@4.1.2":
-  version "4.1.2"
-  resolved "https://registry.yarnpkg.com/@angular/compiler-cli/-/compiler-cli-4.1.2.tgz#b65ba8980330c048702aed242a956daf0251f02a"
+"@angular/compiler-cli@4.4.6":
+  version "4.4.6"
+  resolved "https://registry.yarnpkg.com/@angular/compiler-cli/-/compiler-cli-4.4.6.tgz#bafd3d1e260e99087eb9a8cf7532dbd603abb9b1"
   dependencies:
-    "@angular/tsc-wrapped" "4.1.2"
+    "@angular/tsc-wrapped" "4.4.6"
     minimist "^1.2.0"
     reflect-metadata "^0.1.2"
 
-"@angular/compiler@4.1.2":
-  version "4.1.2"
-  resolved "https://registry.yarnpkg.com/@angular/compiler/-/compiler-4.1.2.tgz#09542381162fd8dd962d84559498ce69a05071ea"
-
-"@angular/compiler@^4.4.6":
+"@angular/compiler@4.4.6", "@angular/compiler@^4.4.6":
   version "4.4.6"
   resolved "https://registry.yarnpkg.com/@angular/compiler/-/compiler-4.4.6.tgz#2ee1faf25b757e1d128979074be7fae529b3bc20"
   dependencies:
     tslib "^1.7.1"
 
-"@angular/core@4.1.2":
-  version "4.1.2"
-  resolved "https://registry.yarnpkg.com/@angular/core/-/core-4.1.2.tgz#37b5c040b9dd37003499aea04319d699e3870596"
-
-"@angular/core@^4.4.6":
+"@angular/core@4.4.6", "@angular/core@^4.4.6":
   version "4.4.6"
   resolved "https://registry.yarnpkg.com/@angular/core/-/core-4.4.6.tgz#13031fd10dcfe438875419b38f21120958bc2354"
   dependencies:
     tslib "^1.7.1"
 
-"@angular/forms@4.1.2":
-  version "4.1.2"
-  resolved "https://registry.yarnpkg.com/@angular/forms/-/forms-4.1.2.tgz#82983e9ec5d0833e7ae14beb8e47dd357c88f490"
+"@angular/forms@4.4.6":
+  version "4.4.6"
+  resolved "https://registry.yarnpkg.com/@angular/forms/-/forms-4.4.6.tgz#fe64ace42435c1b80f49034b7c41ce8caf14a44a"
+  dependencies:
+    tslib "^1.7.1"
 
-"@angular/http@4.1.2":
-  version "4.1.2"
-  resolved "https://registry.yarnpkg.com/@angular/http/-/http-4.1.2.tgz#fc378c3330c0410e1fb8aac2546329a6887776e4"
-
-"@angular/http@^4.4.6":
+"@angular/http@4.4.6", "@angular/http@^4.4.6":
   version "4.4.6"
   resolved "https://registry.yarnpkg.com/@angular/http/-/http-4.4.6.tgz#0af680c6710bdc026d940e225cfd0f6a5c005d0c"
   dependencies:
     tslib "^1.7.1"
 
-"@angular/platform-browser-dynamic@4.1.2":
-  version "4.1.2"
-  resolved "https://registry.yarnpkg.com/@angular/platform-browser-dynamic/-/platform-browser-dynamic-4.1.2.tgz#d241c61792c794bec627ab64b31a66bea22abb9f"
-
-"@angular/platform-browser-dynamic@^4.4.6":
+"@angular/platform-browser-dynamic@4.4.6", "@angular/platform-browser-dynamic@^4.4.6":
   version "4.4.6"
   resolved "https://registry.yarnpkg.com/@angular/platform-browser-dynamic/-/platform-browser-dynamic-4.4.6.tgz#4d3d9a6a7bf2cf3de4058a615ae059eff641fa36"
   dependencies:
     tslib "^1.7.1"
 
-"@angular/platform-browser@4.1.2":
-  version "4.1.2"
-  resolved "https://registry.yarnpkg.com/@angular/platform-browser/-/platform-browser-4.1.2.tgz#16e50a8f75b4d675c9e2903e499e0fe4c6a125ac"
-
-"@angular/platform-browser@^4.4.6":
+"@angular/platform-browser@4.4.6", "@angular/platform-browser@^4.4.6":
   version "4.4.6"
   resolved "https://registry.yarnpkg.com/@angular/platform-browser/-/platform-browser-4.4.6.tgz#a9839c547e1b654fa1d24a89780c8ba6ab8dcce0"
   dependencies:
     tslib "^1.7.1"
 
-"@angular/platform-server@4.1.2":
-  version "4.1.2"
-  resolved "https://registry.yarnpkg.com/@angular/platform-server/-/platform-server-4.1.2.tgz#3ef2206a59fd2d138d267aad101a50d3d806e39c"
+"@angular/platform-server@4.4.6":
+  version "4.4.6"
+  resolved "https://registry.yarnpkg.com/@angular/platform-server/-/platform-server-4.4.6.tgz#431248f4891a635c76ad15a17d03e9c87e1a3837"
   dependencies:
     parse5 "^3.0.1"
+    tslib "^1.7.1"
     xhr2 "^0.1.4"
 
-"@angular/router@^4.1.2":
+"@angular/router@^4.4.6":
   version "4.4.6"
   resolved "https://registry.yarnpkg.com/@angular/router/-/router-4.4.6.tgz#0f6ad29ae0ff8d2c9ea379bd320447217b7ec866"
   dependencies:
@@ -98,35 +79,35 @@
     base64-js "^1.1.2"
     jshashes "^1.0.5"
 
-"@angular/tsc-wrapped@4.1.2":
-  version "4.1.2"
-  resolved "https://registry.yarnpkg.com/@angular/tsc-wrapped/-/tsc-wrapped-4.1.2.tgz#26cb145a67b9b80f5dda7874c4f0b1f1e173927d"
+"@angular/tsc-wrapped@4.4.6":
+  version "4.4.6"
+  resolved "https://registry.yarnpkg.com/@angular/tsc-wrapped/-/tsc-wrapped-4.4.6.tgz#16787cbbf50bdc7e738123b19c32527f244e178d"
   dependencies:
     tsickle "^0.21.0"
 
-"@ionic-native/core@^3.4.2":
-  version "3.10.3"
-  resolved "https://registry.yarnpkg.com/@ionic-native/core/-/core-3.10.3.tgz#c9be0a6b731e2ff6b4a60789f46c7386790bab9f"
+"@ionic-native/core@^3.8.0":
+  version "3.14.0"
+  resolved "https://registry.yarnpkg.com/@ionic-native/core/-/core-3.14.0.tgz#796ea9fb1ad1188eb30205c7bca982c8271747be"
 
-"@ionic-native/in-app-browser@^4.5.3":
-  version "4.5.3"
-  resolved "https://registry.yarnpkg.com/@ionic-native/in-app-browser/-/in-app-browser-4.5.3.tgz#3e94b8aa239449a92d91d2cd02e5f19962a5c823"
+"@ionic-native/in-app-browser@^3.8.0":
+  version "3.14.0"
+  resolved "https://registry.yarnpkg.com/@ionic-native/in-app-browser/-/in-app-browser-3.14.0.tgz#915d09eba9e2b36a8edce831c238cc40b1771607"
 
-"@ionic-native/push@^3.4.2":
-  version "3.10.3"
-  resolved "https://registry.yarnpkg.com/@ionic-native/push/-/push-3.10.3.tgz#1fd1bc52486cc0fb8a326461506f89723f09c033"
+"@ionic-native/push@^3.8.0":
+  version "3.14.0"
+  resolved "https://registry.yarnpkg.com/@ionic-native/push/-/push-3.14.0.tgz#e3353c78543bdf47f4298f37f864dd9356866f55"
 
-"@ionic-native/splash-screen@^3.4.2":
-  version "3.10.3"
-  resolved "https://registry.yarnpkg.com/@ionic-native/splash-screen/-/splash-screen-3.10.3.tgz#538de2aab105202c40c2241989774dc2c8931092"
+"@ionic-native/splash-screen@^3.8.0":
+  version "3.14.0"
+  resolved "https://registry.yarnpkg.com/@ionic-native/splash-screen/-/splash-screen-3.14.0.tgz#f864bfbd7f8577743a0301e7bec781316febc309"
 
-"@ionic-native/status-bar@^3.4.2":
-  version "3.10.3"
-  resolved "https://registry.yarnpkg.com/@ionic-native/status-bar/-/status-bar-3.10.3.tgz#d05597841c0866a1e195bafe4981c1224c16d5e5"
+"@ionic-native/status-bar@^3.8.0":
+  version "3.14.0"
+  resolved "https://registry.yarnpkg.com/@ionic-native/status-bar/-/status-bar-3.14.0.tgz#30ee1bc8a34895fb261b1e3d58fa30fb188857df"
 
-"@ionic-native/toast@^3.4.2":
-  version "3.10.3"
-  resolved "https://registry.yarnpkg.com/@ionic-native/toast/-/toast-3.10.3.tgz#fe87f40908f5ddf43440ded7a0fc515cd897faf7"
+"@ionic-native/toast@^3.8.0":
+  version "3.14.0"
+  resolved "https://registry.yarnpkg.com/@ionic-native/toast/-/toast-3.14.0.tgz#7a81abef46b19da65f9a13ee013497c904c532ba"
 
 "@ionic/app-scripts@^2.1.4":
   version "2.1.4"
@@ -3863,9 +3844,9 @@ invert-kv@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/invert-kv/-/invert-kv-1.0.0.tgz#104a8e4aaca6d3d8cd157a8ef8bfab2d7a3ffdb6"
 
-ionic-angular@^3.6.0:
-  version "3.6.0"
-  resolved "https://registry.yarnpkg.com/ionic-angular/-/ionic-angular-3.6.0.tgz#3c9222796c84cab37f5a3d090c268c9fe308e007"
+ionic-angular@^3.8.0:
+  version "3.9.2"
+  resolved "https://registry.yarnpkg.com/ionic-angular/-/ionic-angular-3.9.2.tgz#75053e4a422aaae7d7cd668cc92cfd5cb29d38cc"
 
 ionic@^3.19.0:
   version "3.19.1"
@@ -8264,6 +8245,6 @@ zip-stream@^1.2.0:
     lodash "^4.8.0"
     readable-stream "^2.0.0"
 
-zone.js@^0.8.4:
-  version "0.8.11"
-  resolved "https://registry.yarnpkg.com/zone.js/-/zone.js-0.8.11.tgz#742befb17fbc49a571712b8c7d87e58ca26fd886"
+zone.js@^0.8.18:
+  version "0.8.20"
+  resolved "https://registry.yarnpkg.com/zone.js/-/zone.js-0.8.20.tgz#a218c48db09464b19ff6fc8f0d4bb5b1046e185d"
