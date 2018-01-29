@@ -57,9 +57,6 @@
     </platform>
     <platform name="ios">
         <!-- Platform: iOS -->
-        <feature name="StatusBar">
-            <param name="ios-package" value="CDVStatusBar" onload="true" />
-        </feature>
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
     </platform>
