@@ -55,7 +55,9 @@ export class WPHC {
       pushNotif.init();
       swProvider.init();
       this.statusBar.styleDefault();
-      this.splashScreen.hide();
+      setTimeout(() => { // A small delay to prevent flashing
+        this.splashScreen.hide();
+      }, 100);
     });
   }
 }
