@@ -13,7 +13,7 @@ export const AppearIn = trigger('appear', [
         animate('0.2s ease-in')
     ]),
     transition('in => void', [
-        animate('0.2s 10 ease-out', style({
+        animate('0.2s 0.1s ease-out', style({
             opacity: 0,
             transform: 'scale(0.8)'
         }))
