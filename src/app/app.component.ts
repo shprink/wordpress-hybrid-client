@@ -57,6 +57,11 @@ export class WPHC {
       this.statusBar.styleDefault();
       setTimeout(() => { // A small delay to prevent flashing
         this.splashScreen.hide();
+        // Fix: Splash screen not hiding on iOS
+        // See: https://ipaupload.com/blog/cordova-splash-screen-not-hiding-in-ios/
+        if (navigator.splashscreen) {
+          navigator.splashscreen.hide();
+        }
       }, 100);
     });
   }
