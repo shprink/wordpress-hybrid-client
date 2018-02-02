@@ -28,13 +28,18 @@
     
     <!-- SplashScreen -->
     <preference name="SplashScreen" value="screen"/>
-    <preference name="SplashScreenDelay" value="30000"/>
-    <preference name="SplashShowOnlyFirstTime" value="false"/>
-    <preference name="ShowSplashScreenSpinner" value="false"/>
-    <preference name="SplashMaintainAspectRatio" value="true"/>
+    <preference name="ShowSplashScreenSpinner" value="true"/>
     <preference name="AutoHideSplashScreen" value="false"/>
+    <preference name="FadeSplashScreen" value="true"/>
+    <preference name="FadeSplashScreenDuration" value="1000"/> 
     <preference name="SplashShowOnlyFirstTime" value="false"/>
-    <preference name="FadeSplashScreen" value="false"/>
+    <preference name="SplashMaintainAspectRatio" value="true"/>
+    <platform name="android">
+        <!-- Adding delay also in ios, the plugin always executes the delay and
+             ignores the “AutoHideSplashScreen”.
+             See: https://forum.ionicframework.com/t/cordovasplashscreen-not-hiding-on-ios/42637/5 -->
+        <preference name="SplashScreenDelay" value="30000"/>
+    </platform>
 
     <!-- Crosswalk -->
     <preference name="xwalkCommandLine" value="--disable-pull-to-refresh-effect"/>
@@ -79,6 +84,6 @@
     <plugin name="ionic-plugin-keyboard" spec="~2.2.1" />
 
     <!-- Engine -->
-    <engine name="android" spec="6.1" />
-    <engine name="ios" spec="4.x" />
+    <engine name="android" spec="~6.1.0" />
+    <engine name="ios" spec="~4.1.0" />
 </widget>
