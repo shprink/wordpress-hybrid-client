@@ -59,7 +59,7 @@ export class WPHC {
         this.splashScreen.hide();
         // Fix: Splash screen not hiding on iOS
         // See: https://ipaupload.com/blog/cordova-splash-screen-not-hiding-in-ios/
-        if ('splashscreen' in navigator) {
+        if (navigator.splashscreen) {
           navigator.splashscreen.hide();
         }
       }, 100);
