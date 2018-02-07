@@ -19,7 +19,7 @@ export class PushNotifications {
         public config: Config,
         public injector: Injector
     ) {
-        const plugin = this.config.getPushNotifications('plugin', 'push-notifications-for-wordpress');
+        // const plugin = this.config.getPushNotifications('plugin', 'push-notifications-for-wordpress');
 
         // if (plugin === 'push-notifications-for-wordpress') {
         //     this.instance = this.injector.get(PushNotificationsForWordPress, PushNotificationsForWordPress);

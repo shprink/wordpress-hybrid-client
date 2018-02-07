@@ -8,9 +8,8 @@ import { WpApiCustom } from 'wp-api-angular';
 import { Store } from '@ngrx/store';
 import _get from 'lodash/get';
 import _take from 'lodash/take';
-import _isObject from 'lodash/isObject';
 
-import { AbstractListPage, IListPage, IListResult } from '../abstract/PaginatedPage';
+import { AbstractListPage, IListResult } from '../abstract/PaginatedPage';
 import { addSearchList, cleanSearchList } from '../../actions';
 import { Config } from './../../providers';
 import { AppState } from '../../reducers';

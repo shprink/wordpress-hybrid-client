@@ -3,7 +3,7 @@ import { Storage as IonicStorage } from '@ionic/storage';
 import { Store } from '@ngrx/store';
 import debug from 'debug';
 
-import { AppState, IListState } from './../reducers';
+import { AppState } from './../reducers';
 import { INIT } from './../actions';
 
 const log = debug('Storage');

@@ -1,3 +1,4 @@
+import { enableProdMode } from '@angular/core';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 import debug from 'debug';
 
@@ -5,6 +6,10 @@ import { WPHCModule } from './app.module';
 
 const logApp = debug('App');
 const logSW = debug('SW');
+
+if (__PROD__) {
+    enableProdMode();
+}
 
 platformBrowserDynamic()
     .bootstrapModule(WPHCModule)

@@ -3,11 +3,10 @@ var webpack = require('webpack');
 var ionicWebpackFactory = require(process.env.IONIC_WEBPACK_FACTORY);
 var deepExtend = require('deep-extend');
 var cordovaLib = require('cordova').cordova_lib;
-var CSON = require('cson');
 var ModuleConcatPlugin = require('webpack/lib/optimize/ModuleConcatenationPlugin');
 
-var defaultConfig = CSON.requireFile('./src/config.default.cson');
-var configOverwrite = CSON.requireFile('./config/config.cson');
+var defaultConfig = require('../src/config.default.cson');
+var configOverwrite = require('../config/config.cson');
 
 const RawConfig = deepExtend(defaultConfig, configOverwrite);
 
