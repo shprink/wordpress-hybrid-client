@@ -1,21 +1,24 @@
 var path = require('path');
 var webpack = require('webpack');
+var webpackMerge = require('webpack-merge');
 var ionicWebpackFactory = require(process.env.IONIC_WEBPACK_FACTORY);
 var deepExtend = require('deep-extend');
 var cordovaLib = require('cordova').cordova_lib;
 var ModuleConcatPlugin = require('webpack/lib/optimize/ModuleConcatenationPlugin');
 
-var defaultConfig = require('../src/config.default.cson');
-var configOverwrite = require('../config/config.cson');
+var CSON = require('cson');
+var defaultConfig = CSON.requireFile('./src/config.default.cson');
+var configOverwrite = CSON.requireFile('./config/config.cson');
 
 const RawConfig = deepExtend(defaultConfig, configOverwrite);
+const { dev, prod } = require('@ionic/app-scripts/config/webpack.config');
 
 var prodPlugins = [];
 if (process.env.IONIC_ENV === 'prod') {
   prodPlugins.push(new ModuleConcatPlugin());
 }
 
-module.exports = {
+const customConfig = {
   entry: process.env.IONIC_APP_ENTRY_POINT,
   output: {
     path: '{{BUILD}}',
@@ -90,3 +93,14 @@ function getAppVersion() {
   var config = new cordovaLib.configparser(path.join(__dirname, '..', 'config.xml'));
   return config.version();
 }
+
+/*
+module.exports = {
+  dev: webpackMerge(dev, customConfig),
+  prod: webpackMerge(prod, customConfig),
+};
+*/
+module.exports = {
+  dev: customConfig,
+  prod: customConfig,
+};

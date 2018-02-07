@@ -109,7 +109,8 @@
     "style-loader": "^0.20.1",
     "ts-loader": "^2.3.7",
     "ts-node": "^3.3.0",
-    "typescript": "^2.3.4"
+    "typescript": "^2.3.4",
+    "webpack-merge": "^4.1.1"
   },
   "engines": {
     "node": ">= 6",
