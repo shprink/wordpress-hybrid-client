@@ -61,6 +61,7 @@
     "@ngx-translate/core": "^6.0.1",
     "@ngx-translate/http-loader": "^0.0.3",
     "angular2-moment": "^1.1.0",
+    "babel-polyfill": "^6.26.0",
     "clipboard": "^1.7.1",
     "debug": "^2.6.8",
     "deep-extend": "^0.4.1",

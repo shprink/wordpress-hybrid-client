@@ -19,7 +19,7 @@ if (process.env.IONIC_ENV === 'prod') {
 }
 
 const customConfig = {
-  entry: process.env.IONIC_APP_ENTRY_POINT,
+  entry: ['babel-polyfill', process.env.IONIC_APP_ENTRY_POINT],
   output: {
     path: '{{BUILD}}',
     publicPath: 'build/',

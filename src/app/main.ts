@@ -1,3 +1,5 @@
+import './polyfills';
+
 import { enableProdMode } from '@angular/core';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 import debug from 'debug';
@@ -9,18 +11,6 @@ const logSW = debug('SW');
 
 if (__PROD__) {
     enableProdMode();
-}
-
-// TODO: Move this to better place and include only wanted locale data
-if (!global.Intl) {
-    require.ensure([
-        'intl',
-        'intl/locale-data/jsonp/fi.js',
-        'intl/locale-data/jsonp/en.js'
-    ], function (require) {
-        require('intl');
-        require('intl/locale-data/jsonp/en.js');
-    });
 }
 
 platformBrowserDynamic()
