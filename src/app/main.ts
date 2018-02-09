@@ -4,7 +4,7 @@ import { enableProdMode } from '@angular/core';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 import debug from 'debug';
 
-import { WPHCModule } from './app.module';
+import { AppModule } from './app.module';
 
 const logApp = debug('App');
 const logSW = debug('SW');
@@ -14,7 +14,7 @@ if (__PROD__) {
 }
 
 platformBrowserDynamic()
-    .bootstrapModule(WPHCModule)
+    .bootstrapModule(AppModule)
     .then(() => {
         logApp('Bootstrapped')
         if ('serviceWorker' in navigator && __SW_ENABLED__ && __PROD__) {

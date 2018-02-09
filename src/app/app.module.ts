@@ -125,4 +125,4 @@ export function appInitializerTranslateFactory(translate: TranslateService, inje
     }
   ]
 })
-export class WPHCModule { }
+export class AppModule { }
