@@ -31,3 +31,9 @@ platformBrowserDynamic()
                 .catch(err => console.error('error', err));
         }
     });
+
+setTimeout(() => {
+    if (navigator && navigator.splashscreen) {
+        navigator.splashscreen.hide();
+    }
+}, 300);

@@ -79,7 +79,7 @@
     <plugin name="cordova-plugin-device" spec="~1.1.7" />
     <plugin name="cordova-plugin-splashscreen" spec="~4.1.0" />
     <plugin name="cordova-plugin-crosswalk-webview" spec="~2.4.0" />
-    <plugin name="cordova-plugin-wkwebview-engine" spec="~1.1.4" />
+    <plugin name="cordova-plugin-ionic-webview" spec="~1.1.16"/>
     <plugin name="cordova-plugin-inappbrowser" spec="~1.7.2" />
     <plugin name="ionic-plugin-keyboard" spec="~2.2.1" />
 
