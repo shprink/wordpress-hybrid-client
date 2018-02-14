@@ -1,0 +1,27 @@
+<ion-content>
+    <form [formGroup]="auth" (ngSubmit)="authFormOnSubmit()">
+        <ion-list>
+            <ion-item>
+                <ion-label stacked>{{ 'USERNAME' | translate }}</ion-label>
+                <ion-input type="text" formControlName="username"></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-label stacked>{{ 'PASSWORD' | translate }}</ion-label>
+                <ion-input type="password" formControlName="password"></ion-input>
+            </ion-item>
+            <ion-item *ngIf="isRegisterForm">
+                <ion-label stacked>{{ 'PASSWORD2' | translate }}</ion-label>
+                <ion-input type="password"></ion-input>
+                <ion-input type="hidden" value="register" formControlName="password2"></ion-input>
+            </ion-item>
+        </ion-list>
+        <div padding>
+            <button *ngIf="isLoginForm" ion-button type="submit" block>{{ 'LOGIN' | translate }}</button>
+            <button *ngIf="isRegisterForm" ion-button type="submit" block>{{ 'REGISTER' | translate }}</button>
+            <p text-center>
+                <a (click)="setFormType('register')">{{ 'OR_REGISTER_HERE' | translate }}</a>
+            </p>
+        </div>
+    </form>
+</ion-content>
+

@@ -22,6 +22,7 @@ import { BookmarksComponent } from './bookmarks/bookmarks';
 import { MenuItemsComponent } from './menu-items/menu-items';
 import { EmptyListComponent } from './empty-list/empty-list';
 import { PageNavbarComponent } from './page-navbar/page-navbar';
+import { LoginFormComponent } from "./login-form/login-form";
 
 import {
     ComponentsMapping as CustomComponentsMapping,
@@ -64,6 +65,7 @@ export const COMPONENTS = [
     EmptyListComponent,
     BookmarksComponent,
     PageNavbarComponent,
+    LoginFormComponent,
     ...CustomCOMPONENTS
 ];
 
