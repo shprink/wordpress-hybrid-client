@@ -36,6 +36,7 @@ import { PROVIDERS, Config, Storage as OwnStorage, } from '../providers';
 import { PIPES } from '../pipes';
 
 import * as ionicConfig from './config/app.config.ionic';
+import {AuthenticationService} from "../services/authentication";
 
 // AoT requires an exported function for factories
 export function createTranslateLoader(http: Http) {
@@ -122,7 +123,8 @@ export function appInitializerTranslateFactory(translate: TranslateService, inje
       useFactory: appInitializerTranslateFactory,
       deps: [TranslateService, Injector, Config],
       multi: true
-    }
+    },
+    AuthenticationService
   ]
 })
 export class AppModule { }
