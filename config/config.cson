@@ -1,0 +1,31 @@
+# Here you can overwrite any of the src/config.default.cson
+title: "My Blog title"
+search:
+    types: ['posts', 'pages', 'movie']
+api:
+    baseUrl: "https://activegan.anonymous.org.il/wp-json"
+
+# Static metas (for SEO purpose)
+# Each page will dynamically overwrite those
+metas:
+    title: 'אקטיויגן'
+    description: 'אפליצקיית הסברה על זכויות בעלי חיים'
+    themeColor: '#4e8ef7'
+    # Open graph
+    ogTitle: 'אקטיויגן'
+    ogType: 'website'
+    ogUrl: 'https://activegan.anonymous.org.il'
+    ogImage: ''
+    ogImageWidth: 400
+    ogImageHeight: 400
+    # Twitter card
+    twitterSite: ''
+    twitterCreator: '@AnimalAnonymous' # e.g @julienrenaux
+
+admob:
+    bannerEnabled: false
+    interstitialEnabled: false
+    config:
+        publisherId: null
+        interstitialAdId: null
+        isTesting: true

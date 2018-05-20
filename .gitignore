@@ -45,7 +45,8 @@ before_build.md
 /ionic.config.json
 www/
 myapp/
-/config/
+/config/*
+!/config/.gitignore
 /resources/
 src/**/*.js
 src/**/*.js.map
