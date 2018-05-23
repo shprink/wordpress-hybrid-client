@@ -5,7 +5,7 @@
   for more info on Angular 2 Components.
 -->
 <div *ngIf="item">
-  <div *ngIf="item.featured_media !== 0 && item.better_featured_image" class="thumbnail" [style.background-image]="'url(' + item.better_featured_image?.media_details.sizes.medium.source_url + ')'"></div>
+  <div *ngIf="item.featured_media !== 0 && item.better_featured_image" class="thumbnail" [style.background-image]="'url(' + item.better_featured_image?.media_details?.sizes?.medium?.source_url + ')'"></div>
   <div class="main-content" padding>
     <h1 [innerHtml]="item.title.rendered"></h1>
     <!--<author [link]="true" [authorId]="item.author" [date]="item.date"></author>-->
