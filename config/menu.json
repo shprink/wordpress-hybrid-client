@@ -2,7 +2,7 @@
     {
         "type": "internal",
         "trans": "HOME",
-        "page": "posts",
+        "page": "categories",
         "icon": "home",
         "navRoot": true
     },
@@ -176,40 +176,6 @@
     {
         "type": "separator",
         "trans": "Others"
-    },
-    {
-        "type": "folder",
-        "trans": "AUTHORS",
-        "icon": "people",
-        "list": [
-            {
-                "type": "internal",
-                "trans": "Admin",
-                "page": "author",
-                "params": {
-                    "id": 1
-                },
-                "icon": "people",
-                "navRoot": true
-            },
-            {
-                "type": "internal",
-                "trans": "Test User",
-                "page": "author",
-                "params": {
-                    "id": 13
-                },
-                "icon": "people",
-                "navRoot": true
-            },
-            {
-                "type": "internal",
-                "trans": "All",
-                "page": "authors",
-                "icon": "people",
-                "navRoot": true
-            }
-        ]
     },
     {
         "type": "internal",
