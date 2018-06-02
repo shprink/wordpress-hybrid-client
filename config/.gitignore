@@ -1,2 +1,5 @@
 !config.cson
 !menu.json
+!components/index.ts
+!components/post-card
+

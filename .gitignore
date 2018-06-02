@@ -41,7 +41,7 @@ iOS
 legacy/
 cordova.plugin.backup
 before_build.md
-/config.xml
+config.xml
 /ionic.config.json
 www/
 myapp/
@@ -54,3 +54,4 @@ src/**/*.js.map
 .io-config.json
 .sourcemaps
 .temp
+.gradle
