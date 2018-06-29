@@ -27,6 +27,7 @@
     "test-ci": "karma start ./test-config/karma-ci.conf.js --single-run",
     "start": "npm run ionic:start",
     "ionic:prepare": "ionic cordova prepare",
+    "ionic:removeCrosswalk": "ionic cordova plugin remove crosswalk-webview",
     "ionic:run": "ionic cordova run",
     "ionic:start": "ionic serve",
     "ionic:resources": "ionic cordova resources",
