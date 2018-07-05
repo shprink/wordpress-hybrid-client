@@ -5,6 +5,10 @@ search:
 api:
     baseUrl: "https://activegan.anonymous.org.il/wp-json"
 
+defaultPage:
+    page: 'categories'
+
+
 # Static metas (for SEO purpose)
 # Each page will dynamically overwrite those
 metas:
