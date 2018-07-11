@@ -8,174 +8,10 @@
     },
     {
         "type": "internal",
-        "trans": "TABS",
-        "page": "customTabs",
-        "icon": "albums",
-        "navRoot": true
-    },
-    {
-        "type": "separator",
-        "trans": "Posts type"
-    },
-    {
-        "type": "folder",
-        "trans": "POSTS",
+        "trans": "All",
+        "page": "posts",
         "icon": "paper",
-        "list": [
-            {
-                "type": "internal",
-                "trans": "Hello world",
-                "page": "postsItem",
-                "params": {
-                    "year": "2015",
-                    "month": "11",
-                    "day": "20",
-                    "slug": "hello-world"
-                },
-                "icon": "document"
-            },
-            {
-                "type": "internal",
-                "trans": "All",
-                "page": "posts",
-                "icon": "paper",
-                "navRoot": true
-            }
-        ]
-    },
-    {
-        "type": "folder",
-        "trans": "PAGES",
-        "page": "pages",
-        "params": {},
-        "icon": "document",
-        "list": [
-            {
-                "type": "internal",
-                "trans": "Sample page",
-                "page": "pagesItem",
-                "params": {
-                    "slug": "sample-page"
-                },
-                "icon": "document"
-            },
-            {
-                "type": "internal",
-                "trans": "All",
-                "page": "pages",
-                "icon": "copy",
-                "navRoot": true
-            }
-        ]
-    },
-    {
-        "type": "folder",
-        "trans": "CUSTOM_POSTS",
-        "icon": "videocam",
-        "list": [
-            {
-                "type": "internal",
-                "trans": "La vie en rose",
-                "page": "movieItem",
-                "params": {
-                    "slug": "la-vie-en-rose"
-                },
-                "icon": "videocam"
-            },
-            {
-                "type": "internal",
-                "trans": "All Movies",
-                "page": "movie",
-                "icon": "videocam",
-                "navRoot": true
-            }
-        ]
-    },
-    {
-        "type": "separator",
-        "trans": "Taxonomies type"
-    },
-    {
-        "type": "folder",
-        "trans": "CATEGORIES",
-        "icon": "folder",
-        "list": [
-            {
-                "type": "internal",
-                "trans": "Uncategorized",
-                "page": "category",
-                "params": {
-                    "id": 1
-                },
-                "icon": "help"
-            },
-            {
-                "type": "internal",
-                "trans": "All",
-                "page": "categories",
-                "icon": "folder",
-                "navRoot": true
-            }
-        ]
-    },
-    {
-        "type": "folder",
-        "trans": "TAGS",
-        "icon": "pricetags",
-        "list": [
-            {
-                "type": "internal",
-                "trans": "AngularJS",
-                "page": "tag",
-                "params": {
-                    "id": 16
-                },
-                "icon": "logo-apple"
-            },
-            {
-                "type": "internal",
-                "trans": "All",
-                "page": "tags",
-                "icon": "pricetags",
-                "navRoot": true
-            }
-        ]
-    },
-    {
-        "type": "folder",
-        "trans": "CUSTOM_TAXO",
-        "icon": "film",
-        "list": [
-            {
-                "type": "internal",
-                "trans": "Audrey Tautou",
-                "page": "actorItem",
-                "params": {
-                    "id": 99
-                },
-                "icon": "film"
-            },
-            {
-                "type": "internal",
-                "trans": "Marion Cotillard",
-                "page": "actorItem",
-                "params": {
-                    "id": 96
-                },
-                "icon": "film"
-            },
-            {
-                "type": "internal",
-                "trans": "All Actors",
-                "page": "actor",
-                "icon": "film",
-                "navRoot": true
-            }
-        ]
-    },
-    {
-        "type": "separator",
-        "trans": "Others"
+        "navRoot": true
     },
     {
         "type": "internal",
@@ -186,17 +22,14 @@
         "navRoot": true
     },
     {
+        "type": "separator"
+    },
+    {
         "type": "internal",
         "trans": "SETTINGS",
         "page": "params",
         "params": {},
         "icon": "cog",
         "navRoot": true
-    },
-    {
-        "type": "external",
-        "trans": "My blog (external link)",
-        "href": "https://julienrenaux.fr",
-        "icon": "link"
     }
 ]
