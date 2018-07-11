@@ -1,0 +1,49 @@
+{
+    "routing": {
+        "index": "/index.html",
+        "routes": {
+            "/": {
+                "prefix": false
+            },
+            "/posts": {
+                "prefix": false
+            },
+            "/pages": {
+                "prefix": true
+            },
+            "/author": {
+                "prefix": true
+            },
+            "/authors": {
+                "prefix": false
+            },
+            "/category": {
+                "prefix": true
+            },
+            "/categories": {
+                "prefix": false
+            },
+            "/tag": {
+                "prefix": true
+            },
+            "/tags": {
+                "prefix": false
+            },
+            "/bookmarks": {
+                "prefix": false
+            },
+            "/settings": {
+                "prefix": false
+            },
+            "/movies": {
+                "prefix": true
+            },
+            "/actors": {
+                "prefix": true
+            },
+            "/custom-tabs": {
+                "prefix": false
+            }
+        }
+    }
+}

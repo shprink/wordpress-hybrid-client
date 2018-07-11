@@ -1,0 +1,18 @@
+<!--
+  Generated template for the MovieList component.
+
+  See https://angular.io/docs/ts/latest/api/core/index/ComponentMetadata-class.html
+  for more info on Angular 2 Components.
+-->
+<ion-card *ngFor="let item of list; trackBy: trackBy">  
+  <ion-card-content (click)="openPage($event, item)">
+    <ion-card-title [innerHtml]="item.title.rendered"></ion-card-title>
+    <!--<author [author]="author$ | async" [date]="post.date"></author>-->
+    <p [innerHtml]="item.content.rendered"></p>
+  </ion-card-content>
+  <toolbar
+    [bookmarkId]="type + ':' + item.id"
+    [shareUrl]="item.link"
+    [shareSubject]="item.title.rendered"
+  ></toolbar>
+</ion-card>

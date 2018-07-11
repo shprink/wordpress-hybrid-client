@@ -1,0 +1,5 @@
+<ion-card *ngFor="let item of list; trackBy: trackBy">
+  <ion-card-content (click)="openPage($event, item)">
+    {{item.id}}
+  </ion-card-content>
+</ion-card>

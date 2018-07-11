@@ -1,0 +1,23 @@
+<!--
+  Generated template for the MovieItem component.
+
+  See https://angular.io/docs/ts/latest/api/core/index/ComponentMetadata-class.html
+  for more info on Angular 2 Components.
+-->
+<div *ngIf="item">
+  <div class="main-content" padding>
+    <h1 [innerHtml]="item.title.rendered"></h1>
+    <!--<author [link]="true" [authorId]="item.author" [date]="item.date"></author>-->
+    <toolbar
+    [bookmarkId]="type + ':' + item.id"
+    [shareUrl]="item.link"
+    [shareSubject]="item.title.rendered"
+  ></toolbar>
+    <div [innerHtml]="item.content.rendered" class="page-content"></div>
+    <toolbar
+      [bookmarkId]="type + ':' + item.id"
+      [shareUrl]="item.link"
+      [shareSubject]="item.title.rendered"
+    ></toolbar>
+  </div>
+</div>

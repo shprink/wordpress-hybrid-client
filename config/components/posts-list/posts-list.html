@@ -1,0 +1,19 @@
+<!--
+  Generated template for the PostsList component.
+
+  See https://angular.io/docs/ts/latest/api/core/index/ComponentMetadata-class.html
+  for more info on Angular 2 Components.
+-->
+<ion-grid>
+  <ion-row>
+    <ion-col display-flex col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 *ngFor="let item of list; trackBy: trackBy">
+      <post-card
+        [type]="type"
+        [@appear]="'in'"
+        [post]="item"
+        [onClick]="openPage"
+        [content]="content"
+      ></post-card>
+    </ion-col>
+  </ion-row>
+</ion-grid>

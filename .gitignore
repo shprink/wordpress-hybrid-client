@@ -45,8 +45,7 @@ config.xml
 /ionic.config.json
 www/
 myapp/
-/config/*
-!/config/.gitignore
+#/config/*
 /resources/
 src/**/*.js
 src/**/*.js.map
@@ -55,3 +54,4 @@ src/**/*.js.map
 .sourcemaps
 .temp
 .gradle
+package-lock.json
