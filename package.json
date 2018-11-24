@@ -39,6 +39,8 @@
     "build:dev": "./scripts/buildPWA.sh",
     "build:pwa": "./scripts/buildPWA.sh",
     "buildAndRun:pwa": "./scripts/buildPWAAndRun.sh",
+    "build:pwaDebug": "./scripts/buildPWADebug.sh",
+    "buildAndRun:pwaDebug": "./scripts/buildPWADebugAndRun.sh",
     "ionic:serve": "ionic-app-scripts serve",
     "postinstall": "npm run installWPHC",
     "installWPHC": "node ./scripts/install.js",

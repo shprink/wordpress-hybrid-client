@@ -4,7 +4,7 @@ set -x
 
 BUILDFOLDER=www/
 
-./scripts/buildPWA.sh
+./scripts/buildPWADebug.sh
 
 cd $BUILDFOLDER
 http-server -p 3000
