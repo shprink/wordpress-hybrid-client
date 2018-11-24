@@ -2,7 +2,7 @@
     "name": "אקטיויגן",
     "short_name": "אקטיויגן",
     "description": "אפליקציית הסברה על זכויות בעלי-חיים",
-    "default_locale": "en",
+    "default_locale": "he",
     "start_url": "index.html",
     "display": "standalone",
     "lang": "en-*",

@@ -10,7 +10,7 @@ platformBrowserDynamic()
     .bootstrapModule(AppModule)
     .then(() => {
         logApp('Bootstrapped')
-        if ('serviceWorker' in navigator && __SW_ENABLED__ && __PROD__) {
+        if ('serviceWorker' in navigator && __SW_ENABLED__ ) {
             navigator.serviceWorker.register('worker-basic.min.js')
                 .then((reg) => {
                     if (reg.installing) {
